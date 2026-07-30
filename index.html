@@ -60,13 +60,12 @@
   .statuspill{font-size:11.5px;font-weight:800;letter-spacing:.4px;padding:4px 11px;border-radius:999px;white-space:nowrap}
   .punch.ahead .statuspill{background:var(--ahead-base);color:#fff}
   .punch.behind .statuspill{background:var(--behind-base);color:#fff}
-  .punch-row{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-top:10px}
-  .punch-num{font-size:41px;font-weight:800;letter-spacing:-1.8px;line-height:.98}
-  .punch-num small{display:block;font-size:11.5px;font-weight:600;color:var(--slate-400);letter-spacing:0;margin-top:6px}
-  .deltas{text-align:right;flex:0 0 auto}
-  .d-primary{font-size:19px;font-weight:800;letter-spacing:-.5px;white-space:nowrap}
+  .punch-num{font-size:33px;font-weight:800;letter-spacing:-1.3px;line-height:1;margin-top:10px;white-space:nowrap}
+  .punch-num small{font-size:12px;font-weight:600;color:var(--slate-400);letter-spacing:0;margin-left:8px}
+  .deltas{margin-top:12px;display:flex;flex-direction:column;gap:5px}
+  .d-primary{font-size:15px;font-weight:800;letter-spacing:-.2px;white-space:nowrap}
   .d-primary span{font-size:12px;font-weight:600;color:var(--slate-500);margin-left:5px;letter-spacing:0}
-  .d-secondary{font-size:13.5px;font-weight:700;margin-top:5px;white-space:nowrap}
+  .d-secondary{font-size:13px;font-weight:700;white-space:nowrap}
   .d-secondary span{font-size:11px;font-weight:600;color:var(--slate-400);margin-left:4px}
   .up{color:var(--ahead)} .down{color:var(--behind)}
 
@@ -136,12 +135,10 @@
   <section>
     <div class="card punch" id="punchCard">
       <div class="k"><span>Projected end of day</span><span class="statuspill" id="statusPill"></span></div>
-      <div class="punch-row">
-        <div class="punch-num" id="projVal"></div>
-        <div class="deltas">
-          <div class="d-primary" id="dPrimary"></div>
-          <div class="d-secondary" id="dSecondary"></div>
-        </div>
+      <div class="punch-num" id="projVal"></div>
+      <div class="deltas">
+        <div class="d-primary" id="dPrimary"></div>
+        <div class="d-secondary" id="dSecondary"></div>
       </div>
     </div>
 
@@ -218,7 +215,7 @@
   </section>
 </div>
 
-<script>window.__PACING__={"nowH":14,"wd":"Thu","dateLabel":"Thu, Jul 30","asofLabel":"as of 2:26 PM PDT","compDate":{"lastweek":"Thu, Jul 23","lastyear":"Thu, Jul 31, 2025"},"legLW":"Jul 23","legLY":"Jul 31 '25","units":{"today":[3,12,14,19,29,39,49,58,81,100,113,125,148,162,175],"lastweek":[5,6,12,17,21,33,43,55,66,74,91,111,126,132,151,172,203,219,234,242,256,267,269,273],"lastyear":[6,10,16,17,21,25,32,47,60,82,90,101,106,110,116,128,151,164,167,173,174,177,180,183]},"sales":{"today":[51.97,248.88,287.86,382.81,577.71,792.61,961.51,1090.42,1472.29,1794.51,2050.38,2298.26,2704.03,2957.89,3201.76],"lastweek":[99.95,123.94,232.78,340.73,405.69,614.57,834.47,1070.85,1300.74,1435.66,1784.49,2130.09,2392.04,2499.6,2857.41,3197.61,3799.9,4095,4363.85,4504.77,4746.63,4965.52,5004.5,5069.46],"lastyear":[151.94,248.9,356.84,377.83,468.79,564.75,721.58,1057.43,1365.92,1911.18,2110.7,2306.6,2472.55,2556.51,2658.45,2902.33,3435.2,3727.07,3813.04,3990.98,4022.97,4086.94,4150.91,4217.88]},"full":{"units":{"lastweek":273,"lastyear":183},"sales":{"lastweek":5069.46,"lastyear":4217.88}},"orders":152,"ordersSub":"1.2 units · $21.06 ea","freshLabel":"Live · refreshed 2:26 PM PT"};</script>
+<script>window.__PACING__={"nowH":15,"wd":"Thu","dateLabel":"Thu, Jul 30","asofLabel":"as of 3:10 PM PDT","compDate":{"lastweek":"Thu, Jul 23","lastyear":"Thu, Jul 31, 2025"},"legLW":"Jul 23","legLY":"Jul 31 '25","units":{"today":[3,12,14,19,29,39,49,58,81,100,113,125,148,162,178,180],"lastweek":[5,6,12,17,21,33,43,55,66,74,91,111,126,132,151,172,203,219,234,242,256,267,269,273],"lastyear":[6,10,16,17,21,25,32,47,60,82,90,101,106,110,116,128,151,164,167,173,174,177,180,183]},"sales":{"today":[51.97,248.88,287.86,382.81,577.71,792.61,961.51,1090.42,1472.29,1794.51,2050.38,2298.26,2704.03,2957.89,3276.73,3316.71],"lastweek":[99.95,123.94,232.78,340.73,405.69,614.57,834.47,1070.85,1300.74,1435.66,1784.49,2130.09,2392.04,2499.6,2857.41,3197.61,3799.9,4095,4363.85,4504.77,4746.63,4965.52,5004.5,5069.46],"lastyear":[151.94,248.9,356.84,377.83,468.79,564.75,721.58,1057.43,1365.92,1911.18,2110.7,2306.6,2472.55,2556.51,2658.45,2902.33,3435.2,3727.07,3813.04,3990.98,4022.97,4086.94,4150.91,4217.88]},"full":{"units":{"lastweek":273,"lastyear":183},"sales":{"lastweek":5069.46,"lastyear":4217.88}},"orders":157,"ordersSub":"1.1 units · $21.13 ea","freshLabel":"Live · refreshed 3:10 PM PT"};</script>
 <script>
 (function(){
   var D = window.__PACING__;
@@ -236,12 +233,23 @@
   function compShort(c){ return c==='lastweek' ? 'Last '+WD : 'Last yr'; }
   function other(c){ return c==='lastweek' ? 'lastyear' : 'lastweek'; }
 
-  function forecastCurve(todayArr, compArr){
+  // Forecast blends BOTH comp days' hour-by-hour shape → a STABLE projected total that does not
+  // move when you toggle the comp (the toggle only changes what you compare that total against).
+  // fb(h) = the average fraction of a full day's sales that had accrued by hour h across the two
+  // comp days; projecting today forward on that blended shape lands at todayNow / fb(now).
+  function fb(h, lwArr, lyArr){
+    return (lwArr[h]/lwArr[lwArr.length-1] + lyArr[h]/lyArr[lyArr.length-1]) / 2;
+  }
+  function forecastCurve(todayArr, lwArr, lyArr){
     var now = todayArr.length-1;
-    var paceRatio = todayArr[now]/compArr[now];
+    var base = fb(now, lwArr, lyArr);
     var out=[];
-    for(var h=now; h<compArr.length; h++) out.push(todayArr[now]+(compArr[h]-compArr[now])*paceRatio);
+    for(var h=now; h<24; h++) out.push(todayArr[now] * (fb(h, lwArr, lyArr) / base));
     return out;
+  }
+  function blendedProjEod(todayArr, lwArr, lyArr){
+    var now = todayArr.length-1;
+    return todayArr[now] / fb(now, lwArr, lyArr);
   }
   function deltaHTML(proj, full, label, metric){
     var pct = Math.round((proj/full-1)*100);
@@ -263,10 +271,12 @@
     var today=Dm.today, compArr=Dm[comp];
     var now=today.length-1;
     var todayNow=today[now], compNow=compArr[NOW_H], compFull=compArr[compArr.length-1];
-    var pace=todayNow/compNow, projEod=todayNow*(compFull/compNow), ahead=pace>=1;
+    var pace=todayNow/compNow, paceAhead=pace>=1;               // pace vs THIS comp at this hour → drives the meter
+    var projEod=blendedProjEod(today, Dm.lastweek, Dm.lastyear); // stable, comp-independent landing estimate
     var oc=other(comp);
 
     var primaryPct=Math.round((projEod/FULL[metric][comp]-1)*100);
+    var ahead=primaryPct>=0;                                     // projected to LAND above the selected comp's full day
     document.getElementById('punchCard').className='card punch '+(ahead?'ahead':'behind');
     document.getElementById('statusPill').textContent=(ahead?'▲ AHEAD ':'▼ BEHIND ')+(primaryPct>=0?'+':'')+primaryPct+'%';
     document.getElementById('projVal').innerHTML='≈ '+fmt(projEod,metric)+'<small>'+fmt(todayNow,metric)+' so far</small>';
@@ -278,13 +288,13 @@
     document.getElementById('gaugeArc').style.strokeDasharray=(257.6*frac)+' 257.6';
     document.getElementById('gaugeTick').setAttribute('transform','rotate('+(-90+frac*180)+' 100 108)');
     document.getElementById('pacePct').textContent=Math.round(pace*100)+'%';
-    document.getElementById('paceOfPace').style.color=ahead?'var(--ahead)':'var(--behind)';
+    document.getElementById('paceOfPace').style.color=paceAhead?'var(--ahead)':'var(--behind)';
     document.getElementById('paceOfPace').textContent="of "+compName(comp)+"'s pace";
     document.querySelector('.hero .cap').textContent='Pace vs this hour '+(comp==='lastweek'?'last week':'last year');
     var diff=todayNow-compNow;
     var v=document.getElementById('verdict');
-    v.className='verdict '+(ahead?'ahead':'behind');
-    v.textContent=(ahead?'▲ ':'▼ ')+fmt(Math.abs(diff),metric)+suf(metric)+(ahead?' ahead of pace':' behind pace');
+    v.className='verdict '+(paceAhead?'ahead':'behind');
+    v.textContent=(paceAhead?'▲ ':'▼ ')+fmt(Math.abs(diff),metric)+suf(metric)+(paceAhead?' ahead of pace':' behind pace');
     document.getElementById('compareLine').innerHTML='<b>'+fmt(todayNow,metric)+suf(metric)+'</b> so far vs <b>'+fmt(compNow,metric)+'</b> by this hour on '+COMP_DATE[comp]+'.';
 
     document.getElementById('sSales').textContent=money(SALES.today[SALES.today.length-1]);
@@ -319,7 +329,7 @@
     var Dm=metric==='sales'?SALES:UNITS;
     var W=400,H=236,padL=metric==='sales'?46:32,padR=14,padT=14,padB=26;
     var iw=W-padL-padR, ih=H-padT-padB;
-    var fc=forecastCurve(Dm.today,Dm[comp]);
+    var fc=forecastCurve(Dm.today,Dm.lastweek,Dm.lastyear);
     var projEnd=fc[fc.length-1];
     var maxY=Math.max(Dm.lastweek[Dm.lastweek.length-1],Dm.lastyear[Dm.lastyear.length-1],projEnd)*1.06;
     var x=function(h){return padL+(h/23)*iw;}, y=function(val){return padT+ih-(val/maxY)*ih;};
