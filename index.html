@@ -160,19 +160,19 @@
       <div class="cap">Pace vs this hour last week</div>
       <div class="gaugewrap">
         <svg viewBox="0 0 200 128" aria-hidden="true">
-          <defs>
-            <linearGradient id="gg" x1="0" y1="0" x2="1" y2="0">
-              <stop offset="0" stop-color="#C93A32"/><stop offset=".30" stop-color="#D96A2B"/><stop offset=".49" stop-color="#E0A93A"/><stop offset=".51" stop-color="#3F9E52"/><stop offset="1" stop-color="#2E7D32"/>
-            </linearGradient>
-          </defs>
+          <!-- grey track (full semicircle) -->
           <path d="M18 108 A82 82 0 0 1 182 108" fill="none" stroke="#EDF1F6" stroke-width="15" stroke-linecap="round"/>
-          <path id="gaugeArc" d="M18 108 A82 82 0 0 1 182 108" fill="none" stroke="url(#gg)" stroke-width="15" stroke-linecap="round"/>
-          <line x1="100" y1="14" x2="100" y2="40" stroke="#0B0F14" stroke-width="2.5" stroke-linecap="round"/>
-          <text x="100" y="9" text-anchor="middle" font-size="9" font-weight="700" fill="#0B0F14" font-family="var(--font)">ON&nbsp;PACE</text>
-          <text x="20" y="124" text-anchor="start" font-size="8.5" font-weight="700" fill="#B45309" font-family="var(--font)">BEHIND</text>
-          <text x="180" y="124" text-anchor="end" font-size="8.5" font-weight="700" fill="#2E7D32" font-family="var(--font)">AHEAD</text>
-          <line id="gaugeTick" x1="100" y1="108" x2="100" y2="42" stroke="#0B0F14" stroke-width="3" stroke-linecap="round" transform="rotate(0 100 108)"/>
-          <circle cx="100" cy="108" r="5.5" fill="#0B0F14"/>
+          <!-- faint zone tints so behind/ahead read even at exactly on-pace -->
+          <path d="M100 26 A82 82 0 0 0 18 108" fill="none" stroke="#FBECEA" stroke-width="15" stroke-linecap="round"/>
+          <path d="M100 26 A82 82 0 0 1 182 108" fill="none" stroke="#EAF6ED" stroke-width="15" stroke-linecap="round"/>
+          <!-- diverging fills: grow from the ON-PACE center outward. Behind = red (left), ahead = green (right). -->
+          <path id="gBehind" d="M100 26 A82 82 0 0 0 18 108" fill="none" stroke="#C93A32" stroke-width="15" stroke-linecap="round" stroke-dasharray="0 999"/>
+          <path id="gAhead" d="M100 26 A82 82 0 0 1 182 108" fill="none" stroke="#3F9E52" stroke-width="15" stroke-linecap="round" stroke-dasharray="0 999"/>
+          <!-- ON PACE reference tick at top-center -->
+          <line x1="100" y1="14" x2="100" y2="42" stroke="#0B0F14" stroke-width="3" stroke-linecap="round"/>
+          <text x="100" y="9" text-anchor="middle" font-size="9" font-weight="800" fill="#0B0F14" font-family="var(--font)">ON&nbsp;PACE</text>
+          <text x="18" y="125" text-anchor="start" font-size="8.5" font-weight="700" fill="#B45309" font-family="var(--font)">BEHIND</text>
+          <text x="182" y="125" text-anchor="end" font-size="8.5" font-weight="700" fill="#2E7D32" font-family="var(--font)">AHEAD</text>
         </svg>
         <div class="gtext">
           <div class="pct" id="pacePct"></div>
@@ -215,7 +215,7 @@
   </section>
 </div>
 
-<script>window.__PACING__={"nowH":15,"wd":"Thu","dateLabel":"Thu, Jul 30","asofLabel":"as of 3:52 PM PDT","compDate":{"lastweek":"Thu, Jul 23","lastyear":"Thu, Jul 31, 2025"},"legLW":"Jul 23","legLY":"Jul 31 '25","units":{"today":[3,12,14,19,29,39,49,58,81,100,113,125,148,162,178,191],"lastweek":[5,6,12,17,21,33,43,55,66,74,91,111,126,132,151,172,203,219,234,242,256,267,269,273],"lastyear":[6,10,16,17,21,25,32,47,60,82,90,101,106,110,116,128,151,164,167,173,174,177,180,183]},"sales":{"today":[51.97,248.88,287.86,382.81,577.71,792.61,961.51,1090.42,1472.29,1794.51,2050.38,2298.26,2704.03,2957.89,3276.73,3538.6],"lastweek":[99.95,123.94,232.78,340.73,405.69,614.57,834.47,1070.85,1300.74,1435.66,1784.49,2130.09,2392.04,2499.6,2857.41,3197.61,3799.9,4095,4363.85,4504.77,4746.63,4965.52,5004.5,5069.46],"lastyear":[151.94,248.9,356.84,377.83,468.79,564.75,721.58,1057.43,1365.92,1911.18,2110.7,2306.6,2472.55,2556.51,2658.45,2902.33,3435.2,3727.07,3813.04,3990.98,4022.97,4086.94,4150.91,4217.88]},"full":{"units":{"lastweek":273,"lastyear":183},"sales":{"lastweek":5069.46,"lastyear":4217.88}},"orders":167,"ordersSub":"1.1 units · $21.19 ea","freshLabel":"Live · refreshed 3:52 PM PT"};</script>
+<script>window.__PACING__={"nowH":15,"wd":"Thu","dateLabel":"Thu, Jul 30","asofLabel":"as of 3:58 PM PDT","compDate":{"lastweek":"Thu, Jul 23","lastyear":"Thu, Jul 31, 2025"},"legLW":"Jul 23","legLY":"Jul 31 '25","units":{"today":[3,12,14,19,29,39,49,58,81,100,113,125,148,162,178,192],"lastweek":[5,6,12,17,21,33,43,55,66,74,91,111,126,132,151,172,203,219,234,242,256,267,269,273],"lastyear":[6,10,16,17,21,25,32,47,60,82,90,101,106,110,116,128,151,164,167,173,174,177,180,183]},"sales":{"today":[51.97,248.88,287.86,382.81,577.71,792.61,961.51,1090.42,1472.29,1794.51,2050.38,2298.26,2704.03,2957.89,3276.73,3558.59],"lastweek":[99.95,123.94,232.78,340.73,405.69,614.57,834.47,1070.85,1300.74,1435.66,1784.49,2130.09,2392.04,2499.6,2857.41,3197.61,3799.9,4095,4363.85,4504.77,4746.63,4965.52,5004.5,5069.46],"lastyear":[151.94,248.9,356.84,377.83,468.79,564.75,721.58,1057.43,1365.92,1911.18,2110.7,2306.6,2472.55,2556.51,2658.45,2902.33,3435.2,3727.07,3813.04,3990.98,4022.97,4086.94,4150.91,4217.88]},"full":{"units":{"lastweek":273,"lastyear":183},"sales":{"lastweek":5069.46,"lastyear":4217.88}},"orders":168,"ordersSub":"1.1 units · $21.18 ea","freshLabel":"Live · refreshed 3:58 PM PT"};</script>
 <script>
 (function(){
   var D = window.__PACING__;
@@ -283,11 +283,15 @@
     document.getElementById('dPrimary').innerHTML=deltaHTML(projEod, FULL[metric][comp], compShort(comp), metric);
     document.getElementById('dSecondary').innerHTML=deltaHTML(projEod, FULL[metric][oc], compShort(oc), metric);
 
+    // Diverging meter: each side is a quarter-arc (length ≈ π·82/2 ≈ 128.8) that fills from the
+    // ON-PACE center outward. Full side = ±50% off pace; beyond that it just caps.
     var clamp=function(x,a,b){return Math.max(a,Math.min(b,x));};
-    var frac=clamp((pace-0.5)/1.0,0,1);
-    document.getElementById('gaugeArc').style.strokeDasharray=(257.6*frac)+' 257.6';
-    document.getElementById('gaugeTick').setAttribute('transform','rotate('+(-90+frac*180)+' 100 108)');
+    var QL=128.8;
+    var aheadFrac=clamp((pace-1)/0.5,0,1), behindFrac=clamp((1-pace)/0.5,0,1);
+    document.getElementById('gAhead').setAttribute('stroke-dasharray',(aheadFrac*QL).toFixed(1)+' 999');
+    document.getElementById('gBehind').setAttribute('stroke-dasharray',(behindFrac*QL).toFixed(1)+' 999');
     document.getElementById('pacePct').textContent=Math.round(pace*100)+'%';
+    document.getElementById('pacePct').style.color=paceAhead?'var(--ahead)':'var(--behind)';
     document.getElementById('paceOfPace').style.color=paceAhead?'var(--ahead)':'var(--behind)';
     document.getElementById('paceOfPace').textContent="of "+compName(comp)+"'s pace";
     document.querySelector('.hero .cap').textContent='Pace vs this hour '+(comp==='lastweek'?'last week':'last year');
