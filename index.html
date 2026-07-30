@@ -215,7 +215,7 @@
   </section>
 </div>
 
-<script>window.__PACING__={"nowH":15,"wd":"Thu","dateLabel":"Thu, Jul 30","asofLabel":"as of 3:16 PM PDT","compDate":{"lastweek":"Thu, Jul 23","lastyear":"Thu, Jul 31, 2025"},"legLW":"Jul 23","legLY":"Jul 31 '25","units":{"today":[3,12,14,19,29,39,49,58,81,100,113,125,148,162,178,183],"lastweek":[5,6,12,17,21,33,43,55,66,74,91,111,126,132,151,172,203,219,234,242,256,267,269,273],"lastyear":[6,10,16,17,21,25,32,47,60,82,90,101,106,110,116,128,151,164,167,173,174,177,180,183]},"sales":{"today":[51.97,248.88,287.86,382.81,577.71,792.61,961.51,1090.42,1472.29,1794.51,2050.38,2298.26,2704.03,2957.89,3276.73,3361.68],"lastweek":[99.95,123.94,232.78,340.73,405.69,614.57,834.47,1070.85,1300.74,1435.66,1784.49,2130.09,2392.04,2499.6,2857.41,3197.61,3799.9,4095,4363.85,4504.77,4746.63,4965.52,5004.5,5069.46],"lastyear":[151.94,248.9,356.84,377.83,468.79,564.75,721.58,1057.43,1365.92,1911.18,2110.7,2306.6,2472.55,2556.51,2658.45,2902.33,3435.2,3727.07,3813.04,3990.98,4022.97,4086.94,4150.91,4217.88]},"full":{"units":{"lastweek":273,"lastyear":183},"sales":{"lastweek":5069.46,"lastyear":4217.88}},"orders":160,"ordersSub":"1.1 units · $21.01 ea","freshLabel":"Live · refreshed 3:16 PM PT"};</script>
+<script>window.__PACING__={"nowH":15,"wd":"Thu","dateLabel":"Thu, Jul 30","asofLabel":"as of 3:52 PM PDT","compDate":{"lastweek":"Thu, Jul 23","lastyear":"Thu, Jul 31, 2025"},"legLW":"Jul 23","legLY":"Jul 31 '25","units":{"today":[3,12,14,19,29,39,49,58,81,100,113,125,148,162,178,191],"lastweek":[5,6,12,17,21,33,43,55,66,74,91,111,126,132,151,172,203,219,234,242,256,267,269,273],"lastyear":[6,10,16,17,21,25,32,47,60,82,90,101,106,110,116,128,151,164,167,173,174,177,180,183]},"sales":{"today":[51.97,248.88,287.86,382.81,577.71,792.61,961.51,1090.42,1472.29,1794.51,2050.38,2298.26,2704.03,2957.89,3276.73,3538.6],"lastweek":[99.95,123.94,232.78,340.73,405.69,614.57,834.47,1070.85,1300.74,1435.66,1784.49,2130.09,2392.04,2499.6,2857.41,3197.61,3799.9,4095,4363.85,4504.77,4746.63,4965.52,5004.5,5069.46],"lastyear":[151.94,248.9,356.84,377.83,468.79,564.75,721.58,1057.43,1365.92,1911.18,2110.7,2306.6,2472.55,2556.51,2658.45,2902.33,3435.2,3727.07,3813.04,3990.98,4022.97,4086.94,4150.91,4217.88]},"full":{"units":{"lastweek":273,"lastyear":183},"sales":{"lastweek":5069.46,"lastyear":4217.88}},"orders":167,"ordersSub":"1.1 units · $21.19 ea","freshLabel":"Live · refreshed 3:52 PM PT"};</script>
 <script>
 (function(){
   var D = window.__PACING__;
@@ -361,9 +361,20 @@
 
   document.getElementById('compSeg').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;state.comp=b.getAttribute('data-comp');render();});
   document.getElementById('metricSeg').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;state.metric=b.getAttribute('data-metric');render();});
-  // hourly auto-reload + reload when reopened/foregrounded (standalone page only; harmless in the shell iframe)
+  // ── Freshness: always show the latest PUBLISHED build, not the snapshot from when you last looked ──
+  // (standalone page only; harmless in the shell iframe, where a reload just re-runs the same srcdoc.)
+  // 1) Reload hourly if the page is left open all day.
   setInterval(function(){ try{location.reload();}catch(e){} }, 60*60*1000);
-  document.addEventListener('visibilitychange',function(){ if(!document.hidden) render(); });
+  // 2) iOS/Safari restore from the back-forward cache (tapping back into the bookmark / Home-Screen app)
+  //    hands you the OLD page as-is → force a real fetch so the data is current.
+  window.addEventListener('pageshow', function(e){ if(e.persisted){ try{location.reload();}catch(err){} } });
+  // 3) Returning to the tab after being away > 30s pulls a fresh build; a momentary switch just re-draws.
+  var hiddenAt = 0;
+  document.addEventListener('visibilitychange', function(){
+    if(document.hidden){ hiddenAt = Date.now(); return; }
+    if(hiddenAt && (Date.now() - hiddenAt) > 30000){ try{location.reload();}catch(e){ render(); } }
+    else { render(); }
+  });
   render();
 })();
 </script>
