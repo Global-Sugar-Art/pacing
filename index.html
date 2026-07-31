@@ -42,11 +42,11 @@
   .dot{width:6px;height:6px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 3px rgba(34,197,94,.18);animation:pulse 2.4s infinite}
   @keyframes pulse{0%,100%{opacity:1}50%{opacity:.45}}
 
-  .controls{display:flex;gap:8px;padding:14px 14px 4px}
-  .seg{display:flex;background:#fff;border:1px solid #E2E8F0;border-radius:10px;padding:3px;flex:1;box-shadow:0 1px 2px rgba(15,23,42,.05)}
-  .seg button{flex:1;border:0;background:transparent;font-family:inherit;font-size:12.5px;font-weight:600;color:var(--slate-500);padding:7px 4px;border-radius:7px;cursor:pointer;transition:.15s}
+  .controls{display:flex;gap:6px;margin-top:9px}
+  .seg{display:flex;background:#fff;border:1px solid #E2E8F0;border-radius:8px;padding:2px;flex:1;box-shadow:0 1px 2px rgba(15,23,42,.05)}
+  .seg button{flex:1;border:0;background:transparent;font-family:inherit;font-size:10.5px;font-weight:600;color:var(--slate-500);padding:4px 4px;border-radius:6px;cursor:pointer;transition:.15s;white-space:nowrap}
   .seg button.on{background:var(--navy-800);color:#fff}
-  .seg.metric button.on{background:var(--electric)}
+  .seg.metric button.on{background:var(--navy-800)}
 
   section{padding:12px 14px 0}
   .card{background:#fff;border:1px solid #E7ECF2;border-radius:16px;box-shadow:0 6px 20px rgba(15,23,42,.06)}
@@ -56,10 +56,10 @@
   .punch.behind{background:linear-gradient(160deg,#fff,#FFEEDF);border-color:#E7ECF2;border-left-color:var(--behind-base)}
   .punch.ahead .punch-num{color:var(--ahead)}
   .punch.behind .punch-num{color:var(--behind)}
-  .punch .k{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:11.5px;font-weight:700;color:var(--slate-500);text-transform:uppercase;letter-spacing:.6px}
+  .punch .k, .hero .k{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:11.5px;font-weight:700;color:var(--slate-500);text-transform:uppercase;letter-spacing:.6px}
   .statuspill{font-size:11.5px;font-weight:800;letter-spacing:.4px;padding:4px 11px;border-radius:999px;white-space:nowrap}
-  .punch.ahead .statuspill{background:var(--ahead-base);color:#fff}
-  .punch.behind .statuspill{background:var(--behind-base);color:#fff}
+  .punch.ahead .statuspill, .hero.ahead .statuspill{background:var(--ahead-base);color:#fff}
+  .punch.behind .statuspill, .hero.behind .statuspill{background:var(--behind-base);color:#fff}
   .punch-num{font-size:33px;font-weight:800;letter-spacing:-1.3px;line-height:1;margin-top:10px;white-space:nowrap}
   .punch-num small{font-size:16px;font-weight:800;color:var(--navy-900);letter-spacing:-.4px;margin-left:10px}
   .deltas{margin-top:12px;display:flex;flex-direction:column;gap:5px}
@@ -82,18 +82,20 @@
   .swatch.ly{background:var(--grey-line)}
   #chart{width:100%;height:auto;display:block;touch-action:pan-y}
 
-  .hero{padding:15px 18px 18px;text-align:center;margin-top:12px}
-  .hero .cap{font-size:12px;font-weight:600;color:var(--slate-500);text-transform:uppercase;letter-spacing:.6px;margin-bottom:14px}
-  .duo{display:flex;align-items:flex-end;justify-content:space-around;gap:10px}
-  .duo-col{flex:1;min-width:0}
-  .duo-n{font-size:29px;font-weight:800;letter-spacing:-1.1px;line-height:1}
-  .duo-comp .duo-n{color:var(--slate-400)}
-  .duo-k{font-size:10.5px;font-weight:600;color:var(--slate-500);text-transform:uppercase;letter-spacing:.4px;margin-top:6px}
-  .duo-vs{font-size:12px;font-weight:800;color:var(--slate-400);align-self:center;flex:0 0 auto}
-  .pillwrap{margin-top:15px}
-  .pace-pill{display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:800;padding:6px 15px;border-radius:999px}
-  .pace-pill.ahead{background:var(--ahead-soft);color:var(--ahead);border:1px solid var(--ahead-border)}
-  .pace-pill.behind{background:var(--behind-soft);color:var(--behind);border:1px solid var(--behind-border)}
+  .hero{padding:15px 18px 17px;margin-top:12px;border-left:5px solid transparent;transition:background .2s,border-color .2s}
+  .hero.ahead{background:linear-gradient(160deg,#fff,#E7F5EB);border-color:#E7ECF2;border-left-color:var(--ahead-base)}
+  .hero.behind{background:linear-gradient(160deg,#fff,#FFEEDF);border-color:#E7ECF2;border-left-color:var(--behind-base)}
+  .pace-bars{display:flex;flex-direction:column;gap:14px;margin:14px 0 2px}
+  .pb-lbl{display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin-bottom:6px}
+  .pb-name{font-size:10.5px;font-weight:600;color:var(--slate-500);text-transform:uppercase;letter-spacing:.4px}
+  .pb-val{font-size:21px;font-weight:800;letter-spacing:-.6px;line-height:1;color:var(--slate-400)}
+  .hero.ahead .pb-val.today{color:var(--ahead)}
+  .hero.behind .pb-val.today{color:var(--behind)}
+  .pb-track{display:block;height:9px;background:#EDF1F6;border-radius:999px;overflow:hidden}
+  .pb-fill{display:block;height:100%;border-radius:999px;transition:width .3s}
+  .pb-fill.comp{background:var(--slate-300)}
+  .hero.ahead .pb-fill.today{background:var(--ahead-base)}
+  .hero.behind .pb-fill.today{background:var(--behind-base)}
 
   .stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
   .stat{background:#fff;border:1px solid #E7ECF2;border-radius:14px;padding:13px 14px;box-shadow:0 4px 14px rgba(15,23,42,.05)}
@@ -141,23 +143,36 @@
     <div class="brandrow">
       <svg class="mark" viewBox="0 0 128 128" fill="none" aria-hidden="true"><g stroke-linecap="round" stroke-linejoin="round"><path d="M28 64 H43 L50 42 L58 84 L67 52 L73 64 H100" stroke="#00D2FF" stroke-width="3.9"/><path d="M22 64 H28 M100 64 H106" stroke="#0090FF" stroke-width="2.8"/><path d="M30 36 A36 36 0 0 1 98 36" stroke="#0090FF" stroke-width="3.2"/><path d="M98 92 A36 36 0 0 1 30 92" stroke="#0090FF" stroke-width="3.2"/><circle cx="31" cy="64" r="3" fill="#0B0F14" stroke="#0090FF" stroke-width="2.1"/><circle cx="97" cy="64" r="3" fill="#0B0F14" stroke="#0090FF" stroke-width="2.1"/></g></svg>
       <span class="name">Sugar<b>Pulse</b></span>
-      <span class="tab">Today's Pace</span>
+      <span class="tab">Pace IQ</span>
     </div>
     <div class="asof"><span class="dot"></span><span class="date" id="date"></span> · <span id="asof"></span></div>
+    <div class="controls">
+      <div class="seg comp" id="compSeg">
+        <button data-comp="lastyear" class="on">vs Last Year</button>
+        <button data-comp="lastweek" id="btnLW">vs Last</button>
+      </div>
+      <div class="seg metric" id="metricSeg">
+        <button data-metric="sales" class="on">Sales</button>
+        <button data-metric="units">Units</button>
+      </div>
+    </div>
   </header>
 
-  <div class="controls">
-    <div class="seg comp" id="compSeg">
-      <button data-comp="lastyear" class="on">vs Last Year</button>
-      <button data-comp="lastweek" id="btnLW">vs Last</button>
-    </div>
-    <div class="seg metric" id="metricSeg">
-      <button data-metric="sales" class="on">Sales</button>
-      <button data-metric="units">Units</button>
-    </div>
-  </div>
-
   <section>
+    <div class="card hero" id="paceCard">
+      <div class="k"><span id="paceCap">Pace vs this hour</span><span class="statuspill" id="paceStatus"></span></div>
+      <div class="pace-bars">
+        <div class="pb-item">
+          <div class="pb-lbl"><span class="pb-name">Today so far</span><span class="pb-val today" id="pbTodayVal"></span></div>
+          <div class="pb-track"><span class="pb-fill today" id="pbToday"></span></div>
+        </div>
+        <div class="pb-item">
+          <div class="pb-lbl"><span class="pb-name" id="pbCompName"></span><span class="pb-val" id="pbCompVal"></span></div>
+          <div class="pb-track"><span class="pb-fill comp" id="pbComp"></span></div>
+        </div>
+      </div>
+    </div>
+
     <div class="card punch" id="punchCard">
       <div class="k"><span>Projected end of day</span><span class="statuspill" id="statusPill"></span></div>
       <div class="punch-num" id="projVal"></div>
@@ -181,41 +196,8 @@
       <svg id="chart" viewBox="0 0 400 236" preserveAspectRatio="xMidYMid meet"></svg>
     </div>
 
-    <div class="card hero">
-      <div class="cap" id="paceCap">Pace vs this hour</div>
-      <div class="duo">
-        <div class="duo-col"><div class="duo-n" id="paceToday"></div><div class="duo-k">Today so far</div></div>
-        <div class="duo-vs">vs</div>
-        <div class="duo-col duo-comp"><div class="duo-n" id="paceComp"></div><div class="duo-k" id="paceCompK"></div></div>
-      </div>
-      <div class="pillwrap"><span class="pace-pill" id="verdict"></span></div>
-    </div>
-
-    <div class="stats">
-      <div class="stat">
-        <div class="k">Sales so far</div>
-        <div class="v" id="sSales"></div>
-        <div class="sub" id="sSalesSub"></div>
-      </div>
-      <div class="stat">
-        <div class="k">Units so far</div>
-        <div class="v" id="sUnits"></div>
-        <div class="sub" id="sUnitsSub"></div>
-      </div>
-      <div class="stat">
-        <div class="k">Orders so far</div>
-        <div class="v" id="sOrders"></div>
-        <div class="sub" id="sOrdersSub"></div>
-      </div>
-      <div class="stat">
-        <div class="k" id="compFullK"></div>
-        <div class="v" id="compFullV"></div>
-        <div class="sub" id="compFullSub"></div>
-      </div>
-    </div>
-
     <div class="card family" id="familyCard" style="display:none">
-      <div class="fam-head">What's driving it <span id="famComp"></span></div>
+      <div class="fam-head">What's driving it</div>
       <div class="fam-summary" id="famSummary"></div>
       <div class="fam-cols">
         <div><div class="fam-k up">▲ Biggest beats</div><div id="famBeats"></div></div>
@@ -224,7 +206,7 @@
     </div>
 
     <div class="card recap" id="recapCard" style="display:none">
-      <div class="recap-head">Recap <span>· vs prior year</span></div>
+      <div class="recap-head">Recap</div>
       <div id="recapRows"></div>
     </div>
 
@@ -234,7 +216,7 @@
   </section>
 </div>
 
-<script>window.__PACING__={"nowH":7,"wd":"Fri","liveUrl":"https://odfz7pp4z4lxf6ase3vp7zvn3m0cboph.lambda-url.us-east-2.on.aws/","dateLabel":"Fri, Jul 31","asofLabel":"as of 10:22 AM EDT","compDate":{"lastweek":"Fri, Jul 24","lastyear":"Fri, Aug 1, 2025"},"legLW":"Jul 24","legLY":"Aug 1 '25","units":{"today":[5,7,9,13,21,26,43,47],"lastweek":[2,2,3,7,16,36,47,56,66,78,91,112,120,129,138,143,151,159,178,192,198,203,211,214],"lastyear":[4,4,8,18,21,28,32,36,48,62,75,97,101,109,117,125,132,139,151,157,158,163,163,166]},"sales":{"today":[96.95,136.93,191.91,258.87,383.49,468,808.83,890.79],"lastweek":[34.98,34.98,49.97,136.93,311.84,660.8,852.69,1023.6,1213.5,1468.38,1699.95,2093.35,2237.27,2394.78,2539.69,2631.64,2802.56,2949.48,3345.65,3601.51,3730.45,3812.9,3981.82,4041.79],"lastyear":[93.96,93.96,190.92,464.82,560.33,689.26,796.22,892.18,1183.66,1506.52,1857.39,2369.17,2454.13,2645.05,2835.97,2980.89,3156.82,3311.35,3599.83,3743.77,3762.76,3878.71,3878.71,3946.68]},"full":{"units":{"lastweek":214,"lastyear":166},"sales":{"lastweek":4041.79,"lastyear":3946.68}},"orders":40,"ordersSub":"1.2 units · $22.27 ea","freshLabel":"Live · refreshed 7:22 AM PT","recap":{"yesterday":{"label":"Yesterday","sub":"Thu, Jul 30","units":266,"sales":4849.65,"lastweek":{"units":273,"sales":5069.46},"lastyear":{"units":183,"sales":4217.88}},"mtd":{"label":"Month to date","sub":"Jul 1–Jul 30","units":8155,"sales":157811.23,"prioryear":{"units":5190,"sales":122215.54}},"ytd":{"label":"Year to date","sub":"2026 · through Jul 30","units":67239,"sales":1245418,"prioryear":{"units":38822,"sales":841981.52}}}};</script>
+<script>window.__PACING__={"nowH":7,"wd":"Fri","liveUrl":"https://odfz7pp4z4lxf6ase3vp7zvn3m0cboph.lambda-url.us-east-2.on.aws/","dateLabel":"Fri, Jul 31","asofLabel":"as of 10:50 AM EDT","compDate":{"lastweek":"Fri, Jul 24","lastyear":"Fri, Aug 1, 2025"},"legLW":"Jul 24","legLY":"Aug 1 '25","units":{"today":[5,7,9,13,21,26,43,70],"lastweek":[2,2,3,7,16,36,47,56,66,78,91,112,120,129,138,143,151,159,178,192,198,203,211,214],"lastyear":[4,4,8,18,21,28,32,36,48,62,75,97,101,109,117,125,132,139,151,157,158,163,163,166]},"sales":{"today":[96.95,136.93,191.91,258.87,383.49,468,808.83,1364.96],"lastweek":[34.98,34.98,49.97,136.93,311.84,660.8,852.69,1023.6,1213.5,1468.38,1699.95,2093.35,2237.27,2394.78,2539.69,2631.64,2802.56,2949.48,3345.65,3601.51,3730.45,3812.9,3981.82,4041.79],"lastyear":[93.96,93.96,190.92,464.82,560.33,689.26,796.22,892.18,1183.66,1506.52,1857.39,2369.17,2454.13,2645.05,2835.97,2980.89,3156.82,3311.35,3599.83,3743.77,3762.76,3878.71,3878.71,3946.68]},"full":{"units":{"lastweek":214,"lastyear":166},"sales":{"lastweek":4041.79,"lastyear":3946.68}},"orders":57,"ordersSub":"1.2 units · $23.95 ea","freshLabel":"Live · refreshed 7:50 AM PT","recap":{"yesterday":{"label":"Yesterday","sub":"Thu, Jul 30","units":266,"sales":4849.65,"lastweek":{"units":273,"sales":5069.46},"lastyear":{"units":183,"sales":4217.88}},"mtd":{"label":"Month to date","sub":"Jul 1–Jul 30","units":8147,"sales":157691.31,"prioryear":{"units":5190,"sales":122215.54}},"ytd":{"label":"Year to date","sub":"Jan 1–Jul 30","units":67231,"sales":1245298.08,"prioryear":{"units":38822,"sales":841981.52}}}};</script>
 <script>
 (function(){
   var D = window.__PACING__;
@@ -303,34 +285,18 @@
     document.getElementById('dPrimary').innerHTML=deltaHTML(projEod, FULL[metric][comp], compShort(comp), metric);
     document.getElementById('dSecondary').innerHTML=deltaHTML(projEod, FULL[metric][oc], compShort(oc), metric);
 
-    // Pace card (dual stat): today so far vs the comp at this same hour, + the ahead/behind delta.
+    // Pace card: mirrors the projected-EOD card — left title + ahead/behind pill top-right; the
+    // today/comp dollars label the two horizontal bars.
+    document.getElementById('paceCard').className='card hero '+(paceAhead?'ahead':'behind');
     document.getElementById('paceCap').textContent='Pace vs this hour '+(comp==='lastweek'?'last week':'last year');
-    var pt=document.getElementById('paceToday');
-    pt.textContent=fmt(todayNow,metric);
-    pt.style.color=paceAhead?'var(--ahead)':'var(--behind)';
-    document.getElementById('paceComp').textContent=fmt(compNow,metric);
-    document.getElementById('paceCompK').textContent='This hr · '+(comp==='lastweek'?D.legLW:D.legLY);
-    var diff=todayNow-compNow, dpct=Math.abs(Math.round((pace-1)*100));
-    var v=document.getElementById('verdict');
-    v.className='pace-pill '+(paceAhead?'ahead':'behind');
-    v.textContent=(paceAhead?'▲ ':'▼ ')+fmt(Math.abs(diff),metric)+suf(metric)+' ('+dpct+'%) '+(paceAhead?'ahead':'behind');
-
-    document.getElementById('sSales').textContent=money(SALES.today[SALES.today.length-1]);
-    document.getElementById('sUnits').textContent=Math.round(UNITS.today[UNITS.today.length-1]).toLocaleString();
-    document.getElementById('sOrders').textContent=D.orders.toLocaleString();
-    document.getElementById('sOrdersSub').textContent=D.ordersSub;
-    var paceU=UNITS.today[NOW_H]/UNITS[comp][NOW_H], paceS=SALES.today[NOW_H]/SALES[comp][NOW_H];
-    var tag=function(p){return '<b class="'+(p>=1?'up':'down')+'">'+Math.round(p*100)+'%</b> of '+compName(comp)+' pace';};
-    document.getElementById('sSalesSub').innerHTML=tag(paceS);
-    document.getElementById('sUnitsSub').innerHTML=tag(paceU);
-    document.getElementById('compFullK').textContent=compNameCap(comp)+' (full)';
-    if(metric==='sales'){
-      document.getElementById('compFullV').textContent=money(FULL.sales[comp]);
-      document.getElementById('compFullSub').textContent=Math.round(FULL.units[comp]).toLocaleString()+' units · full day';
-    }else{
-      document.getElementById('compFullV').textContent=Math.round(FULL.units[comp]).toLocaleString();
-      document.getElementById('compFullSub').textContent=money(FULL.sales[comp])+' · full day';
-    }
+    var dpct=Math.abs(Math.round((pace-1)*100));
+    document.getElementById('paceStatus').textContent=(paceAhead?'▲ AHEAD +':'▼ BEHIND −')+dpct+'%';
+    document.getElementById('pbTodayVal').textContent=fmt(todayNow,metric);
+    document.getElementById('pbCompVal').textContent=fmt(compNow,metric);
+    document.getElementById('pbCompName').textContent='This hr · '+(comp==='lastweek'?D.legLW:D.legLY);
+    var pbMax=Math.max(todayNow,compNow,1);
+    document.getElementById('pbToday').style.width=(todayNow/pbMax*100).toFixed(1)+'%';
+    document.getElementById('pbComp').style.width=(compNow/pbMax*100).toFixed(1)+'%';
 
     document.getElementById('chartTitle').textContent='Cumulative '+(metric==='sales'?'sales':'units')+' through the day';
     document.getElementById('fcTag').textContent='forecast ≈ '+(metric==='sales'?moneyK(projEod):Math.round(projEod).toLocaleString());
@@ -427,7 +393,6 @@
   function paintFamily(){
     var d = famData; if(!d) return;
     var blk = (d.comps && d.comps[state.comp]) ? d.comps[state.comp] : d;
-    document.getElementById('famComp').textContent = '· est. revenue vs '+(blk.compLabel||'last week')+' by this hour';
     document.getElementById('famSummary').textContent = blk.summary || '';
     document.getElementById('famBeats').innerHTML = famRows(blk.beats, 'up');
     document.getElementById('famMisses').innerHTML = famRows(blk.misses, 'down');
@@ -463,9 +428,9 @@
   function renderRecap(r){
     if(!r) return;
     var html='';
-    html+=rcRow(r.yesterday, rcChip(r.yesterday.sales, r.yesterday.lastweek.sales,'wk')+rcChip(r.yesterday.sales, r.yesterday.lastyear.sales,'yr'));
-    html+=rcRow(r.mtd, rcChip(r.mtd.sales, r.mtd.prioryear.sales,'yr'));
-    html+=rcRow(r.ytd, rcChip(r.ytd.sales, r.ytd.prioryear.sales,'yr'));
+    html+=rcRow(r.yesterday, rcChip(r.yesterday.sales, r.yesterday.lastweek.sales,'$ WoW')+rcChip(r.yesterday.sales, r.yesterday.lastyear.sales,'$ YoY'));
+    html+=rcRow(r.mtd, rcChip(r.mtd.sales, r.mtd.prioryear.sales,'$ YoY'));
+    html+=rcRow(r.ytd, rcChip(r.ytd.sales, r.ytd.prioryear.sales,'$ YoY'));
     document.getElementById('recapRows').innerHTML=html;
     document.getElementById('recapCard').style.display='';
   }
