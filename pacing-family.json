@@ -1,72 +1,88 @@
 {
-  "generatedAt": "2026-07-31T02:30:01.901Z",
-  "today": "2026-07-30",
-  "comp": "2026-07-23",
-  "compLabel": "Thu, Jul 23",
+  "generatedAt": "2026-07-31T13:41:17.085Z",
+  "today": "2026-07-31",
   "metric": "units",
-  "todayUnits": 238,
-  "compUnits": 242,
-  "ratio": 0.8864468864468864,
+  "todayUnits": 38,
   "partial": false,
+  "comps": {
+    "lastweek": {
+      "comp": "2026-07-24",
+      "compLabel": "Fri, Jul 24",
+      "compUnits": 47,
+      "ratio": 0.21962616822429906,
+      "beats": [
+        {
+          "name": "Global Sugar Art Sugar Premium Hibiscus Sprays",
+          "img": "https://m.media-amazon.com/images/I/71zg1hvV9PL.jpg",
+          "today": 4,
+          "comp": 0,
+          "delta": 4
+        }
+      ],
+      "misses": [
+        {
+          "name": "Mini Edible Royal Icing Flowers Cake Decoratio",
+          "img": "https://m.media-amazon.com/images/I/71CJJHh9bzL.jpg",
+          "today": 6,
+          "comp": 10,
+          "delta": -4
+        },
+        {
+          "name": "Edible Daisy Cake Decorations",
+          "img": "https://m.media-amazon.com/images/I/61Fo1ZnZi0L.jpg",
+          "today": 1,
+          "comp": 5,
+          "delta": -4
+        }
+      ],
+      "summary": "Today you're running 9 units behind last Fri, Jul 24 at this hour. Biggest lift: Global Sugar Art Sugar Premium Hibiscus Sprays (+4 units). Biggest drag: Mini Edible Royal Icing Flowers Cake Decoratio (−4 units)."
+    },
+    "lastyear": {
+      "comp": "2025-08-01",
+      "compLabel": "Fri, Aug 1, 2025",
+      "compUnits": 32,
+      "ratio": 0.1927710843373494,
+      "beats": [
+        {
+          "name": "Mini Edible Royal Icing Flowers Cake Decoratio",
+          "img": "https://m.media-amazon.com/images/I/71CJJHh9bzL.jpg",
+          "today": 6,
+          "comp": 1,
+          "delta": 5
+        }
+      ],
+      "misses": [],
+      "summary": "Today you're running 6 units ahead of last year (Fri, Aug 1, 2025) at this hour. Biggest lift: Mini Edible Royal Icing Flowers Cake Decoratio (+5 units). "
+    }
+  },
+  "comp": "2026-07-24",
+  "compLabel": "Fri, Jul 24",
+  "compUnits": 47,
+  "ratio": 0.21962616822429906,
   "beats": [
     {
-      "name": "Buttercream Frosting",
-      "img": "https://m.media-amazon.com/images/I/61OojwDd59L.jpg",
-      "today": 39,
-      "comp": 22,
-      "delta": 17
-    },
-    {
-      "name": "Edible Cupcake Decorations — Assorted Themes",
-      "img": "https://m.media-amazon.com/images/I/71zOmSvkgTL.jpg",
-      "today": 11,
-      "comp": 4,
-      "delta": 7
-    },
-    {
-      "name": "Global Sugar Art Edible Exquisite Rose & Leaf ",
-      "img": "https://m.media-amazon.com/images/I/712HUz-6-dL.jpg",
-      "today": 6,
+      "name": "Global Sugar Art Sugar Premium Hibiscus Sprays",
+      "img": "https://m.media-amazon.com/images/I/71zg1hvV9PL.jpg",
+      "today": 4,
       "comp": 0,
-      "delta": 6
+      "delta": 4
     }
   ],
   "misses": [
     {
-      "name": "Edible Daisy Cake Decorations",
-      "img": "https://m.media-amazon.com/images/I/61BJ6Q6IkXL.jpg",
-      "today": 31,
-      "comp": 50,
-      "delta": -19
-    },
-    {
-      "name": "Cake Dummy Round – Styrofoam Fake Cake for Dec",
-      "img": "https://m.media-amazon.com/images/I/711fimYqXqL.jpg",
-      "today": 14,
-      "comp": 27,
-      "delta": -13
-    },
-    {
-      "name": "Royal Icing and Cookie Mixes",
-      "img": "https://m.media-amazon.com/images/I/71HPCF6CTiL.jpg",
-      "today": 0,
-      "comp": 7,
-      "delta": -7
-    },
-    {
-      "name": "Global Sugar Art Sugar Hydrandea Blossoms Wire",
-      "img": "https://m.media-amazon.com/images/I/41wa4rEjlHL.jpg",
-      "today": 0,
-      "comp": 4,
+      "name": "Mini Edible Royal Icing Flowers Cake Decoratio",
+      "img": "https://m.media-amazon.com/images/I/71CJJHh9bzL.jpg",
+      "today": 6,
+      "comp": 10,
       "delta": -4
     },
     {
-      "name": "Global Sugar Art 3-Count Pink Cymbidium Orchid",
-      "img": "https://m.media-amazon.com/images/I/511mRoOvMEL.jpg",
-      "today": 0,
-      "comp": 4,
+      "name": "Edible Daisy Cake Decorations",
+      "img": "https://m.media-amazon.com/images/I/61Fo1ZnZi0L.jpg",
+      "today": 1,
+      "comp": 5,
       "delta": -4
     }
   ],
-  "summary": "Today you're running 4 units behind last Thu, Jul 23 at this hour. Biggest lift: Buttercream Frosting (+17 units). Biggest drag: Edible Daisy Cake Decorations (−19 units)."
+  "summary": "Today you're running 9 units behind last Fri, Jul 24 at this hour. Biggest lift: Global Sugar Art Sugar Premium Hibiscus Sprays (+4 units). Biggest drag: Mini Edible Royal Icing Flowers Cake Decoratio (−4 units)."
 }
