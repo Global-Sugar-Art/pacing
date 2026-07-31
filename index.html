@@ -215,7 +215,7 @@
   </section>
 </div>
 
-<script>window.__PACING__={"nowH":16,"wd":"Thu","dateLabel":"Thu, Jul 30","asofLabel":"as of 4:12 PM PDT","compDate":{"lastweek":"Thu, Jul 23","lastyear":"Thu, Jul 31, 2025"},"legLW":"Jul 23","legLY":"Jul 31 '25","units":{"today":[3,12,14,19,29,39,49,58,81,100,113,125,148,162,178,192,193],"lastweek":[5,6,12,17,21,33,43,55,66,74,91,111,126,132,151,172,203,219,234,242,256,267,269,273],"lastyear":[6,10,16,17,21,25,32,47,60,82,90,101,106,110,116,128,151,164,167,173,174,177,180,183]},"sales":{"today":[51.97,248.88,287.86,382.81,577.71,792.61,961.51,1090.42,1472.29,1794.51,2050.38,2298.26,2704.03,2957.89,3276.73,3558.59,3577.58],"lastweek":[99.95,123.94,232.78,340.73,405.69,614.57,834.47,1070.85,1300.74,1435.66,1784.49,2130.09,2392.04,2499.6,2857.41,3197.61,3799.9,4095,4363.85,4504.77,4746.63,4965.52,5004.5,5069.46],"lastyear":[151.94,248.9,356.84,377.83,468.79,564.75,721.58,1057.43,1365.92,1911.18,2110.7,2306.6,2472.55,2556.51,2658.45,2902.33,3435.2,3727.07,3813.04,3990.98,4022.97,4086.94,4150.91,4217.88]},"full":{"units":{"lastweek":273,"lastyear":183},"sales":{"lastweek":5069.46,"lastyear":4217.88}},"orders":169,"ordersSub":"1.1 units · $21.17 ea","freshLabel":"Live · refreshed 4:12 PM PT"};</script>
+<script>window.__PACING__={"nowH":17,"wd":"Thu","liveUrl":"","dateLabel":"Thu, Jul 30","asofLabel":"as of 5:42 PM PDT","compDate":{"lastweek":"Thu, Jul 23","lastyear":"Thu, Jul 31, 2025"},"legLW":"Jul 23","legLY":"Jul 31 '25","units":{"today":[3,12,14,19,29,39,49,58,81,100,113,125,148,162,178,192,201,211],"lastweek":[5,6,12,17,21,33,43,55,66,74,91,111,126,132,151,172,203,219,234,242,256,267,269,273],"lastyear":[6,10,16,17,21,25,32,47,60,82,90,101,106,110,116,128,151,164,167,173,174,177,180,183]},"sales":{"today":[51.97,248.88,287.86,382.81,577.71,792.61,961.51,1090.42,1472.29,1794.51,2050.38,2298.26,2704.03,2957.89,3276.73,3558.59,3717.6,3908.5],"lastweek":[99.95,123.94,232.78,340.73,405.69,614.57,834.47,1070.85,1300.74,1435.66,1784.49,2130.09,2392.04,2499.6,2857.41,3197.61,3799.9,4095,4363.85,4504.77,4746.63,4965.52,5004.5,5069.46],"lastyear":[151.94,248.9,356.84,377.83,468.79,564.75,721.58,1057.43,1365.92,1911.18,2110.7,2306.6,2472.55,2556.51,2658.45,2902.33,3435.2,3727.07,3813.04,3990.98,4022.97,4086.94,4150.91,4217.88]},"full":{"units":{"lastweek":273,"lastyear":183},"sales":{"lastweek":5069.46,"lastyear":4217.88}},"orders":186,"ordersSub":"1.1 units · $21.01 ea","freshLabel":"Live · refreshed 5:42 PM PT"};</script>
 <script>
 (function(){
   var D = window.__PACING__;
@@ -365,21 +365,49 @@
 
   document.getElementById('compSeg').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;state.comp=b.getAttribute('data-comp');render();});
   document.getElementById('metricSeg').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;state.metric=b.getAttribute('data-metric');render();});
-  // ── Freshness: always show the latest PUBLISHED build, not the snapshot from when you last looked ──
-  // (standalone page only; harmless in the shell iframe, where a reload just re-runs the same srcdoc.)
-  // 1) Reload hourly if the page is left open all day.
+  // ── Live + freshness ──────────────────────────────────────────────────────────────────────────
+  // The page ships with an hourly-baked snapshot that works even if the live endpoint is down. When a
+  // live endpoint (D.liveUrl) is configured, every load / refresh / return pulls TODAY up-to-the-minute
+  // (comps stay baked — they don't change intraday). On ANY fetch failure the baked snapshot stands.
+  function applyLive(live){
+    if(!live || live.error || !live.today || !live.today.sales || !live.today.sales.length) return;
+    D.units.today = live.today.units;
+    D.sales.today = live.today.sales;
+    NOW_H = live.nowH;
+    var it = (live.today.items && live.today.items[NOW_H]) || 0;
+    D.orders = it;
+    D.ordersSub = (it ? (live.today.units[NOW_H]/it).toFixed(1) : '0')+' units · '+(it ? '$'+(live.today.sales[NOW_H]/it).toFixed(2) : '$0')+' ea';
+    if(live.asof){ D.asofLabel = live.asof; var a=document.getElementById('asof'); if(a) a.textContent = live.asof; }
+    render();
+  }
+  function fetchLive(){
+    if(!D.liveUrl) return false;
+    var ctrl = ('AbortController' in window) ? new AbortController() : null;
+    var to = ctrl ? setTimeout(function(){ try{ctrl.abort();}catch(e){} }, 7000) : 0;
+    fetch(D.liveUrl, ctrl ? {signal:ctrl.signal, cache:'no-store'} : {cache:'no-store'})
+      .then(function(r){ return r && r.ok ? r.json() : null; })
+      .then(function(live){ if(to) clearTimeout(to); applyLive(live); })
+      .catch(function(){ if(to) clearTimeout(to); });   // keep the baked snapshot on any failure
+    return true;
+  }
+  function refreshNow(){ if(!fetchLive()){ try{location.reload();}catch(e){ render(); } } }
+
+  render();       // draw the baked snapshot immediately
+  fetchLive();    // then overlay up-to-the-minute today data if a live endpoint is configured
+
+  // Left open all day → hourly full reload (refreshes comps at day-rollover + picks up code changes).
   setInterval(function(){ try{location.reload();}catch(e){} }, 60*60*1000);
-  // 2) iOS/Safari restore from the back-forward cache (tapping back into the bookmark / Home-Screen app)
-  //    hands you the OLD page as-is → force a real fetch so the data is current.
+  // bfcache restore (tapping back into the bookmark / Home-Screen app after a while) → full reload,
+  // then the onload fetchLive() overlays current data.
   window.addEventListener('pageshow', function(e){ if(e.persisted){ try{location.reload();}catch(err){} } });
-  // 3) Returning to the tab after being away > 30s pulls a fresh build; a momentary switch just re-draws.
+  // Returning to the tab after >30s away → up-to-the-minute pull (live if configured, else full reload);
+  // a momentary switch just re-draws.
   var hiddenAt = 0;
   document.addEventListener('visibilitychange', function(){
     if(document.hidden){ hiddenAt = Date.now(); return; }
-    if(hiddenAt && (Date.now() - hiddenAt) > 30000){ try{location.reload();}catch(e){ render(); } }
+    if(hiddenAt && (Date.now() - hiddenAt) > 30000){ refreshNow(); }
     else { render(); }
   });
-  render();
 })();
 </script>
 </body>
