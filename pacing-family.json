@@ -1,25 +1,25 @@
 {
-  "generatedAt": "2026-07-31T16:46:28.375Z",
+  "generatedAt": "2026-07-31T18:21:44.209Z",
   "today": "2026-07-31",
   "metric": "sales",
   "estimated": true,
-  "todayDollars": 1812,
-  "todayUnits": 92,
+  "todayDollars": 2288,
+  "todayUnits": 116,
   "partial": false,
   "comps": {
     "lastweek": {
       "comp": "2026-07-24",
       "compLabel": "Fri, Jul 24",
-      "compDollars": 1468,
-      "compUnits": 78,
-      "ratio": 0.36329942921329417,
+      "compDollars": 2093,
+      "compUnits": 112,
+      "ratio": 0.5179264632749352,
       "beats": [
         {
           "name": "Global Sugar Art Premium Edible Roses",
           "img": "https://m.media-amazon.com/images/I/31XtgrHQVHL.jpg",
-          "today": 123,
-          "comp": 15,
-          "delta": 109
+          "today": 124,
+          "comp": 21,
+          "delta": 103
         },
         {
           "name": "Global Sugar Art 3-Count Orange Alstroemeria P",
@@ -31,16 +31,9 @@
         {
           "name": "Global Sugar Art Sugar Premium Hibiscus Sprays",
           "img": "https://m.media-amazon.com/images/I/71zg1hvV9PL.jpg",
-          "today": 78,
+          "today": 79,
           "comp": 0,
-          "delta": 78
-        },
-        {
-          "name": "Gumpaste Sugar Flowers with Pearl Stamens - We",
-          "img": "https://m.media-amazon.com/images/I/71YTCkvFwOL.jpg",
-          "today": 99,
-          "comp": 44,
-          "delta": 56
+          "delta": 79
         },
         {
           "name": "Global Sugar Art Peace Roses 8 Count Cake Topp",
@@ -48,141 +41,148 @@
           "today": 52,
           "comp": 0,
           "delta": 52
+        },
+        {
+          "name": "Global Sugar Art 20-Count White Frangipani Plu",
+          "img": "https://m.media-amazon.com/images/I/61J8hTXv08S.jpg",
+          "today": 77,
+          "comp": 26,
+          "delta": 52
         }
       ],
       "misses": [
         {
-          "name": "Mini Edible Royal Icing Flowers Cake Decoratio",
-          "img": "https://m.media-amazon.com/images/I/71CJJHh9bzL.jpg",
-          "today": 227,
-          "comp": 281,
-          "delta": -54
-        },
-        {
           "name": "Edible Daisy Cake Decorations",
           "img": "https://m.media-amazon.com/images/I/61Fo1ZnZi0L.jpg",
-          "today": 87,
-          "comp": 138,
+          "today": 105,
+          "comp": 197,
+          "delta": -92
+        },
+        {
+          "name": "Mini Edible Royal Icing Flowers Cake Decoratio",
+          "img": "https://m.media-amazon.com/images/I/71CJJHh9bzL.jpg",
+          "today": 349,
+          "comp": 400,
           "delta": -51
-        },
-        {
-          "name": "Global Sugar Art Blossoms and Leaves Edible Su",
-          "img": "https://m.media-amazon.com/images/I/61TcjFYONlL.jpg",
-          "today": 0,
-          "comp": 45,
-          "delta": -45
-        },
-        {
-          "name": "Cake Dummy Round – Styrofoam Fake Cake for Dec",
-          "img": "https://m.media-amazon.com/images/I/711fimYqXqL.jpg",
-          "today": 196,
-          "comp": 240,
-          "delta": -44
         },
         {
           "name": "Global Sugar Art 1-Count Large White Cattleya ",
           "img": "https://m.media-amazon.com/images/I/41Yt7TOXHBL.jpg",
           "today": 0,
-          "comp": 28,
-          "delta": -28
+          "comp": 41,
+          "delta": -41
+        },
+        {
+          "name": "Buttercream Frosting",
+          "img": "https://m.media-amazon.com/images/I/61OojwDd59L.jpg",
+          "today": 262,
+          "comp": 301,
+          "delta": -38
+        },
+        {
+          "name": "Global Sugar Art Sugar Cake Flower Cake Kits b",
+          "img": "https://m.media-amazon.com/images/I/51Wf5BZauDL.jpg",
+          "today": 0,
+          "comp": 36,
+          "delta": -36
         }
       ],
-      "summary": "Today we're running $344 ahead of last Fri, Jul 24 at this hour. Biggest beat driving it: Global Sugar Art Premium Edible Roses (+$109)."
+      "summary": "Today we're running $195 ahead of last Fri, Jul 24 at this hour. Biggest beat driving it: Global Sugar Art Premium Edible Roses (+$103)."
     },
     "lastyear": {
       "comp": "2025-08-01",
       "compLabel": "Fri, Aug 1, 2025",
-      "compDollars": 1507,
-      "compUnits": 62,
-      "ratio": 0.38171830500572634,
+      "compDollars": 2369,
+      "compUnits": 97,
+      "ratio": 0.6002944246809977,
       "beats": [
         {
           "name": "Mini Edible Royal Icing Flowers Cake Decoratio",
           "img": "https://m.media-amazon.com/images/I/71CJJHh9bzL.jpg",
-          "today": 227,
-          "comp": 29,
-          "delta": 198
-        },
-        {
-          "name": "Global Sugar Art Premium Edible Roses",
-          "img": "https://m.media-amazon.com/images/I/31XtgrHQVHL.jpg",
-          "today": 123,
-          "comp": 50,
-          "delta": 74
-        },
-        {
-          "name": "Global Sugar Art Sugar Premium Hibiscus Sprays",
-          "img": "https://m.media-amazon.com/images/I/71zg1hvV9PL.jpg",
-          "today": 78,
-          "comp": 8,
-          "delta": 70
+          "today": 349,
+          "comp": 46,
+          "delta": 304
         },
         {
           "name": "Cake Dummy Round – Styrofoam Fake Cake for Dec",
           "img": "https://m.media-amazon.com/images/I/711fimYqXqL.jpg",
-          "today": 196,
-          "comp": 149,
-          "delta": 47
+          "today": 328,
+          "comp": 235,
+          "delta": 93
         },
         {
-          "name": "Global Sugar Art 3-Count White Freesia Sugar F",
-          "img": "https://m.media-amazon.com/images/I/31xeDKUD47S.jpg",
-          "today": 45,
+          "name": "Global Sugar Art Blossoms and Leaves Edible Su",
+          "img": "https://m.media-amazon.com/images/I/61TcjFYONlL.jpg",
+          "today": 78,
           "comp": 0,
-          "delta": 45
+          "delta": 78
+        },
+        {
+          "name": "Global Sugar Art Sugar Premium Hibiscus Sprays",
+          "img": "https://m.media-amazon.com/images/I/71zg1hvV9PL.jpg",
+          "today": 79,
+          "comp": 13,
+          "delta": 65
+        },
+        {
+          "name": "Edible Cupcake Decorations — Assorted Themes",
+          "img": "https://m.media-amazon.com/images/I/71zOmSvkgTL.jpg",
+          "today": 84,
+          "comp": 26,
+          "delta": 58
         }
       ],
       "misses": [
         {
           "name": "Edible Daisy Cake Decorations",
           "img": "https://m.media-amazon.com/images/I/61Fo1ZnZi0L.jpg",
-          "today": 87,
-          "comp": 172,
-          "delta": -85
+          "today": 105,
+          "comp": 270,
+          "delta": -166
+        },
+        {
+          "name": "Buttercream Frosting",
+          "img": "https://m.media-amazon.com/images/I/61OojwDd59L.jpg",
+          "today": 262,
+          "comp": 392,
+          "delta": -130
         },
         {
           "name": "Global Sugar Art Hydrangea Blossoms Sugar Cake",
           "img": "https://m.media-amazon.com/images/I/51j23-vG5WL.jpg",
           "today": 0,
-          "comp": 68,
-          "delta": -68
+          "comp": 107,
+          "delta": -107
         },
         {
           "name": "Global Sugar Art Sugar Cupcake Flowers by Chef",
           "img": "https://m.media-amazon.com/images/I/71QqUyJUW8L.jpg",
           "today": 0,
-          "comp": 60,
-          "delta": -60
+          "comp": 94,
+          "delta": -94
         },
         {
           "name": "Global Sugar Art Sugar Hydrandea Blossoms Wire",
           "img": "https://m.media-amazon.com/images/I/41wa4rEjlHL.jpg",
           "today": 0,
-          "comp": 50,
-          "delta": -50
-        },
-        {
-          "name": "Global Sugar Art 14-Piece Wedding Cake Decorat",
-          "img": "https://m.media-amazon.com/images/I/51sgF6ey5zL.jpg",
-          "today": 0,
-          "comp": 33,
-          "delta": -33
+          "comp": 78,
+          "delta": -78
         }
       ],
-      "summary": "Today we're running $306 ahead of last year (Fri, Aug 1, 2025) at this hour. Biggest beat driving it: Mini Edible Royal Icing Flowers Cake Decoratio (+$198)."
+      "summary": "Today we're running $81 behind last year (Fri, Aug 1, 2025) at this hour. Biggest miss driving it: Edible Daisy Cake Decorations (−$166)."
     }
   },
   "comp": "2026-07-24",
   "compLabel": "Fri, Jul 24",
-  "compDollars": 1468,
-  "ratio": 0.36329942921329417,
+  "compDollars": 2093,
+  "ratio": 0.5179264632749352,
   "beats": [
     {
       "name": "Global Sugar Art Premium Edible Roses",
       "img": "https://m.media-amazon.com/images/I/31XtgrHQVHL.jpg",
-      "today": 123,
-      "comp": 15,
-      "delta": 109
+      "today": 124,
+      "comp": 21,
+      "delta": 103
     },
     {
       "name": "Global Sugar Art 3-Count Orange Alstroemeria P",
@@ -194,16 +194,9 @@
     {
       "name": "Global Sugar Art Sugar Premium Hibiscus Sprays",
       "img": "https://m.media-amazon.com/images/I/71zg1hvV9PL.jpg",
-      "today": 78,
+      "today": 79,
       "comp": 0,
-      "delta": 78
-    },
-    {
-      "name": "Gumpaste Sugar Flowers with Pearl Stamens - We",
-      "img": "https://m.media-amazon.com/images/I/71YTCkvFwOL.jpg",
-      "today": 99,
-      "comp": 44,
-      "delta": 56
+      "delta": 79
     },
     {
       "name": "Global Sugar Art Peace Roses 8 Count Cake Topp",
@@ -211,44 +204,51 @@
       "today": 52,
       "comp": 0,
       "delta": 52
+    },
+    {
+      "name": "Global Sugar Art 20-Count White Frangipani Plu",
+      "img": "https://m.media-amazon.com/images/I/61J8hTXv08S.jpg",
+      "today": 77,
+      "comp": 26,
+      "delta": 52
     }
   ],
   "misses": [
     {
-      "name": "Mini Edible Royal Icing Flowers Cake Decoratio",
-      "img": "https://m.media-amazon.com/images/I/71CJJHh9bzL.jpg",
-      "today": 227,
-      "comp": 281,
-      "delta": -54
-    },
-    {
       "name": "Edible Daisy Cake Decorations",
       "img": "https://m.media-amazon.com/images/I/61Fo1ZnZi0L.jpg",
-      "today": 87,
-      "comp": 138,
+      "today": 105,
+      "comp": 197,
+      "delta": -92
+    },
+    {
+      "name": "Mini Edible Royal Icing Flowers Cake Decoratio",
+      "img": "https://m.media-amazon.com/images/I/71CJJHh9bzL.jpg",
+      "today": 349,
+      "comp": 400,
       "delta": -51
-    },
-    {
-      "name": "Global Sugar Art Blossoms and Leaves Edible Su",
-      "img": "https://m.media-amazon.com/images/I/61TcjFYONlL.jpg",
-      "today": 0,
-      "comp": 45,
-      "delta": -45
-    },
-    {
-      "name": "Cake Dummy Round – Styrofoam Fake Cake for Dec",
-      "img": "https://m.media-amazon.com/images/I/711fimYqXqL.jpg",
-      "today": 196,
-      "comp": 240,
-      "delta": -44
     },
     {
       "name": "Global Sugar Art 1-Count Large White Cattleya ",
       "img": "https://m.media-amazon.com/images/I/41Yt7TOXHBL.jpg",
       "today": 0,
-      "comp": 28,
-      "delta": -28
+      "comp": 41,
+      "delta": -41
+    },
+    {
+      "name": "Buttercream Frosting",
+      "img": "https://m.media-amazon.com/images/I/61OojwDd59L.jpg",
+      "today": 262,
+      "comp": 301,
+      "delta": -38
+    },
+    {
+      "name": "Global Sugar Art Sugar Cake Flower Cake Kits b",
+      "img": "https://m.media-amazon.com/images/I/51Wf5BZauDL.jpg",
+      "today": 0,
+      "comp": 36,
+      "delta": -36
     }
   ],
-  "summary": "Today we're running $344 ahead of last Fri, Jul 24 at this hour. Biggest beat driving it: Global Sugar Art Premium Edible Roses (+$109)."
+  "summary": "Today we're running $195 ahead of last Fri, Jul 24 at this hour. Biggest beat driving it: Global Sugar Art Premium Edible Roses (+$103)."
 }
