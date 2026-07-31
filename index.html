@@ -34,7 +34,7 @@
   .mark{width:19px;height:19px;flex:0 0 auto}
   .brandrow .name{font-weight:700;font-size:12.5px;letter-spacing:-.3px}
   .brandrow .name b{color:var(--electric)}
-  .brandrow .tab{margin-left:auto;font-size:10.5px;font-weight:600;color:var(--slate-300);border:1px solid rgba(203,213,225,.28);padding:1px 8px;border-radius:999px}
+  .brandrow .tab{margin-left:auto;font-size:12px;font-weight:700;color:#fff;border:1px solid rgba(203,213,225,.30);padding:3px 12px;border-radius:999px}
   .headline{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
   .headline h1{font-size:16px;font-weight:700;letter-spacing:-.4px}
   .headline .date{font-size:11.5px;color:var(--slate-400);font-weight:500}
@@ -80,7 +80,7 @@
   .swatch.fc{background:repeating-linear-gradient(90deg,var(--electric) 0 4px,transparent 4px 7px)}
   .swatch.lw{background:var(--amber)}
   .swatch.ly{background:var(--grey-line)}
-  #chart{width:100%;height:auto;display:block;touch-action:none}
+  #chart{width:100%;height:auto;display:block;touch-action:pan-y}
 
   .hero{padding:15px 18px 18px;text-align:center;margin-top:12px}
   .hero .cap{font-size:12px;font-weight:600;color:var(--slate-500);text-transform:uppercase;letter-spacing:.6px;margin-bottom:14px}
@@ -126,13 +126,9 @@
     <div class="brandrow">
       <svg class="mark" viewBox="0 0 128 128" fill="none" aria-hidden="true"><g stroke-linecap="round" stroke-linejoin="round"><path d="M28 64 H43 L50 42 L58 84 L67 52 L73 64 H100" stroke="#00D2FF" stroke-width="3.9"/><path d="M22 64 H28 M100 64 H106" stroke="#0090FF" stroke-width="2.8"/><path d="M30 36 A36 36 0 0 1 98 36" stroke="#0090FF" stroke-width="3.2"/><path d="M98 92 A36 36 0 0 1 30 92" stroke="#0090FF" stroke-width="3.2"/><circle cx="31" cy="64" r="3" fill="#0B0F14" stroke="#0090FF" stroke-width="2.1"/><circle cx="97" cy="64" r="3" fill="#0B0F14" stroke="#0090FF" stroke-width="2.1"/></g></svg>
       <span class="name">Sugar<b>Pulse</b></span>
-      <span class="tab">Pacing</span>
+      <span class="tab">Today's Pace</span>
     </div>
-    <div class="headline">
-      <h1>Today's Pace</h1>
-      <span class="date" id="date"></span>
-    </div>
-    <div class="asof"><span class="dot"></span><span id="asof"></span></div>
+    <div class="asof"><span class="dot"></span><span class="date" id="date"></span> · <span id="asof"></span></div>
   </header>
 
   <div class="controls">
@@ -219,7 +215,7 @@
   </section>
 </div>
 
-<script>window.__PACING__={"nowH":19,"wd":"Thu","liveUrl":"https://odfz7pp4z4lxf6ase3vp7zvn3m0cboph.lambda-url.us-east-2.on.aws/","dateLabel":"Thu, Jul 30","asofLabel":"as of 10:29 PM EDT","compDate":{"lastweek":"Thu, Jul 23","lastyear":"Thu, Jul 31, 2025"},"legLW":"Jul 23","legLY":"Jul 31 '25","units":{"today":[3,12,14,19,29,39,49,58,81,100,113,125,148,162,178,190,199,215,226,236],"lastweek":[5,6,12,17,21,33,43,55,66,74,91,111,126,132,151,172,203,219,234,242,256,267,269,273],"lastyear":[6,10,16,17,21,25,32,47,60,82,90,101,106,110,116,128,151,164,167,173,174,177,180,183]},"sales":{"today":[51.97,248.88,287.86,382.81,577.71,792.61,961.51,1090.42,1472.29,1794.51,2050.38,2298.26,2704.03,2957.89,3276.73,3498.61,3657.62,3943.46,4134.05,4290.95],"lastweek":[99.95,123.94,232.78,340.73,405.69,614.57,834.47,1070.85,1300.74,1435.66,1784.49,2130.09,2392.04,2499.6,2857.41,3197.61,3799.9,4095,4363.85,4504.77,4746.63,4965.52,5004.5,5069.46],"lastyear":[151.94,248.9,356.84,377.83,468.79,564.75,721.58,1057.43,1365.92,1911.18,2110.7,2306.6,2472.55,2556.51,2658.45,2902.33,3435.2,3727.07,3813.04,3990.98,4022.97,4086.94,4150.91,4217.88]},"full":{"units":{"lastweek":273,"lastyear":183},"sales":{"lastweek":5069.46,"lastyear":4217.88}},"orders":210,"ordersSub":"1.1 units · $20.43 ea","freshLabel":"Live · refreshed 7:29 PM PT"};</script>
+<script>window.__PACING__={"nowH":19,"wd":"Thu","liveUrl":"https://odfz7pp4z4lxf6ase3vp7zvn3m0cboph.lambda-url.us-east-2.on.aws/","dateLabel":"Thu, Jul 30","asofLabel":"as of 10:41 PM EDT","compDate":{"lastweek":"Thu, Jul 23","lastyear":"Thu, Jul 31, 2025"},"legLW":"Jul 23","legLY":"Jul 31 '25","units":{"today":[3,12,14,19,29,39,49,58,81,100,113,125,148,162,178,190,199,215,226,238],"lastweek":[5,6,12,17,21,33,43,55,66,74,91,111,126,132,151,172,203,219,234,242,256,267,269,273],"lastyear":[6,10,16,17,21,25,32,47,60,82,90,101,106,110,116,128,151,164,167,173,174,177,180,183]},"sales":{"today":[51.97,248.88,287.86,382.81,577.71,792.61,961.51,1090.42,1472.29,1794.51,2050.38,2298.26,2704.03,2957.89,3276.73,3498.61,3657.62,3943.46,4134.05,4325.93],"lastweek":[99.95,123.94,232.78,340.73,405.69,614.57,834.47,1070.85,1300.74,1435.66,1784.49,2130.09,2392.04,2499.6,2857.41,3197.61,3799.9,4095,4363.85,4504.77,4746.63,4965.52,5004.5,5069.46],"lastyear":[151.94,248.9,356.84,377.83,468.79,564.75,721.58,1057.43,1365.92,1911.18,2110.7,2306.6,2472.55,2556.51,2658.45,2902.33,3435.2,3727.07,3813.04,3990.98,4022.97,4086.94,4150.91,4217.88]},"full":{"units":{"lastweek":273,"lastyear":183},"sales":{"lastweek":5069.46,"lastyear":4217.88}},"orders":212,"ordersSub":"1.1 units · $20.41 ea","freshLabel":"Live · refreshed 7:41 PM PT"};</script>
 <script>
 (function(){
   var D = window.__PACING__;
