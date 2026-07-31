@@ -1,0 +1,76 @@
+{
+  "generatedAt": "2026-07-31T02:00:05.974Z",
+  "today": "2026-07-30",
+  "comp": "2026-07-23",
+  "compLabel": "Thu, Jul 23",
+  "metric": "units",
+  "todayUnits": 226,
+  "compUnits": 242,
+  "ratio": 0.8864468864468864,
+  "partial": false,
+  "beats": [
+    {
+      "name": "Buttercream Frosting",
+      "today": 38,
+      "comp": 22,
+      "delta": 16
+    },
+    {
+      "name": "Edible Cupcake Decorations — Assorted Themes",
+      "today": 11,
+      "comp": 4,
+      "delta": 7
+    },
+    {
+      "name": "Global Sugar Art Edible Exquisite Rose & Leaf ",
+      "today": 6,
+      "comp": 0,
+      "delta": 6
+    },
+    {
+      "name": "Paramount Crystals for Candy Melts & Chocolate",
+      "today": 3,
+      "comp": 0,
+      "delta": 3
+    },
+    {
+      "name": "Global Sugar Art Premium White Roses by Chef A",
+      "today": 3,
+      "comp": 0,
+      "delta": 3
+    }
+  ],
+  "misses": [
+    {
+      "name": "Cake Dummy Round – Styrofoam Fake Cake for Dec",
+      "today": 14,
+      "comp": 27,
+      "delta": -13
+    },
+    {
+      "name": "Edible Daisy Cake Decorations",
+      "today": 9,
+      "comp": 20,
+      "delta": -11
+    },
+    {
+      "name": "Edible Daisy Cake Decorations",
+      "today": 21,
+      "comp": 29,
+      "delta": -8
+    },
+    {
+      "name": "Royal Icing and Cookie Mixes",
+      "today": 0,
+      "comp": 7,
+      "delta": -7
+    },
+    {
+      "name": "Global Sugar Art Sugar Hydrandea Blossoms Wire",
+      "today": 0,
+      "comp": 4,
+      "delta": -4
+    }
+  ],
+  "summary": "Today you're running 16 units behind last Thu, Jul 23 at this hour. Biggest lift: Buttercream Frosting (+16 units). Biggest drag: Cake Dummy Round – Styrofoam Fake Cake for Dec (−13 units)."
+}
