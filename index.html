@@ -102,6 +102,19 @@
   .stat .sub{font-size:11.5px;color:var(--slate-500);margin-top:3px}
   .stat .sub b{font-weight:700}
 
+  .family{margin-top:12px;padding:16px 18px 15px}
+  .fam-head{font-size:13px;font-weight:800;color:var(--navy-800);letter-spacing:-.2px}
+  .fam-head span{font-weight:600;color:var(--slate-500);font-size:12px}
+  .fam-summary{font-size:12.5px;color:var(--slate-500);line-height:1.55;margin-top:8px}
+  .fam-summary b{color:var(--navy-900);font-weight:700}
+  .fam-cols{margin-top:14px;display:flex;flex-direction:column;gap:14px}
+  .fam-k{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px}
+  .fam-k.up{color:var(--ahead)} .fam-k.down{color:var(--behind)}
+  .fam-row{display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:5px 0;border-top:1px solid #F1F5F9}
+  .fam-name{font-size:12.5px;color:var(--navy-800);font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .fam-d{font-size:13px;font-weight:800;white-space:nowrap;flex:0 0 auto}
+  .fam-d.up{color:var(--ahead)} .fam-d.down{color:var(--behind)}
+  .fam-foot{font-size:10px;color:var(--slate-400);margin-top:12px;line-height:1.45;border-top:1px solid #F1F5F9;padding-top:9px}
   footer{padding:16px 18px 0;text-align:center;font-size:11px;color:var(--slate-400);line-height:1.55}
   .fresh-flag{display:inline-block;margin-top:10px;font-size:10.5px;font-weight:700;letter-spacing:.3px;color:var(--ahead);background:var(--ahead-soft);border:1px solid var(--ahead-border);padding:4px 10px;border-radius:999px}
 </style>
@@ -189,6 +202,16 @@
       </div>
     </div>
 
+    <div class="card family" id="familyCard" style="display:none">
+      <div class="fam-head">What's driving it <span id="famComp"></span></div>
+      <div class="fam-summary" id="famSummary"></div>
+      <div class="fam-cols">
+        <div><div class="fam-k up">▲ Biggest beats</div><div id="famBeats"></div></div>
+        <div><div class="fam-k down">▼ Biggest drags</div><div id="famMisses"></div></div>
+      </div>
+      <div class="fam-foot" id="famFoot"></div>
+    </div>
+
     <footer>
       Data via SP-API order metrics (marketplace total, both fulfillment channels).<br/>
       Comps align by weekday: last week = &minus;7 days, last year = &minus;364 days.<br/>
@@ -198,7 +221,7 @@
   </section>
 </div>
 
-<script>window.__PACING__={"nowH":18,"wd":"Thu","liveUrl":"https://odfz7pp4z4lxf6ase3vp7zvn3m0cboph.lambda-url.us-east-2.on.aws/","dateLabel":"Thu, Jul 30","asofLabel":"as of 9:38 PM EDT","compDate":{"lastweek":"Thu, Jul 23","lastyear":"Thu, Jul 31, 2025"},"legLW":"Jul 23","legLY":"Jul 31 '25","units":{"today":[3,12,14,19,29,39,49,58,81,100,113,125,148,162,178,190,199,215,224],"lastweek":[5,6,12,17,21,33,43,55,66,74,91,111,126,132,151,172,203,219,234,242,256,267,269,273],"lastyear":[6,10,16,17,21,25,32,47,60,82,90,101,106,110,116,128,151,164,167,173,174,177,180,183]},"sales":{"today":[51.97,248.88,287.86,382.81,577.71,792.61,961.51,1090.42,1472.29,1794.51,2050.38,2298.26,2704.03,2957.89,3276.73,3498.61,3657.62,3943.46,4094.07],"lastweek":[99.95,123.94,232.78,340.73,405.69,614.57,834.47,1070.85,1300.74,1435.66,1784.49,2130.09,2392.04,2499.6,2857.41,3197.61,3799.9,4095,4363.85,4504.77,4746.63,4965.52,5004.5,5069.46],"lastyear":[151.94,248.9,356.84,377.83,468.79,564.75,721.58,1057.43,1365.92,1911.18,2110.7,2306.6,2472.55,2556.51,2658.45,2902.33,3435.2,3727.07,3813.04,3990.98,4022.97,4086.94,4150.91,4217.88]},"full":{"units":{"lastweek":273,"lastyear":183},"sales":{"lastweek":5069.46,"lastyear":4217.88}},"orders":200,"ordersSub":"1.1 units · $20.47 ea","freshLabel":"Live · refreshed 6:38 PM PT"};</script>
+<script>window.__PACING__={"nowH":19,"wd":"Thu","liveUrl":"https://odfz7pp4z4lxf6ase3vp7zvn3m0cboph.lambda-url.us-east-2.on.aws/","dateLabel":"Thu, Jul 30","asofLabel":"as of 10:08 PM EDT","compDate":{"lastweek":"Thu, Jul 23","lastyear":"Thu, Jul 31, 2025"},"legLW":"Jul 23","legLY":"Jul 31 '25","units":{"today":[3,12,14,19,29,39,49,58,81,100,113,125,148,162,178,190,199,215,226,227],"lastweek":[5,6,12,17,21,33,43,55,66,74,91,111,126,132,151,172,203,219,234,242,256,267,269,273],"lastyear":[6,10,16,17,21,25,32,47,60,82,90,101,106,110,116,128,151,164,167,173,174,177,180,183]},"sales":{"today":[51.97,248.88,287.86,382.81,577.71,792.61,961.51,1090.42,1472.29,1794.51,2050.38,2298.26,2704.03,2957.89,3276.73,3498.61,3657.62,3943.46,4134.05,4156.04],"lastweek":[99.95,123.94,232.78,340.73,405.69,614.57,834.47,1070.85,1300.74,1435.66,1784.49,2130.09,2392.04,2499.6,2857.41,3197.61,3799.9,4095,4363.85,4504.77,4746.63,4965.52,5004.5,5069.46],"lastyear":[151.94,248.9,356.84,377.83,468.79,564.75,721.58,1057.43,1365.92,1911.18,2110.7,2306.6,2472.55,2556.51,2658.45,2902.33,3435.2,3727.07,3813.04,3990.98,4022.97,4086.94,4150.91,4217.88]},"full":{"units":{"lastweek":273,"lastyear":183},"sales":{"lastweek":5069.46,"lastyear":4217.88}},"orders":203,"ordersSub":"1.1 units · $20.47 ea","freshLabel":"Live · refreshed 7:08 PM PT"};</script>
 <script>
 (function(){
   var D = window.__PACING__;
@@ -377,6 +400,31 @@
 
   render();       // draw the baked snapshot immediately
   fetchLive();    // then overlay up-to-the-minute today data if a live endpoint is configured
+
+  // ── "What's driving it" — family beats/misses (published a few times a day, same-origin JSON) ──
+  function famDelta(v){ return (v>=0?'+':'−')+Math.abs(Math.round(v)).toLocaleString(); }
+  function famRows(arr, cls){
+    if(!arr || !arr.length) return '<div class="fam-row" style="color:var(--slate-400);font-size:12px">None.</div>';
+    return arr.map(function(r){ return '<div class="fam-row"><span class="fam-name">'+r.name+'</span><span class="fam-d '+cls+'">'+famDelta(r.delta)+'</span></div>'; }).join('');
+  }
+  function renderFamily(d){
+    if(!d || (!(d.beats&&d.beats.length) && !(d.misses&&d.misses.length))) return;
+    document.getElementById('famComp').textContent = '· units vs '+(d.compLabel||'last week')+' by this hour';
+    document.getElementById('famSummary').textContent = d.summary || '';
+    document.getElementById('famBeats').innerHTML = famRows(d.beats, 'up');
+    document.getElementById('famMisses').innerHTML = famRows(d.misses, 'down');
+    var when='';
+    try{ when=new Date(d.generatedAt).toLocaleTimeString('en-US',{timeZone:'America/New_York',hour:'numeric',minute:'2-digit'})+' ET'; }catch(e){}
+    document.getElementById('famFoot').textContent = 'Unit sales by family (units are exact even for today’s pending orders; $ isn’t yet), rolled up by parent listing; comp scaled to this hour from '+(d.compLabel||'last week')+"’s full day. Refreshes a few times a day"+(when?' · last '+when:'')+'.';
+    document.getElementById('familyCard').style.display='';
+  }
+  function fetchFamily(){
+    fetch('https://global-sugar-art.github.io/pacing/pacing-family.json?cb='+Date.now(), {cache:'no-store'})
+      .then(function(r){ return r && r.ok ? r.json() : null; })
+      .then(function(d){ if(d) renderFamily(d); })
+      .catch(function(){});   // section stays hidden until the JSON exists
+  }
+  fetchFamily();
 
   // Left open all day → hourly full reload (refreshes comps at day-rollover + picks up code changes).
   setInterval(function(){ try{location.reload();}catch(e){} }, 60*60*1000);
