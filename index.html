@@ -215,7 +215,7 @@
   </section>
 </div>
 
-<script>window.__PACING__={"nowH":6,"wd":"Fri","liveUrl":"https://odfz7pp4z4lxf6ase3vp7zvn3m0cboph.lambda-url.us-east-2.on.aws/","dateLabel":"Fri, Jul 31","asofLabel":"as of 9:00 AM EDT","compDate":{"lastweek":"Fri, Jul 24","lastyear":"Fri, Aug 1, 2025"},"legLW":"Jul 24","legLY":"Aug 1 '25","units":{"today":[5,7,9,13,21,26,26],"lastweek":[2,2,3,7,16,36,47,56,66,78,91,112,120,129,138,143,151,159,178,192,198,203,211,214],"lastyear":[4,4,8,18,21,28,32,36,48,62,75,97,101,109,117,125,132,139,151,157,158,163,163,166]},"sales":{"today":[96.95,136.93,191.91,258.87,383.49,468,468],"lastweek":[34.98,34.98,49.97,136.93,311.84,660.8,852.69,1023.6,1213.5,1468.38,1699.95,2093.35,2237.27,2394.78,2539.69,2631.64,2802.56,2949.48,3345.65,3601.51,3730.45,3812.9,3981.82,4041.79],"lastyear":[93.96,93.96,190.92,464.82,560.33,689.26,796.22,892.18,1183.66,1506.52,1857.39,2369.17,2454.13,2645.05,2835.97,2980.89,3156.82,3311.35,3599.83,3743.77,3762.76,3878.71,3878.71,3946.68]},"full":{"units":{"lastweek":214,"lastyear":166},"sales":{"lastweek":4041.79,"lastyear":3946.68}},"orders":22,"ordersSub":"1.2 units · $21.27 ea","freshLabel":"Live · refreshed 6:00 AM PT"};</script>
+<script>window.__PACING__={"nowH":6,"wd":"Fri","liveUrl":"https://odfz7pp4z4lxf6ase3vp7zvn3m0cboph.lambda-url.us-east-2.on.aws/","dateLabel":"Fri, Jul 31","asofLabel":"as of 9:41 AM EDT","compDate":{"lastweek":"Fri, Jul 24","lastyear":"Fri, Aug 1, 2025"},"legLW":"Jul 24","legLY":"Aug 1 '25","units":{"today":[5,7,9,13,21,26,38],"lastweek":[2,2,3,7,16,36,47,56,66,78,91,112,120,129,138,143,151,159,178,192,198,203,211,214],"lastyear":[4,4,8,18,21,28,32,36,48,62,75,97,101,109,117,125,132,139,151,157,158,163,163,166]},"sales":{"today":[96.95,136.93,191.91,258.87,383.49,468,716.88],"lastweek":[34.98,34.98,49.97,136.93,311.84,660.8,852.69,1023.6,1213.5,1468.38,1699.95,2093.35,2237.27,2394.78,2539.69,2631.64,2802.56,2949.48,3345.65,3601.51,3730.45,3812.9,3981.82,4041.79],"lastyear":[93.96,93.96,190.92,464.82,560.33,689.26,796.22,892.18,1183.66,1506.52,1857.39,2369.17,2454.13,2645.05,2835.97,2980.89,3156.82,3311.35,3599.83,3743.77,3762.76,3878.71,3878.71,3946.68]},"full":{"units":{"lastweek":214,"lastyear":166},"sales":{"lastweek":4041.79,"lastyear":3946.68}},"orders":31,"ordersSub":"1.2 units · $23.13 ea","freshLabel":"Live · refreshed 6:41 AM PT"};</script>
 <script>
 (function(){
   var D = window.__PACING__;
@@ -223,6 +223,7 @@
   var UNITS = D.units, SALES = D.sales, FULL = D.full;
 
   var state = {comp:'lastyear', metric:'sales'};
+  var famData = null;   // family beats/misses JSON, fetched below the fold; repainted on comp toggle
 
   function money(v){ return '$'+Math.round(v).toLocaleString(); }
   function moneyK(v){ return v>=1000 ? '$'+(v/1000).toFixed(1)+'k' : '$'+Math.round(v); }
@@ -357,7 +358,7 @@
     document.getElementById('chart').innerHTML=g;
   }
 
-  document.getElementById('compSeg').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;state.comp=b.getAttribute('data-comp');render();});
+  document.getElementById('compSeg').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;state.comp=b.getAttribute('data-comp');render();paintFamily();});
   document.getElementById('metricSeg').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;state.metric=b.getAttribute('data-metric');render();});
   // ── Live + freshness ──────────────────────────────────────────────────────────────────────────
   // The page ships with an hourly-baked snapshot that works even if the live endpoint is down. When a
@@ -401,16 +402,28 @@
     if(!arr || !arr.length) return '<div class="fam-row" style="color:var(--slate-400);font-size:12px">None.</div>';
     return arr.map(function(r){ var im = r.img ? '<img class="fam-img" src="'+r.img+'" loading="lazy" alt="">' : '<span class="fam-img"></span>'; return '<div class="fam-row">'+im+'<span class="fam-name">'+r.name+'</span><span class="fam-d '+cls+'">'+famDelta(r.delta)+'</span></div>'; }).join('');
   }
-  function renderFamily(d){
-    if(!d || (!(d.beats&&d.beats.length) && !(d.misses&&d.misses.length))) return;
-    document.getElementById('famComp').textContent = '· units vs '+(d.compLabel||'last week')+' by this hour';
-    document.getElementById('famSummary').textContent = d.summary || '';
-    document.getElementById('famBeats').innerHTML = famRows(d.beats, 'up');
-    document.getElementById('famMisses').innerHTML = famRows(d.misses, 'down');
+  function famHasContent(b){ return !!(b && ((b.beats&&b.beats.length) || (b.misses&&b.misses.length))); }
+  // Paints the family card for the CURRENTLY-selected comp (state.comp). New JSON carries d.comps
+  // {lastweek,lastyear}; an older cached JSON is flat (lastweek only) → fall back to it.
+  function paintFamily(){
+    var d = famData; if(!d) return;
+    var blk = (d.comps && d.comps[state.comp]) ? d.comps[state.comp] : d;
+    document.getElementById('famComp').textContent = '· units vs '+(blk.compLabel||'last week')+' by this hour';
+    document.getElementById('famSummary').textContent = blk.summary || '';
+    document.getElementById('famBeats').innerHTML = famRows(blk.beats, 'up');
+    document.getElementById('famMisses').innerHTML = famRows(blk.misses, 'down');
     var when='';
-    try{ when=new Date(d.generatedAt).toLocaleTimeString('en-US',{timeZone:'America/New_York',hour:'numeric',minute:'2-digit'})+' ET'; }catch(e){}
-    document.getElementById('famFoot').textContent = 'Unit sales by family (units are exact even for today’s pending orders; $ isn’t yet), rolled up by parent listing; comp scaled to this hour from '+(d.compLabel||'last week')+"’s full day. Refreshes a few times a day"+(when?' · last '+when:'')+'.';
+    try{ when=new Date(d.generatedAt).toLocaleString('en-US',{timeZone:'America/New_York',weekday:'short',hour:'numeric',minute:'2-digit'})+' ET'; }catch(e){}
+    document.getElementById('famFoot').textContent = 'Unit sales by family (units are exact even for today’s pending orders; $ isn’t yet), rolled up by parent listing; comp scaled to this hour from '+(blk.compLabel||'last week')+"’s full day. Refreshes a few times a day"+(when?' · updated '+when:'')+'.';
     document.getElementById('familyCard').style.display='';
+  }
+  function renderFamily(d){
+    if(!d) return;
+    // Show the card if EITHER comp has material movement (early morning both may be empty → stay hidden).
+    var any = d.comps ? Object.keys(d.comps).some(function(k){return famHasContent(d.comps[k]);}) : famHasContent(d);
+    if(!any) return;
+    famData = d;
+    paintFamily();
   }
   function fetchFamily(){
     fetch('https://global-sugar-art.github.io/pacing/pacing-family.json?cb='+Date.now(), {cache:'no-store'})
