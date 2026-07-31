@@ -115,6 +115,21 @@
   .fam-name{flex:1;min-width:0;font-size:12.5px;color:var(--navy-800);font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
   .fam-d{font-size:13px;font-weight:800;white-space:nowrap;flex:0 0 auto}
   .fam-d.up{color:var(--ahead)} .fam-d.down{color:var(--behind)}
+  .recap{margin-top:12px;padding:16px 18px 8px}
+  .recap-head{font-size:13px;font-weight:800;color:var(--navy-800);letter-spacing:-.2px}
+  .recap-head span{font-weight:600;color:var(--slate-500);font-size:12px}
+  .rc-row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:11px 0;border-top:1px solid #F1F5F9;margin-top:8px}
+  .rc-row:first-of-type{margin-top:6px}
+  .rc-k{font-size:13.5px;font-weight:700;color:var(--navy-800)}
+  .rc-sub{font-size:11px;color:var(--slate-400);margin-top:2px}
+  .rc-r{text-align:right;flex:0 0 auto}
+  .rc-v{font-size:18px;font-weight:800;letter-spacing:-.5px;color:var(--navy-900)}
+  .rc-u{font-size:10.5px;color:var(--slate-400);margin-top:1px}
+  .rc-chips{display:flex;gap:5px;justify-content:flex-end;margin-top:6px}
+  .rc-chip{font-size:10.5px;font-weight:700;padding:2px 6px;border-radius:6px;white-space:nowrap}
+  .rc-chip.up{color:var(--ahead);background:var(--ahead-soft);border:1px solid var(--ahead-border)}
+  .rc-chip.down{color:var(--behind);background:var(--behind-soft);border:1px solid var(--behind-border)}
+  .rc-chip.flat{color:var(--slate-400);background:var(--slate-100);border:1px solid #E2E8F0}
   .fam-foot{font-size:10px;color:var(--slate-400);margin-top:12px;line-height:1.45;border-top:1px solid #F1F5F9;padding-top:9px}
   footer{padding:16px 18px 0;text-align:center;font-size:11px;color:var(--slate-400);line-height:1.55}
   .fresh-flag{display:inline-block;margin-top:10px;font-size:10.5px;font-weight:700;letter-spacing:.3px;color:var(--ahead);background:var(--ahead-soft);border:1px solid var(--ahead-border);padding:4px 10px;border-radius:999px}
@@ -206,7 +221,11 @@
         <div><div class="fam-k up">▲ Biggest beats</div><div id="famBeats"></div></div>
         <div><div class="fam-k down">▼ Biggest drags</div><div id="famMisses"></div></div>
       </div>
-      <div class="fam-foot" id="famFoot"></div>
+    </div>
+
+    <div class="card recap" id="recapCard" style="display:none">
+      <div class="recap-head">Recap <span>· vs prior year</span></div>
+      <div id="recapRows"></div>
     </div>
 
     <footer>
@@ -215,7 +234,7 @@
   </section>
 </div>
 
-<script>window.__PACING__={"nowH":6,"wd":"Fri","liveUrl":"https://odfz7pp4z4lxf6ase3vp7zvn3m0cboph.lambda-url.us-east-2.on.aws/","dateLabel":"Fri, Jul 31","asofLabel":"as of 9:41 AM EDT","compDate":{"lastweek":"Fri, Jul 24","lastyear":"Fri, Aug 1, 2025"},"legLW":"Jul 24","legLY":"Aug 1 '25","units":{"today":[5,7,9,13,21,26,38],"lastweek":[2,2,3,7,16,36,47,56,66,78,91,112,120,129,138,143,151,159,178,192,198,203,211,214],"lastyear":[4,4,8,18,21,28,32,36,48,62,75,97,101,109,117,125,132,139,151,157,158,163,163,166]},"sales":{"today":[96.95,136.93,191.91,258.87,383.49,468,716.88],"lastweek":[34.98,34.98,49.97,136.93,311.84,660.8,852.69,1023.6,1213.5,1468.38,1699.95,2093.35,2237.27,2394.78,2539.69,2631.64,2802.56,2949.48,3345.65,3601.51,3730.45,3812.9,3981.82,4041.79],"lastyear":[93.96,93.96,190.92,464.82,560.33,689.26,796.22,892.18,1183.66,1506.52,1857.39,2369.17,2454.13,2645.05,2835.97,2980.89,3156.82,3311.35,3599.83,3743.77,3762.76,3878.71,3878.71,3946.68]},"full":{"units":{"lastweek":214,"lastyear":166},"sales":{"lastweek":4041.79,"lastyear":3946.68}},"orders":31,"ordersSub":"1.2 units · $23.13 ea","freshLabel":"Live · refreshed 6:41 AM PT"};</script>
+<script>window.__PACING__={"nowH":7,"wd":"Fri","liveUrl":"https://odfz7pp4z4lxf6ase3vp7zvn3m0cboph.lambda-url.us-east-2.on.aws/","dateLabel":"Fri, Jul 31","asofLabel":"as of 10:22 AM EDT","compDate":{"lastweek":"Fri, Jul 24","lastyear":"Fri, Aug 1, 2025"},"legLW":"Jul 24","legLY":"Aug 1 '25","units":{"today":[5,7,9,13,21,26,43,47],"lastweek":[2,2,3,7,16,36,47,56,66,78,91,112,120,129,138,143,151,159,178,192,198,203,211,214],"lastyear":[4,4,8,18,21,28,32,36,48,62,75,97,101,109,117,125,132,139,151,157,158,163,163,166]},"sales":{"today":[96.95,136.93,191.91,258.87,383.49,468,808.83,890.79],"lastweek":[34.98,34.98,49.97,136.93,311.84,660.8,852.69,1023.6,1213.5,1468.38,1699.95,2093.35,2237.27,2394.78,2539.69,2631.64,2802.56,2949.48,3345.65,3601.51,3730.45,3812.9,3981.82,4041.79],"lastyear":[93.96,93.96,190.92,464.82,560.33,689.26,796.22,892.18,1183.66,1506.52,1857.39,2369.17,2454.13,2645.05,2835.97,2980.89,3156.82,3311.35,3599.83,3743.77,3762.76,3878.71,3878.71,3946.68]},"full":{"units":{"lastweek":214,"lastyear":166},"sales":{"lastweek":4041.79,"lastyear":3946.68}},"orders":40,"ordersSub":"1.2 units · $22.27 ea","freshLabel":"Live · refreshed 7:22 AM PT","recap":{"yesterday":{"label":"Yesterday","sub":"Thu, Jul 30","units":266,"sales":4849.65,"lastweek":{"units":273,"sales":5069.46},"lastyear":{"units":183,"sales":4217.88}},"mtd":{"label":"Month to date","sub":"Jul 1–Jul 30","units":8155,"sales":157811.23,"prioryear":{"units":5190,"sales":122215.54}},"ytd":{"label":"Year to date","sub":"2026 · through Jul 30","units":67239,"sales":1245418,"prioryear":{"units":38822,"sales":841981.52}}}};</script>
 <script>
 (function(){
   var D = window.__PACING__;
@@ -397,7 +416,7 @@
   fetchLive();    // then overlay up-to-the-minute today data if a live endpoint is configured
 
   // ── "What's driving it" — family beats/misses (published a few times a day, same-origin JSON) ──
-  function famDelta(v){ return (v>=0?'+':'−')+Math.abs(Math.round(v)).toLocaleString(); }
+  function famDelta(v){ return (v>=0?'+$':'−$')+Math.abs(Math.round(v)).toLocaleString(); }
   function famRows(arr, cls){
     if(!arr || !arr.length) return '<div class="fam-row" style="color:var(--slate-400);font-size:12px">None.</div>';
     return arr.map(function(r){ var im = r.img ? '<img class="fam-img" src="'+r.img+'" loading="lazy" alt="">' : '<span class="fam-img"></span>'; return '<div class="fam-row">'+im+'<span class="fam-name">'+r.name+'</span><span class="fam-d '+cls+'">'+famDelta(r.delta)+'</span></div>'; }).join('');
@@ -408,13 +427,10 @@
   function paintFamily(){
     var d = famData; if(!d) return;
     var blk = (d.comps && d.comps[state.comp]) ? d.comps[state.comp] : d;
-    document.getElementById('famComp').textContent = '· units vs '+(blk.compLabel||'last week')+' by this hour';
+    document.getElementById('famComp').textContent = '· est. revenue vs '+(blk.compLabel||'last week')+' by this hour';
     document.getElementById('famSummary').textContent = blk.summary || '';
     document.getElementById('famBeats').innerHTML = famRows(blk.beats, 'up');
     document.getElementById('famMisses').innerHTML = famRows(blk.misses, 'down');
-    var when='';
-    try{ when=new Date(d.generatedAt).toLocaleString('en-US',{timeZone:'America/New_York',weekday:'short',hour:'numeric',minute:'2-digit'})+' ET'; }catch(e){}
-    document.getElementById('famFoot').textContent = 'Unit sales by family (units are exact even for today’s pending orders; $ isn’t yet), rolled up by parent listing; comp scaled to this hour from '+(blk.compLabel||'last week')+"’s full day. Refreshes a few times a day"+(when?' · updated '+when:'')+'.';
     document.getElementById('familyCard').style.display='';
   }
   function renderFamily(d){
@@ -432,6 +448,28 @@
       .catch(function(){});   // section stays hidden until the JSON exists
   }
   fetchFamily();
+
+  // ── Bottom recap: Yesterday / MTD / YTD vs prior year (baked in D.recap; completed periods) ──
+  function rcChip(cur, prev, label){
+    if(!prev) return '<span class="rc-chip flat">'+label+' —</span>';
+    var p=(cur-prev)/prev*100, cls=p>=0?'up':'down', sign=p>=0?'+':'−';
+    return '<span class="rc-chip '+cls+'">'+label+' '+sign+Math.abs(p).toFixed(0)+'%</span>';
+  }
+  function rcRow(item, chips){
+    var uni = Math.round(item.units).toLocaleString()+' units';
+    return '<div class="rc-row"><div class="rc-l"><div class="rc-k">'+item.label+'</div><div class="rc-sub">'+item.sub+'</div></div>'+
+      '<div class="rc-r"><div class="rc-v">'+money(item.sales)+'</div><div class="rc-u">'+uni+'</div><div class="rc-chips">'+chips+'</div></div></div>';
+  }
+  function renderRecap(r){
+    if(!r) return;
+    var html='';
+    html+=rcRow(r.yesterday, rcChip(r.yesterday.sales, r.yesterday.lastweek.sales,'wk')+rcChip(r.yesterday.sales, r.yesterday.lastyear.sales,'yr'));
+    html+=rcRow(r.mtd, rcChip(r.mtd.sales, r.mtd.prioryear.sales,'yr'));
+    html+=rcRow(r.ytd, rcChip(r.ytd.sales, r.ytd.prioryear.sales,'yr'));
+    document.getElementById('recapRows').innerHTML=html;
+    document.getElementById('recapCard').style.display='';
+  }
+  renderRecap(D.recap);
 
   // Left open all day → hourly full reload (refreshes comps at day-rollover + picks up code changes).
   setInterval(function(){ try{location.reload();}catch(e){} }, 60*60*1000);
