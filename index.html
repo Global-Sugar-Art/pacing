@@ -110,8 +110,9 @@
   .fam-cols{margin-top:14px;display:flex;flex-direction:column;gap:14px}
   .fam-k{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px}
   .fam-k.up{color:var(--ahead)} .fam-k.down{color:var(--behind)}
-  .fam-row{display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:5px 0;border-top:1px solid #F1F5F9}
-  .fam-name{font-size:12.5px;color:var(--navy-800);font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .fam-row{display:flex;align-items:center;gap:10px;padding:6px 0;border-top:1px solid #F1F5F9}
+  .fam-img{width:28px;height:28px;border-radius:6px;object-fit:cover;background:#F1F5F9;flex:0 0 auto}
+  .fam-name{flex:1;min-width:0;font-size:12.5px;color:var(--navy-800);font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
   .fam-d{font-size:13px;font-weight:800;white-space:nowrap;flex:0 0 auto}
   .fam-d.up{color:var(--ahead)} .fam-d.down{color:var(--behind)}
   .fam-foot{font-size:10px;color:var(--slate-400);margin-top:12px;line-height:1.45;border-top:1px solid #F1F5F9;padding-top:9px}
@@ -218,7 +219,7 @@
   </section>
 </div>
 
-<script>window.__PACING__={"nowH":19,"wd":"Thu","liveUrl":"https://odfz7pp4z4lxf6ase3vp7zvn3m0cboph.lambda-url.us-east-2.on.aws/","dateLabel":"Thu, Jul 30","asofLabel":"as of 10:23 PM EDT","compDate":{"lastweek":"Thu, Jul 23","lastyear":"Thu, Jul 31, 2025"},"legLW":"Jul 23","legLY":"Jul 31 '25","units":{"today":[3,12,14,19,29,39,49,58,81,100,113,125,148,162,178,190,199,215,226,233],"lastweek":[5,6,12,17,21,33,43,55,66,74,91,111,126,132,151,172,203,219,234,242,256,267,269,273],"lastyear":[6,10,16,17,21,25,32,47,60,82,90,101,106,110,116,128,151,164,167,173,174,177,180,183]},"sales":{"today":[51.97,248.88,287.86,382.81,577.71,792.61,961.51,1090.42,1472.29,1794.51,2050.38,2298.26,2704.03,2957.89,3276.73,3498.61,3657.62,3943.46,4134.05,4245.98],"lastweek":[99.95,123.94,232.78,340.73,405.69,614.57,834.47,1070.85,1300.74,1435.66,1784.49,2130.09,2392.04,2499.6,2857.41,3197.61,3799.9,4095,4363.85,4504.77,4746.63,4965.52,5004.5,5069.46],"lastyear":[151.94,248.9,356.84,377.83,468.79,564.75,721.58,1057.43,1365.92,1911.18,2110.7,2306.6,2472.55,2556.51,2658.45,2902.33,3435.2,3727.07,3813.04,3990.98,4022.97,4086.94,4150.91,4217.88]},"full":{"units":{"lastweek":273,"lastyear":183},"sales":{"lastweek":5069.46,"lastyear":4217.88}},"orders":209,"ordersSub":"1.1 units · $20.32 ea","freshLabel":"Live · refreshed 7:23 PM PT"};</script>
+<script>window.__PACING__={"nowH":19,"wd":"Thu","liveUrl":"https://odfz7pp4z4lxf6ase3vp7zvn3m0cboph.lambda-url.us-east-2.on.aws/","dateLabel":"Thu, Jul 30","asofLabel":"as of 10:29 PM EDT","compDate":{"lastweek":"Thu, Jul 23","lastyear":"Thu, Jul 31, 2025"},"legLW":"Jul 23","legLY":"Jul 31 '25","units":{"today":[3,12,14,19,29,39,49,58,81,100,113,125,148,162,178,190,199,215,226,236],"lastweek":[5,6,12,17,21,33,43,55,66,74,91,111,126,132,151,172,203,219,234,242,256,267,269,273],"lastyear":[6,10,16,17,21,25,32,47,60,82,90,101,106,110,116,128,151,164,167,173,174,177,180,183]},"sales":{"today":[51.97,248.88,287.86,382.81,577.71,792.61,961.51,1090.42,1472.29,1794.51,2050.38,2298.26,2704.03,2957.89,3276.73,3498.61,3657.62,3943.46,4134.05,4290.95],"lastweek":[99.95,123.94,232.78,340.73,405.69,614.57,834.47,1070.85,1300.74,1435.66,1784.49,2130.09,2392.04,2499.6,2857.41,3197.61,3799.9,4095,4363.85,4504.77,4746.63,4965.52,5004.5,5069.46],"lastyear":[151.94,248.9,356.84,377.83,468.79,564.75,721.58,1057.43,1365.92,1911.18,2110.7,2306.6,2472.55,2556.51,2658.45,2902.33,3435.2,3727.07,3813.04,3990.98,4022.97,4086.94,4150.91,4217.88]},"full":{"units":{"lastweek":273,"lastyear":183},"sales":{"lastweek":5069.46,"lastyear":4217.88}},"orders":210,"ordersSub":"1.1 units · $20.43 ea","freshLabel":"Live · refreshed 7:29 PM PT"};</script>
 <script>
 (function(){
   var D = window.__PACING__;
@@ -402,7 +403,7 @@
   function famDelta(v){ return (v>=0?'+':'−')+Math.abs(Math.round(v)).toLocaleString(); }
   function famRows(arr, cls){
     if(!arr || !arr.length) return '<div class="fam-row" style="color:var(--slate-400);font-size:12px">None.</div>';
-    return arr.map(function(r){ return '<div class="fam-row"><span class="fam-name">'+r.name+'</span><span class="fam-d '+cls+'">'+famDelta(r.delta)+'</span></div>'; }).join('');
+    return arr.map(function(r){ var im = r.img ? '<img class="fam-img" src="'+r.img+'" loading="lazy" alt="">' : '<span class="fam-img"></span>'; return '<div class="fam-row">'+im+'<span class="fam-name">'+r.name+'</span><span class="fam-d '+cls+'">'+famDelta(r.delta)+'</span></div>'; }).join('');
   }
   function renderFamily(d){
     if(!d || (!(d.beats&&d.beats.length) && !(d.misses&&d.misses.length))) return;
