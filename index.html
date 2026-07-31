@@ -29,17 +29,17 @@
   body{font-family:var(--font);background:#EEF1F5;color:var(--navy-900);-webkit-font-smoothing:antialiased;min-height:100vh;font-variant-numeric:tabular-nums}
   .wrap{max-width:460px;margin:0 auto;padding:0 0 34px}
 
-  header{background:linear-gradient(120deg,var(--navy-900),var(--navy-800));color:#fff;padding:calc(env(safe-area-inset-top) + 16px) 18px 18px;position:sticky;top:0;z-index:10;box-shadow:0 2px 14px rgba(11,15,20,.22)}
-  .brandrow{display:flex;align-items:center;gap:9px;margin-bottom:14px}
-  .mark{width:26px;height:26px;flex:0 0 auto}
-  .brandrow .name{font-weight:700;font-size:15px;letter-spacing:-.3px}
+  header{background:linear-gradient(120deg,var(--navy-900),var(--navy-800));color:#fff;padding:calc(env(safe-area-inset-top) + 8px) 16px 9px;position:sticky;top:0;z-index:10;box-shadow:0 2px 14px rgba(11,15,20,.22)}
+  .brandrow{display:flex;align-items:center;gap:7px;margin-bottom:6px}
+  .mark{width:19px;height:19px;flex:0 0 auto}
+  .brandrow .name{font-weight:700;font-size:12.5px;letter-spacing:-.3px}
   .brandrow .name b{color:var(--electric)}
-  .brandrow .tab{margin-left:auto;font-size:12px;font-weight:600;color:var(--slate-300);border:1px solid rgba(203,213,225,.28);padding:3px 9px;border-radius:999px}
+  .brandrow .tab{margin-left:auto;font-size:10.5px;font-weight:600;color:var(--slate-300);border:1px solid rgba(203,213,225,.28);padding:1px 8px;border-radius:999px}
   .headline{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
-  .headline h1{font-size:19px;font-weight:700;letter-spacing:-.4px}
-  .headline .date{font-size:12.5px;color:var(--slate-400);font-weight:500}
-  .asof{display:flex;align-items:center;gap:6px;margin-top:7px;font-size:11.5px;color:var(--slate-400)}
-  .dot{width:7px;height:7px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 3px rgba(34,197,94,.18);animation:pulse 2.4s infinite}
+  .headline h1{font-size:16px;font-weight:700;letter-spacing:-.4px}
+  .headline .date{font-size:11.5px;color:var(--slate-400);font-weight:500}
+  .asof{display:flex;align-items:center;gap:5px;margin-top:3px;font-size:10.5px;color:var(--slate-400)}
+  .dot{width:6px;height:6px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 3px rgba(34,197,94,.18);animation:pulse 2.4s infinite}
   @keyframes pulse{0%,100%{opacity:1}50%{opacity:.45}}
 
   .controls{display:flex;gap:8px;padding:14px 14px 4px}
@@ -61,7 +61,7 @@
   .punch.ahead .statuspill{background:var(--ahead-base);color:#fff}
   .punch.behind .statuspill{background:var(--behind-base);color:#fff}
   .punch-num{font-size:33px;font-weight:800;letter-spacing:-1.3px;line-height:1;margin-top:10px;white-space:nowrap}
-  .punch-num small{font-size:12px;font-weight:600;color:var(--slate-400);letter-spacing:0;margin-left:8px}
+  .punch-num small{font-size:16px;font-weight:800;color:var(--navy-900);letter-spacing:-.4px;margin-left:10px}
   .deltas{margin-top:12px;display:flex;flex-direction:column;gap:5px}
   .d-primary{font-size:15px;font-weight:800;letter-spacing:-.2px;white-space:nowrap}
   .d-primary span{font-size:12px;font-weight:600;color:var(--slate-500);margin-left:5px;letter-spacing:0}
@@ -82,18 +82,18 @@
   .swatch.ly{background:var(--grey-line)}
   #chart{width:100%;height:auto;display:block;touch-action:none}
 
-  .hero{padding:16px 18px 20px;text-align:center;position:relative;overflow:hidden;margin-top:12px}
-  .hero .cap{font-size:12px;font-weight:600;color:var(--slate-500);text-transform:uppercase;letter-spacing:.6px}
-  .gaugewrap{position:relative;width:224px;max-width:74%;margin:6px auto -6px}
-  .gaugewrap svg{width:100%;height:auto;display:block}
-  .gtext{position:absolute;left:0;right:0;top:54%;transform:translateY(-50%)}
-  .gtext .pct{font-size:42px;font-weight:800;letter-spacing:-1.5px;line-height:1}
-  .gtext .lbl{font-size:12px;font-weight:700;margin-top:4px}
-  .verdict{display:inline-flex;align-items:center;gap:6px;font-size:13.5px;font-weight:700;padding:6px 13px;border-radius:999px;margin-top:2px}
-  .verdict.ahead{background:var(--ahead-soft);color:var(--ahead);border:1px solid var(--ahead-border)}
-  .verdict.behind{background:var(--behind-soft);color:var(--behind);border:1px solid var(--behind-border)}
-  .compare-line{font-size:13px;color:var(--slate-500);margin-top:11px;line-height:1.5}
-  .compare-line b{color:var(--navy-900);font-weight:700}
+  .hero{padding:15px 18px 18px;text-align:center;margin-top:12px}
+  .hero .cap{font-size:12px;font-weight:600;color:var(--slate-500);text-transform:uppercase;letter-spacing:.6px;margin-bottom:14px}
+  .duo{display:flex;align-items:flex-end;justify-content:space-around;gap:10px}
+  .duo-col{flex:1;min-width:0}
+  .duo-n{font-size:29px;font-weight:800;letter-spacing:-1.1px;line-height:1}
+  .duo-comp .duo-n{color:var(--slate-400)}
+  .duo-k{font-size:10.5px;font-weight:600;color:var(--slate-500);text-transform:uppercase;letter-spacing:.4px;margin-top:6px}
+  .duo-vs{font-size:12px;font-weight:800;color:var(--slate-400);align-self:center;flex:0 0 auto}
+  .pillwrap{margin-top:15px}
+  .pace-pill{display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:800;padding:6px 15px;border-radius:999px}
+  .pace-pill.ahead{background:var(--ahead-soft);color:var(--ahead);border:1px solid var(--ahead-border)}
+  .pace-pill.behind{background:var(--behind-soft);color:var(--behind);border:1px solid var(--behind-border)}
 
   .stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
   .stat{background:#fff;border:1px solid #E7ECF2;border-radius:14px;padding:13px 14px;box-shadow:0 4px 14px rgba(15,23,42,.05)}
@@ -157,30 +157,13 @@
     </div>
 
     <div class="card hero">
-      <div class="cap">Pace vs this hour last week</div>
-      <div class="gaugewrap">
-        <svg viewBox="0 0 200 128" aria-hidden="true">
-          <!-- grey track (full semicircle) -->
-          <path d="M18 108 A82 82 0 0 1 182 108" fill="none" stroke="#EDF1F6" stroke-width="15" stroke-linecap="round"/>
-          <!-- faint zone tints so behind/ahead read even at exactly on-pace -->
-          <path d="M100 26 A82 82 0 0 0 18 108" fill="none" stroke="#FBECEA" stroke-width="15" stroke-linecap="round"/>
-          <path d="M100 26 A82 82 0 0 1 182 108" fill="none" stroke="#EAF6ED" stroke-width="15" stroke-linecap="round"/>
-          <!-- diverging fills: grow from the ON-PACE center outward. Behind = red (left), ahead = green (right). -->
-          <path id="gBehind" d="M100 26 A82 82 0 0 0 18 108" fill="none" stroke="#C93A32" stroke-width="15" stroke-linecap="round" stroke-dasharray="0 999"/>
-          <path id="gAhead" d="M100 26 A82 82 0 0 1 182 108" fill="none" stroke="#3F9E52" stroke-width="15" stroke-linecap="round" stroke-dasharray="0 999"/>
-          <!-- ON PACE reference tick at top-center -->
-          <line x1="100" y1="14" x2="100" y2="42" stroke="#0B0F14" stroke-width="3" stroke-linecap="round"/>
-          <text x="100" y="9" text-anchor="middle" font-size="9" font-weight="800" fill="#0B0F14" font-family="var(--font)">ON&nbsp;PACE</text>
-          <text x="18" y="125" text-anchor="start" font-size="8.5" font-weight="700" fill="#B45309" font-family="var(--font)">BEHIND</text>
-          <text x="182" y="125" text-anchor="end" font-size="8.5" font-weight="700" fill="#2E7D32" font-family="var(--font)">AHEAD</text>
-        </svg>
-        <div class="gtext">
-          <div class="pct" id="pacePct"></div>
-          <div class="lbl" id="paceOfPace"></div>
-        </div>
+      <div class="cap" id="paceCap">Pace vs this hour</div>
+      <div class="duo">
+        <div class="duo-col"><div class="duo-n" id="paceToday"></div><div class="duo-k">Today so far</div></div>
+        <div class="duo-vs">vs</div>
+        <div class="duo-col duo-comp"><div class="duo-n" id="paceComp"></div><div class="duo-k" id="paceCompK"></div></div>
       </div>
-      <div class="verdict" id="verdict"></div>
-      <div class="compare-line" id="compareLine"></div>
+      <div class="pillwrap"><span class="pace-pill" id="verdict"></span></div>
     </div>
 
     <div class="stats">
@@ -215,7 +198,7 @@
   </section>
 </div>
 
-<script>window.__PACING__={"nowH":17,"wd":"Thu","liveUrl":"https://odfz7pp4z4lxf6ase3vp7zvn3m0cboph.lambda-url.us-east-2.on.aws/","dateLabel":"Thu, Jul 30","asofLabel":"as of 5:59 PM PDT","compDate":{"lastweek":"Thu, Jul 23","lastyear":"Thu, Jul 31, 2025"},"legLW":"Jul 23","legLY":"Jul 31 '25","units":{"today":[3,12,14,19,29,39,49,58,81,100,113,125,148,162,178,192,201,216],"lastweek":[5,6,12,17,21,33,43,55,66,74,91,111,126,132,151,172,203,219,234,242,256,267,269,273],"lastyear":[6,10,16,17,21,25,32,47,60,82,90,101,106,110,116,128,151,164,167,173,174,177,180,183]},"sales":{"today":[51.97,248.88,287.86,382.81,577.71,792.61,961.51,1090.42,1472.29,1794.51,2050.38,2298.26,2704.03,2957.89,3276.73,3558.59,3717.6,3988.45],"lastweek":[99.95,123.94,232.78,340.73,405.69,614.57,834.47,1070.85,1300.74,1435.66,1784.49,2130.09,2392.04,2499.6,2857.41,3197.61,3799.9,4095,4363.85,4504.77,4746.63,4965.52,5004.5,5069.46],"lastyear":[151.94,248.9,356.84,377.83,468.79,564.75,721.58,1057.43,1365.92,1911.18,2110.7,2306.6,2472.55,2556.51,2658.45,2902.33,3435.2,3727.07,3813.04,3990.98,4022.97,4086.94,4150.91,4217.88]},"full":{"units":{"lastweek":273,"lastyear":183},"sales":{"lastweek":5069.46,"lastyear":4217.88}},"orders":191,"ordersSub":"1.1 units · $20.88 ea","freshLabel":"Live · refreshed 5:59 PM PT"};</script>
+<script>window.__PACING__={"nowH":18,"wd":"Thu","liveUrl":"https://odfz7pp4z4lxf6ase3vp7zvn3m0cboph.lambda-url.us-east-2.on.aws/","dateLabel":"Thu, Jul 30","asofLabel":"as of 6:15 PM PDT","compDate":{"lastweek":"Thu, Jul 23","lastyear":"Thu, Jul 31, 2025"},"legLW":"Jul 23","legLY":"Jul 31 '25","units":{"today":[3,12,14,19,29,39,49,58,81,100,113,125,148,162,178,192,201,217,220],"lastweek":[5,6,12,17,21,33,43,55,66,74,91,111,126,132,151,172,203,219,234,242,256,267,269,273],"lastyear":[6,10,16,17,21,25,32,47,60,82,90,101,106,110,116,128,151,164,167,173,174,177,180,183]},"sales":{"today":[51.97,248.88,287.86,382.81,577.71,792.61,961.51,1090.42,1472.29,1794.51,2050.38,2298.26,2704.03,2957.89,3276.73,3558.59,3717.6,4003.44,4053.11],"lastweek":[99.95,123.94,232.78,340.73,405.69,614.57,834.47,1070.85,1300.74,1435.66,1784.49,2130.09,2392.04,2499.6,2857.41,3197.61,3799.9,4095,4363.85,4504.77,4746.63,4965.52,5004.5,5069.46],"lastyear":[151.94,248.9,356.84,377.83,468.79,564.75,721.58,1057.43,1365.92,1911.18,2110.7,2306.6,2472.55,2556.51,2658.45,2902.33,3435.2,3727.07,3813.04,3990.98,4022.97,4086.94,4150.91,4217.88]},"full":{"units":{"lastweek":273,"lastyear":183},"sales":{"lastweek":5069.46,"lastyear":4217.88}},"orders":195,"ordersSub":"1.1 units · $20.79 ea","freshLabel":"Live · refreshed 6:15 PM PT"};</script>
 <script>
 (function(){
   var D = window.__PACING__;
@@ -279,27 +262,21 @@
     var ahead=primaryPct>=0;                                     // projected to LAND above the selected comp's full day
     document.getElementById('punchCard').className='card punch '+(ahead?'ahead':'behind');
     document.getElementById('statusPill').textContent=(ahead?'▲ AHEAD ':'▼ BEHIND ')+(primaryPct>=0?'+':'')+primaryPct+'%';
-    document.getElementById('projVal').innerHTML='≈ '+fmt(projEod,metric)+'<small>'+fmt(todayNow,metric)+' so far</small>';
+    document.getElementById('projVal').innerHTML=fmt(projEod,metric)+'<small>'+fmt(todayNow,metric)+' so far</small>';
     document.getElementById('dPrimary').innerHTML=deltaHTML(projEod, FULL[metric][comp], compShort(comp), metric);
     document.getElementById('dSecondary').innerHTML=deltaHTML(projEod, FULL[metric][oc], compShort(oc), metric);
 
-    // Diverging meter: each side is a quarter-arc (length ≈ π·82/2 ≈ 128.8) that fills from the
-    // ON-PACE center outward. Full side = ±50% off pace; beyond that it just caps.
-    var clamp=function(x,a,b){return Math.max(a,Math.min(b,x));};
-    var QL=128.8;
-    var aheadFrac=clamp((pace-1)/0.5,0,1), behindFrac=clamp((1-pace)/0.5,0,1);
-    document.getElementById('gAhead').setAttribute('stroke-dasharray',(aheadFrac*QL).toFixed(1)+' 999');
-    document.getElementById('gBehind').setAttribute('stroke-dasharray',(behindFrac*QL).toFixed(1)+' 999');
-    document.getElementById('pacePct').textContent=Math.round(pace*100)+'%';
-    document.getElementById('pacePct').style.color=paceAhead?'var(--ahead)':'var(--behind)';
-    document.getElementById('paceOfPace').style.color=paceAhead?'var(--ahead)':'var(--behind)';
-    document.getElementById('paceOfPace').textContent="of "+compName(comp)+"'s pace";
-    document.querySelector('.hero .cap').textContent='Pace vs this hour '+(comp==='lastweek'?'last week':'last year');
-    var diff=todayNow-compNow;
+    // Pace card (dual stat): today so far vs the comp at this same hour, + the ahead/behind delta.
+    document.getElementById('paceCap').textContent='Pace vs this hour '+(comp==='lastweek'?'last week':'last year');
+    var pt=document.getElementById('paceToday');
+    pt.textContent=fmt(todayNow,metric);
+    pt.style.color=paceAhead?'var(--ahead)':'var(--behind)';
+    document.getElementById('paceComp').textContent=fmt(compNow,metric);
+    document.getElementById('paceCompK').textContent='This hr · '+(comp==='lastweek'?D.legLW:D.legLY);
+    var diff=todayNow-compNow, dpct=Math.abs(Math.round((pace-1)*100));
     var v=document.getElementById('verdict');
-    v.className='verdict '+(paceAhead?'ahead':'behind');
-    v.textContent=(paceAhead?'▲ ':'▼ ')+fmt(Math.abs(diff),metric)+suf(metric)+(paceAhead?' ahead of pace':' behind pace');
-    document.getElementById('compareLine').innerHTML='<b>'+fmt(todayNow,metric)+suf(metric)+'</b> so far vs <b>'+fmt(compNow,metric)+'</b> by this hour on '+COMP_DATE[comp]+'.';
+    v.className='pace-pill '+(paceAhead?'ahead':'behind');
+    v.textContent=(paceAhead?'▲ ':'▼ ')+fmt(Math.abs(diff),metric)+suf(metric)+' ('+dpct+'%) '+(paceAhead?'ahead':'behind');
 
     document.getElementById('sSales').textContent=money(SALES.today[SALES.today.length-1]);
     document.getElementById('sUnits').textContent=Math.round(UNITS.today[UNITS.today.length-1]).toLocaleString();
