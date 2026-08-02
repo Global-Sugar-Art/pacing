@@ -1,76 +1,146 @@
 {
-  "generatedAt": "2026-08-02T12:03:34.069Z",
+  "generatedAt": "2026-08-02T14:36:36.961Z",
   "today": "2026-08-02",
   "metric": "sales",
   "estimated": true,
-  "todayDollars": 208,
-  "todayUnits": 11,
+  "todayDollars": 651,
+  "todayUnits": 33,
   "partial": false,
   "comps": {
     "lastweek": {
       "comp": "2026-07-26",
       "compLabel": "Sun, Jul 26",
-      "compDollars": 164,
-      "compUnits": 9,
-      "ratio": 0.03986215685130061,
+      "compDollars": 502,
+      "compUnits": 25,
+      "ratio": 0.12197464931224343,
       "beats": [
+        {
+          "name": "Global Sugar Art 14-Piece Wedding Cake Decorat",
+          "img": "https://m.media-amazon.com/images/I/51sgF6ey5zL.jpg",
+          "today": 65,
+          "comp": 6,
+          "delta": 59
+        },
+        {
+          "name": "Global Sugar Art 18-Count Edible Daisy Cake De",
+          "img": "https://m.media-amazon.com/images/I/41Znx7utXLL.jpg",
+          "today": 60,
+          "comp": 24,
+          "delta": 37
+        },
+        {
+          "name": "Global Sugar Art Royal Icing Mix",
+          "img": "https://m.media-amazon.com/images/I/71HPCF6CTiL.jpg",
+          "today": 33,
+          "comp": 2,
+          "delta": 32
+        },
+        {
+          "name": "Global Sugar Art 3 Inch Peace Roses 9 Count Ca",
+          "img": "https://m.media-amazon.com/images/I/511pTK1oW1L.jpg",
+          "today": 30,
+          "comp": 0,
+          "delta": 30
+        },
         {
           "name": "Global Sugar Art Large Exquisite Rose & Leaf S",
           "img": "https://m.media-amazon.com/images/I/51NnnujlI7L.jpg",
-          "today": 29,
-          "comp": 1,
-          "delta": 28
+          "today": 30,
+          "comp": 4,
+          "delta": 27
         }
       ],
       "misses": [],
-      "summary": "Today we're running $44 ahead of last Sun, Jul 26 at this hour. Biggest beat driving it: Global Sugar Art Large Exquisite Rose & Leaf S (+$28)."
+      "summary": "Today we're running $149 ahead of last Sun, Jul 26 at this hour. Biggest beat driving it: Global Sugar Art 14-Piece Wedding Cake Decorat (+$59)."
     },
     "lastyear": {
       "comp": "2025-08-03",
       "compLabel": "Sun, Aug 3, 2025",
-      "compDollars": 94,
-      "compUnits": 5,
-      "ratio": 0.031667863270334676,
+      "compDollars": 278,
+      "compUnits": 13,
+      "ratio": 0.09366204541700796,
       "beats": [
+        {
+          "name": "Cake Dummy Round – Styrofoam Fake Cake for Dec",
+          "img": "https://m.media-amazon.com/images/I/711fimYqXqL.jpg",
+          "today": 127,
+          "comp": 42,
+          "delta": 85
+        },
         {
           "name": "Mini Edible Royal Icing Flowers Cake Decoratio",
           "img": "https://m.media-amazon.com/images/I/71CJJHh9bzL.jpg",
-          "today": 32,
-          "comp": 2,
-          "delta": 31
+          "today": 84,
+          "comp": 5,
+          "delta": 79
+        },
+        {
+          "name": "Global Sugar Art 14-Piece Wedding Cake Decorat",
+          "img": "https://m.media-amazon.com/images/I/51sgF6ey5zL.jpg",
+          "today": 65,
+          "comp": 5,
+          "delta": 60
+        },
+        {
+          "name": "Global Sugar Art 18-Count Edible Daisy Cake De",
+          "img": "https://m.media-amazon.com/images/I/41Znx7utXLL.jpg",
+          "today": 60,
+          "comp": 9,
+          "delta": 51
         },
         {
           "name": "Global Sugar Art Large Exquisite Rose & Leaf S",
           "img": "https://m.media-amazon.com/images/I/51NnnujlI7L.jpg",
-          "today": 29,
+          "today": 30,
           "comp": 0,
-          "delta": 29
-        },
-        {
-          "name": "Cake Dummy Round – Styrofoam Fake Cake for Dec",
-          "img": "https://m.media-amazon.com/images/I/711fimYqXqL.jpg",
-          "today": 41,
-          "comp": 14,
-          "delta": 26
+          "delta": 30
         }
       ],
       "misses": [],
-      "summary": "Today we're running $114 ahead of last year (Sun, Aug 3, 2025) at this hour. Biggest beat driving it: Mini Edible Royal Icing Flowers Cake Decoratio (+$31)."
+      "summary": "Today we're running $373 ahead of last year (Sun, Aug 3, 2025) at this hour. Biggest beat driving it: Cake Dummy Round – Styrofoam Fake Cake for Dec (+$85)."
     }
   },
   "comp": "2026-07-26",
   "compLabel": "Sun, Jul 26",
-  "compDollars": 164,
-  "ratio": 0.03986215685130061,
+  "compDollars": 502,
+  "ratio": 0.12197464931224343,
   "beats": [
+    {
+      "name": "Global Sugar Art 14-Piece Wedding Cake Decorat",
+      "img": "https://m.media-amazon.com/images/I/51sgF6ey5zL.jpg",
+      "today": 65,
+      "comp": 6,
+      "delta": 59
+    },
+    {
+      "name": "Global Sugar Art 18-Count Edible Daisy Cake De",
+      "img": "https://m.media-amazon.com/images/I/41Znx7utXLL.jpg",
+      "today": 60,
+      "comp": 24,
+      "delta": 37
+    },
+    {
+      "name": "Global Sugar Art Royal Icing Mix",
+      "img": "https://m.media-amazon.com/images/I/71HPCF6CTiL.jpg",
+      "today": 33,
+      "comp": 2,
+      "delta": 32
+    },
+    {
+      "name": "Global Sugar Art 3 Inch Peace Roses 9 Count Ca",
+      "img": "https://m.media-amazon.com/images/I/511pTK1oW1L.jpg",
+      "today": 30,
+      "comp": 0,
+      "delta": 30
+    },
     {
       "name": "Global Sugar Art Large Exquisite Rose & Leaf S",
       "img": "https://m.media-amazon.com/images/I/51NnnujlI7L.jpg",
-      "today": 29,
-      "comp": 1,
-      "delta": 28
+      "today": 30,
+      "comp": 4,
+      "delta": 27
     }
   ],
   "misses": [],
-  "summary": "Today we're running $44 ahead of last Sun, Jul 26 at this hour. Biggest beat driving it: Global Sugar Art Large Exquisite Rose & Leaf S (+$28)."
+  "summary": "Today we're running $149 ahead of last Sun, Jul 26 at this hour. Biggest beat driving it: Global Sugar Art 14-Piece Wedding Cake Decorat (+$59)."
 }
