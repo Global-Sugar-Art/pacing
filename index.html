@@ -216,7 +216,7 @@
   </section>
 </div>
 
-<script>window.__PACING__={"nowH":9,"wd":"Tue","liveUrl":"https://odfz7pp4z4lxf6ase3vp7zvn3m0cboph.lambda-url.us-east-2.on.aws/","dateLabel":"Tue, Aug 4","asofLabel":"as of 12:14 PM EDT","compDate":{"lastweek":"Tue, Jul 28","lastyear":"Tue, Aug 5, 2025"},"legLW":"Jul 28","legLY":"Aug 5 '25","units":{"today":[6,9,12,13,22,34,54,63,91,99],"lastweek":[0,5,6,10,15,21,34,41,54,74,85,101,141,156,182,205,236,257,274,295,318,330,339,352],"lastyear":[1,3,4,4,14,24,37,48,53,62,81,91,98,103,111,121,145,161,168,181,186,196,198,206]},"sales":{"today":[129.94,189.91,229.88,249.87,413.18,685.06,1035.86,1210.77,1825.65,1957.57],"lastweek":[0,106.79,130.3,204.46,296.41,406.35,655.22,795.85,1045.72,1382.53,1599.94,1889.78,2665.88,2970.73,3466.77,3942,4547.69,4918.78,5223.61,5622,6063.87,6243.75,6415.86,6696.73],"lastyear":[25.99,66.97,94.96,94.96,352.86,542.38,844.89,1110.38,1219.29,1475.2,1942.37,2171.85,2307.78,2440.73,2647.59,2866.49,3435.37,3816.79,3993.72,4305.59,4431.54,4687.44,4724.42,4926.34]},"full":{"units":{"lastweek":352,"lastyear":206},"sales":{"lastweek":6696.73,"lastyear":4926.34}},"orders":92,"ordersSub":"1.1 units · $21.28 ea","freshLabel":"Live · refreshed 9:14 AM PT","recap":{"yesterday":{"label":"Yesterday","sub":"Mon, Aug 3","units":291,"sales":5703.89,"lastweek":{"units":260,"sales":5037.18},"lastyear":{"units":207,"sales":4769.44}},"mtd":{"label":"Month to date","sub":"Aug 1–Aug 3","units":764,"sales":14973.34,"prioryear":{"units":431,"sales":10090.97}},"ytd":{"label":"Year to date","sub":"Jan 1–Aug 3","units":68251,"sales":1265174.69,"prioryear":{"units":39436,"sales":856290.37}}}};</script>
+<script>window.__PACING__={"nowH":9,"wd":"Tue","liveUrl":"https://odfz7pp4z4lxf6ase3vp7zvn3m0cboph.lambda-url.us-east-2.on.aws/","dateLabel":"Tue, Aug 4","asofLabel":"as of 12:56 PM EDT","compDate":{"lastweek":"Tue, Jul 28","lastyear":"Tue, Aug 5, 2025"},"legLW":"Jul 28","legLY":"Aug 5 '25","units":{"today":[6,9,12,13,22,34,54,63,91,114],"lastweek":[0,5,6,10,15,21,34,41,54,74,85,101,141,156,182,205,236,257,274,295,318,330,339,352],"lastyear":[1,3,4,4,14,24,37,48,53,62,81,91,98,103,111,121,145,161,168,181,186,196,198,206]},"sales":{"today":[129.94,189.91,229.88,249.87,413.18,685.06,1035.86,1210.77,1825.65,2228.46],"lastweek":[0,106.79,130.3,204.46,296.41,406.35,655.22,795.85,1045.72,1382.53,1599.94,1889.78,2665.88,2970.73,3466.77,3942,4547.69,4918.78,5223.61,5622,6063.87,6243.75,6415.86,6696.73],"lastyear":[25.99,66.97,94.96,94.96,352.86,542.38,844.89,1110.38,1219.29,1475.2,1942.37,2171.85,2307.78,2440.73,2647.59,2866.49,3435.37,3816.79,3993.72,4305.59,4431.54,4687.44,4724.42,4926.34]},"full":{"units":{"lastweek":352,"lastyear":206},"sales":{"lastweek":6696.73,"lastyear":4926.34}},"orders":107,"ordersSub":"1.1 units · $20.83 ea","freshLabel":"Live · refreshed 9:56 AM PT","recap":{"yesterday":{"label":"Yesterday","sub":"Mon, Aug 3","units":290,"sales":5688.9,"lastweek":{"units":260,"sales":5037.18},"lastyear":{"units":207,"sales":4769.44}},"mtd":{"label":"Month to date","sub":"Aug 1–Aug 3","units":763,"sales":14958.35,"prioryear":{"units":431,"sales":10090.97}},"ytd":{"label":"Year to date","sub":"Jan 1–Aug 3","units":68250,"sales":1265159.7,"prioryear":{"units":39436,"sales":856290.37}}}};</script>
 <script>
 (function(){
   var D = window.__PACING__;
@@ -379,12 +379,29 @@
         var dEl = document.getElementById('date'); if(dEl) dEl.textContent = D.dateLabel;
       }
     } catch(e){}
+    // Overlay the RECAP live too when the endpoint returns it. The recap is baked into the page, so
+    // between bakes (esp. overnight, when GitHub's cron gaps for hours) the bottom half would lag a
+    // fresh top half — and on a new day it would show YESTERDAY's frame until a bake ran. The live
+    // payload's recap is always for the live day, so this keeps the whole page — not just the top —
+    // current. Falls back to the baked recap if the endpoint didn't send one.
+    try { if (live.recap) { D.recap = live.recap; renderRecap(live.recap); } } catch(e){}
+    // The footer "Live · refreshed …" stamp was baked once and never moved, so it disagreed with the
+    // live header "as of" and made the page look staler than it was. Re-stamp it to the live moment
+    // (PT, matching its original format) so header + footer + recap all reflect the same refresh.
+    try {
+      var pt = new Date().toLocaleTimeString('en-US', {timeZone:'America/Los_Angeles', hour:'numeric', minute:'2-digit'});
+      D.freshLabel = 'Live · refreshed ' + pt + ' PT';
+      var ff = document.getElementById('freshFlag'); if(ff) ff.textContent = D.freshLabel;
+    } catch(e){}
     render();
   }
   function fetchLive(){
     if(!D.liveUrl) return false;
     var ctrl = ('AbortController' in window) ? new AbortController() : null;
-    var to = ctrl ? setTimeout(function(){ try{ctrl.abort();}catch(e){} }, 7000) : 0;
+    // 12s (was 7s): the first fetch of a new day computes the recap server-side (~2–3s of extra
+    // getOrderMetrics calls). The baked snapshot is already on screen, so a longer live window only
+    // gives the overlay more time to land — it never delays first paint.
+    var to = ctrl ? setTimeout(function(){ try{ctrl.abort();}catch(e){} }, 12000) : 0;
     fetch(D.liveUrl, ctrl ? {signal:ctrl.signal, cache:'no-store'} : {cache:'no-store'})
       .then(function(r){ return r && r.ok ? r.json() : null; })
       .then(function(live){ if(to) clearTimeout(to); applyLive(live); })
