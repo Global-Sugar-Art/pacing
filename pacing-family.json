@@ -1,82 +1,36 @@
 {
-  "generatedAt": "2026-08-07T14:13:35.283Z",
+  "generatedAt": "2026-08-07T15:56:38.201Z",
   "today": "2026-08-07",
   "metric": "sales",
   "estimated": true,
-  "todayDollars": 428,
-  "todayUnits": 22,
+  "todayDollars": 868,
+  "todayUnits": 46,
   "partial": false,
   "comps": {
     "lastweek": {
       "comp": "2026-07-31",
       "compLabel": "Fri, Jul 31",
-      "compDollars": 1345,
-      "compUnits": 70,
-      "ratio": 0.26545914601170806,
-      "beats": [],
-      "misses": [
-        {
-          "name": "Cake Dummy Round – Styrofoam Fake Cake for Dec",
-          "img": "https://m.media-amazon.com/images/I/711fimYqXqL.jpg",
-          "today": 44,
-          "comp": 215,
-          "delta": -170
-        },
-        {
-          "name": "Mini Edible Royal Icing Flowers Cake Decoratio",
-          "img": "https://m.media-amazon.com/images/I/71CJJHh9bzL.jpg",
-          "today": 88,
-          "comp": 189,
-          "delta": -102
-        },
-        {
-          "name": "Global Sugar Art Hydrangeas Unwired",
-          "img": "https://m.media-amazon.com/images/I/41wa4rEjlHL.jpg",
-          "today": 0,
-          "comp": 53,
-          "delta": -53
-        },
-        {
-          "name": "Buttercream Frosting",
-          "img": "https://m.media-amazon.com/images/I/61OojwDd59L.jpg",
-          "today": 88,
-          "comp": 139,
-          "delta": -51
-        },
-        {
-          "name": "Global Sugar Art Premium Edible Roses",
-          "img": "https://m.media-amazon.com/images/I/31XtgrHQVHL.jpg",
-          "today": 0,
-          "comp": 37,
-          "delta": -37
-        }
-      ],
-      "summary": "Today we're running $917 behind last Fri, Jul 31 at this hour. Biggest miss driving it: Cake Dummy Round – Styrofoam Fake Cake for Dec (−$170)."
-    },
-    "lastyear": {
-      "comp": "2025-08-08",
-      "compLabel": "Fri, Aug 8, 2025",
-      "compDollars": 786,
-      "compUnits": 34,
-      "ratio": 0.21597653468803177,
+      "compDollars": 1677,
+      "compUnits": 86,
+      "ratio": 0.33106553138408945,
       "beats": [
         {
-          "name": "Mini Edible Royal Icing Flowers Cake Decoratio",
-          "img": "https://m.media-amazon.com/images/I/71CJJHh9bzL.jpg",
-          "today": 88,
-          "comp": 33,
-          "delta": 55
+          "name": "Global Sugar Art Sugar White Anemone by Chef A",
+          "img": "https://m.media-amazon.com/images/I/71nw6UNNR-L.jpg",
+          "today": 41,
+          "comp": 0,
+          "delta": 41
         },
         {
-          "name": "Global Sugar Art Large Exquisite Rose & Leaf S",
-          "img": "https://m.media-amazon.com/images/I/51NnnujlI7L.jpg",
+          "name": "Global Sugar Art Premium Peony Sugar Cake Flow",
+          "img": "https://m.media-amazon.com/images/I/61nluIlVyWL.jpg",
           "today": 31,
           "comp": 0,
           "delta": 31
         },
         {
-          "name": "Global Sugar Art Sunflower Sugar Cake Flowers ",
-          "img": "https://m.media-amazon.com/images/I/71GgMBf5tRS.jpg",
+          "name": "Global Sugar Art Sugar Flower Cake Toppers",
+          "img": "https://m.media-amazon.com/images/I/71BVUqVsKHL.jpg",
           "today": 25,
           "comp": 0,
           "delta": 25
@@ -84,71 +38,168 @@
       ],
       "misses": [
         {
-          "name": "Buttercream Frosting",
-          "img": "https://m.media-amazon.com/images/I/61OojwDd59L.jpg",
-          "today": 88,
-          "comp": 141,
-          "delta": -53
+          "name": "Cake Dummy Round – Styrofoam Fake Cake for Dec",
+          "img": "https://m.media-amazon.com/images/I/711fimYqXqL.jpg",
+          "today": 43,
+          "comp": 268,
+          "delta": -224
         },
+        {
+          "name": "Global Sugar Art Premium Edible Roses",
+          "img": "https://m.media-amazon.com/images/I/31XtgrHQVHL.jpg",
+          "today": 0,
+          "comp": 46,
+          "delta": -46
+        },
+        {
+          "name": "Global Sugar Art Hydrangeas Unwired",
+          "img": "https://m.media-amazon.com/images/I/41wa4rEjlHL.jpg",
+          "today": 23,
+          "comp": 66,
+          "delta": -43
+        },
+        {
+          "name": "Global Sugar Art 20-Count White Frangipani Plu",
+          "img": "https://m.media-amazon.com/images/I/61J8hTXv08S.jpg",
+          "today": 0,
+          "comp": 41,
+          "delta": -41
+        },
+        {
+          "name": "Global Sugar Art 14-Piece Wedding Cake Decorat",
+          "img": "https://m.media-amazon.com/images/I/51sgF6ey5zL.jpg",
+          "today": 0,
+          "comp": 41,
+          "delta": -41
+        }
+      ],
+      "summary": "Today we're running $809 behind last Fri, Jul 31 at this hour. Biggest miss driving it: Cake Dummy Round – Styrofoam Fake Cake for Dec (−$224)."
+    },
+    "lastyear": {
+      "comp": "2025-08-08",
+      "compLabel": "Fri, Aug 8, 2025",
+      "compDollars": 946,
+      "compUnits": 41,
+      "ratio": 0.25994100684221666,
+      "beats": [
+        {
+          "name": "Mini Edible Royal Icing Flowers Cake Decoratio",
+          "img": "https://m.media-amazon.com/images/I/71CJJHh9bzL.jpg",
+          "today": 205,
+          "comp": 39,
+          "delta": 166
+        },
+        {
+          "name": "Global Sugar Art Sugar White Anemone by Chef A",
+          "img": "https://m.media-amazon.com/images/I/71nw6UNNR-L.jpg",
+          "today": 41,
+          "comp": 0,
+          "delta": 41
+        },
+        {
+          "name": "Global Sugar Art Large Exquisite Rose & Leaf S",
+          "img": "https://m.media-amazon.com/images/I/51NnnujlI7L.jpg",
+          "today": 30,
+          "comp": 0,
+          "delta": 30
+        },
+        {
+          "name": "Global Sugar Art Sugar Flower Cake Toppers",
+          "img": "https://m.media-amazon.com/images/I/71BVUqVsKHL.jpg",
+          "today": 25,
+          "comp": 0,
+          "delta": 25
+        }
+      ],
+      "misses": [
         {
           "name": "Cake Dummy Round – Styrofoam Fake Cake for Dec",
           "img": "https://m.media-amazon.com/images/I/711fimYqXqL.jpg",
-          "today": 44,
-          "comp": 95,
-          "delta": -50
+          "today": 43,
+          "comp": 114,
+          "delta": -71
         },
         {
-          "name": "Global Sugar Art Sugar Cake Topper Lily Sprays",
-          "img": "https://m.media-amazon.com/images/I/510WykzP58L.jpg",
+          "name": "Global Sugar Art Sugar Cake Flower Cake Kits b",
+          "img": "https://m.media-amazon.com/images/I/51Wf5BZauDL.jpg",
           "today": 0,
-          "comp": 35,
-          "delta": -35
+          "comp": 29,
+          "delta": -29
+        },
+        {
+          "name": "Global Sugar Art Hydrangea Blossoms Sugar Cake",
+          "img": "https://m.media-amazon.com/images/I/51j23-vG5WL.jpg",
+          "today": 0,
+          "comp": 28,
+          "delta": -28
         }
       ],
-      "summary": "Today we're running $358 behind last year (Fri, Aug 8, 2025) at this hour. Biggest miss driving it: Buttercream Frosting (−$53)."
+      "summary": "Today we're running $78 behind last year (Fri, Aug 8, 2025) at this hour. Biggest miss driving it: Cake Dummy Round – Styrofoam Fake Cake for Dec (−$71)."
     }
   },
   "comp": "2026-07-31",
   "compLabel": "Fri, Jul 31",
-  "compDollars": 1345,
-  "ratio": 0.26545914601170806,
-  "beats": [],
+  "compDollars": 1677,
+  "ratio": 0.33106553138408945,
+  "beats": [
+    {
+      "name": "Global Sugar Art Sugar White Anemone by Chef A",
+      "img": "https://m.media-amazon.com/images/I/71nw6UNNR-L.jpg",
+      "today": 41,
+      "comp": 0,
+      "delta": 41
+    },
+    {
+      "name": "Global Sugar Art Premium Peony Sugar Cake Flow",
+      "img": "https://m.media-amazon.com/images/I/61nluIlVyWL.jpg",
+      "today": 31,
+      "comp": 0,
+      "delta": 31
+    },
+    {
+      "name": "Global Sugar Art Sugar Flower Cake Toppers",
+      "img": "https://m.media-amazon.com/images/I/71BVUqVsKHL.jpg",
+      "today": 25,
+      "comp": 0,
+      "delta": 25
+    }
+  ],
   "misses": [
     {
       "name": "Cake Dummy Round – Styrofoam Fake Cake for Dec",
       "img": "https://m.media-amazon.com/images/I/711fimYqXqL.jpg",
-      "today": 44,
-      "comp": 215,
-      "delta": -170
-    },
-    {
-      "name": "Mini Edible Royal Icing Flowers Cake Decoratio",
-      "img": "https://m.media-amazon.com/images/I/71CJJHh9bzL.jpg",
-      "today": 88,
-      "comp": 189,
-      "delta": -102
-    },
-    {
-      "name": "Global Sugar Art Hydrangeas Unwired",
-      "img": "https://m.media-amazon.com/images/I/41wa4rEjlHL.jpg",
-      "today": 0,
-      "comp": 53,
-      "delta": -53
-    },
-    {
-      "name": "Buttercream Frosting",
-      "img": "https://m.media-amazon.com/images/I/61OojwDd59L.jpg",
-      "today": 88,
-      "comp": 139,
-      "delta": -51
+      "today": 43,
+      "comp": 268,
+      "delta": -224
     },
     {
       "name": "Global Sugar Art Premium Edible Roses",
       "img": "https://m.media-amazon.com/images/I/31XtgrHQVHL.jpg",
       "today": 0,
-      "comp": 37,
-      "delta": -37
+      "comp": 46,
+      "delta": -46
+    },
+    {
+      "name": "Global Sugar Art Hydrangeas Unwired",
+      "img": "https://m.media-amazon.com/images/I/41wa4rEjlHL.jpg",
+      "today": 23,
+      "comp": 66,
+      "delta": -43
+    },
+    {
+      "name": "Global Sugar Art 20-Count White Frangipani Plu",
+      "img": "https://m.media-amazon.com/images/I/61J8hTXv08S.jpg",
+      "today": 0,
+      "comp": 41,
+      "delta": -41
+    },
+    {
+      "name": "Global Sugar Art 14-Piece Wedding Cake Decorat",
+      "img": "https://m.media-amazon.com/images/I/51sgF6ey5zL.jpg",
+      "today": 0,
+      "comp": 41,
+      "delta": -41
     }
   ],
-  "summary": "Today we're running $917 behind last Fri, Jul 31 at this hour. Biggest miss driving it: Cake Dummy Round – Styrofoam Fake Cake for Dec (−$170)."
+  "summary": "Today we're running $809 behind last Fri, Jul 31 at this hour. Biggest miss driving it: Cake Dummy Round – Styrofoam Fake Cake for Dec (−$224)."
 }
