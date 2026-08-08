@@ -1,176 +1,212 @@
 {
-  "generatedAt": "2026-08-08T13:46:22.281Z",
+  "generatedAt": "2026-08-08T15:30:28.340Z",
   "today": "2026-08-08",
   "metric": "sales",
   "estimated": true,
-  "todayDollars": 730,
-  "todayUnits": 42,
+  "todayDollars": 1132,
+  "todayUnits": 64,
   "partial": false,
   "comps": {
     "lastweek": {
       "comp": "2026-08-01",
       "compLabel": "Sat, Aug 1",
-      "compDollars": 541,
-      "compUnits": 27,
-      "ratio": 0.12119440430989102,
+      "compDollars": 1102,
+      "compUnits": 54,
+      "ratio": 0.24691374617788384,
       "beats": [
         {
           "name": "Global Sugar Art 1-Count Pink Cherry Blossoms ",
           "img": "https://m.media-amazon.com/images/I/51FWmW9OFSL.jpg",
-          "today": 116,
-          "comp": 5,
-          "delta": 110
+          "today": 117,
+          "comp": 11,
+          "delta": 106
         },
         {
           "name": "Edible Daisy Cake Decorations",
           "img": "https://m.media-amazon.com/images/I/61BJ6Q6IkXL.jpg",
-          "today": 82,
-          "comp": 35,
-          "delta": 47
+          "today": 162,
+          "comp": 72,
+          "delta": 90
+        },
+        {
+          "name": "Paramount Crystals for Candy Melts & Chocolate",
+          "img": "https://m.media-amazon.com/images/I/7180IkY-H7L.jpg",
+          "today": 55,
+          "comp": 0,
+          "delta": 55
         },
         {
           "name": "Edible Cupcake Decorations — Assorted Themes",
           "img": "https://m.media-amazon.com/images/I/71zOmSvkgTL.jpg",
-          "today": 63,
-          "comp": 19,
-          "delta": 43
+          "today": 79,
+          "comp": 39,
+          "delta": 40
         },
         {
           "name": "Global Sugar Art Peony Sprays by Chef Alan Tet",
           "img": "https://m.media-amazon.com/images/I/71y9uzgawgL.jpg",
-          "today": 37,
-          "comp": 0,
-          "delta": 37
-        },
-        {
-          "name": "Global Sugar Art Edible Exquisite Rose & Leaf ",
-          "img": "https://m.media-amazon.com/images/I/712HUz-6-dL.jpg",
           "today": 38,
-          "comp": 5,
-          "delta": 33
+          "comp": 0,
+          "delta": 38
         }
       ],
       "misses": [
         {
           "name": "Mini Edible Royal Icing Flowers Cake Decoratio",
           "img": "https://m.media-amazon.com/images/I/71CJJHh9bzL.jpg",
-          "today": 48,
-          "comp": 89,
-          "delta": -41
+          "today": 65,
+          "comp": 182,
+          "delta": -116
         },
         {
           "name": "Global Sugar Art Blossoms and Leaves Edible Su",
           "img": "https://m.media-amazon.com/images/I/61TcjFYONlL.jpg",
           "today": 0,
-          "comp": 27,
-          "delta": -27
+          "comp": 56,
+          "delta": -56
+        },
+        {
+          "name": "Buttercream Frosting",
+          "img": "https://m.media-amazon.com/images/I/61OojwDd59L.jpg",
+          "today": 66,
+          "comp": 111,
+          "delta": -45
+        },
+        {
+          "name": "Global Sugar Art Sugar Shrub Rose Cake Toppers",
+          "img": "https://m.media-amazon.com/images/I/41kWnJnb4pL.jpg",
+          "today": 23,
+          "comp": 49,
+          "delta": -26
         }
       ],
-      "summary": "Today we're running $189 ahead of last Sat, Aug 1 at this hour. Biggest beat driving it: Global Sugar Art 1-Count Pink Cherry Blossoms  (+$110)."
+      "summary": "Today we're running $30 ahead of last Sat, Aug 1 at this hour. Biggest beat driving it: Global Sugar Art 1-Count Pink Cherry Blossoms  (+$106)."
     },
     "lastyear": {
       "comp": "2025-08-09",
       "compLabel": "Sat, Aug 9, 2025",
-      "compDollars": 277,
-      "compUnits": 13,
-      "ratio": 0.07615272903303884,
+      "compDollars": 630,
+      "compUnits": 29,
+      "ratio": 0.1732009065604612,
       "beats": [
         {
           "name": "Global Sugar Art 1-Count Pink Cherry Blossoms ",
           "img": "https://m.media-amazon.com/images/I/51FWmW9OFSL.jpg",
-          "today": 116,
+          "today": 117,
           "comp": 0,
-          "delta": 116
-        },
-        {
-          "name": "Edible Cupcake Decorations — Assorted Themes",
-          "img": "https://m.media-amazon.com/images/I/71zOmSvkgTL.jpg",
-          "today": 63,
-          "comp": 2,
-          "delta": 61
+          "delta": 117
         },
         {
           "name": "Edible Daisy Cake Decorations",
           "img": "https://m.media-amazon.com/images/I/61BJ6Q6IkXL.jpg",
-          "today": 82,
-          "comp": 24,
-          "delta": 59
+          "today": 162,
+          "comp": 54,
+          "delta": 108
         },
         {
-          "name": "Mini Edible Royal Icing Flowers Cake Decoratio",
-          "img": "https://m.media-amazon.com/images/I/71CJJHh9bzL.jpg",
-          "today": 48,
-          "comp": 6,
-          "delta": 43
+          "name": "Cake Dummy Round – Styrofoam Fake Cake for Dec",
+          "img": "https://m.media-amazon.com/images/I/711fimYqXqL.jpg",
+          "today": 206,
+          "comp": 101,
+          "delta": 105
         },
         {
-          "name": "Global Sugar Art Hydrangeas Unwired",
-          "img": "https://m.media-amazon.com/images/I/41wa4rEjlHL.jpg",
-          "today": 43,
+          "name": "Edible Cupcake Decorations — Assorted Themes",
+          "img": "https://m.media-amazon.com/images/I/71zOmSvkgTL.jpg",
+          "today": 79,
           "comp": 4,
-          "delta": 39
+          "delta": 76
+        },
+        {
+          "name": "Gumpaste Sugar Flowers with Pearl Stamens - We",
+          "img": "https://m.media-amazon.com/images/I/71YTCkvFwOL.jpg",
+          "today": 69,
+          "comp": 9,
+          "delta": 60
         }
       ],
-      "misses": [],
-      "summary": "Today we're running $453 ahead of last year (Sat, Aug 9, 2025) at this hour. Biggest beat driving it: Global Sugar Art 1-Count Pink Cherry Blossoms  (+$116)."
+      "misses": [
+        {
+          "name": "Buttercream Frosting",
+          "img": "https://m.media-amazon.com/images/I/61OojwDd59L.jpg",
+          "today": 66,
+          "comp": 108,
+          "delta": -42
+        }
+      ],
+      "summary": "Today we're running $502 ahead of last year (Sat, Aug 9, 2025) at this hour. Biggest beat driving it: Global Sugar Art 1-Count Pink Cherry Blossoms  (+$117)."
     }
   },
   "comp": "2026-08-01",
   "compLabel": "Sat, Aug 1",
-  "compDollars": 541,
-  "ratio": 0.12119440430989102,
+  "compDollars": 1102,
+  "ratio": 0.24691374617788384,
   "beats": [
     {
       "name": "Global Sugar Art 1-Count Pink Cherry Blossoms ",
       "img": "https://m.media-amazon.com/images/I/51FWmW9OFSL.jpg",
-      "today": 116,
-      "comp": 5,
-      "delta": 110
+      "today": 117,
+      "comp": 11,
+      "delta": 106
     },
     {
       "name": "Edible Daisy Cake Decorations",
       "img": "https://m.media-amazon.com/images/I/61BJ6Q6IkXL.jpg",
-      "today": 82,
-      "comp": 35,
-      "delta": 47
+      "today": 162,
+      "comp": 72,
+      "delta": 90
+    },
+    {
+      "name": "Paramount Crystals for Candy Melts & Chocolate",
+      "img": "https://m.media-amazon.com/images/I/7180IkY-H7L.jpg",
+      "today": 55,
+      "comp": 0,
+      "delta": 55
     },
     {
       "name": "Edible Cupcake Decorations — Assorted Themes",
       "img": "https://m.media-amazon.com/images/I/71zOmSvkgTL.jpg",
-      "today": 63,
-      "comp": 19,
-      "delta": 43
+      "today": 79,
+      "comp": 39,
+      "delta": 40
     },
     {
       "name": "Global Sugar Art Peony Sprays by Chef Alan Tet",
       "img": "https://m.media-amazon.com/images/I/71y9uzgawgL.jpg",
-      "today": 37,
-      "comp": 0,
-      "delta": 37
-    },
-    {
-      "name": "Global Sugar Art Edible Exquisite Rose & Leaf ",
-      "img": "https://m.media-amazon.com/images/I/712HUz-6-dL.jpg",
       "today": 38,
-      "comp": 5,
-      "delta": 33
+      "comp": 0,
+      "delta": 38
     }
   ],
   "misses": [
     {
       "name": "Mini Edible Royal Icing Flowers Cake Decoratio",
       "img": "https://m.media-amazon.com/images/I/71CJJHh9bzL.jpg",
-      "today": 48,
-      "comp": 89,
-      "delta": -41
+      "today": 65,
+      "comp": 182,
+      "delta": -116
     },
     {
       "name": "Global Sugar Art Blossoms and Leaves Edible Su",
       "img": "https://m.media-amazon.com/images/I/61TcjFYONlL.jpg",
       "today": 0,
-      "comp": 27,
-      "delta": -27
+      "comp": 56,
+      "delta": -56
+    },
+    {
+      "name": "Buttercream Frosting",
+      "img": "https://m.media-amazon.com/images/I/61OojwDd59L.jpg",
+      "today": 66,
+      "comp": 111,
+      "delta": -45
+    },
+    {
+      "name": "Global Sugar Art Sugar Shrub Rose Cake Toppers",
+      "img": "https://m.media-amazon.com/images/I/41kWnJnb4pL.jpg",
+      "today": 23,
+      "comp": 49,
+      "delta": -26
     }
   ],
-  "summary": "Today we're running $189 ahead of last Sat, Aug 1 at this hour. Biggest beat driving it: Global Sugar Art 1-Count Pink Cherry Blossoms  (+$110)."
+  "summary": "Today we're running $30 ahead of last Sat, Aug 1 at this hour. Biggest beat driving it: Global Sugar Art 1-Count Pink Cherry Blossoms  (+$106)."
 }
