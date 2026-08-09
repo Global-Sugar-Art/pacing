@@ -1,254 +1,46 @@
 {
-  "generatedAt": "2026-08-08T23:29:26.611Z",
-  "today": "2026-08-08",
+  "generatedAt": "2026-08-09T11:29:53.402Z",
+  "today": "2026-08-09",
   "metric": "sales",
   "estimated": true,
-  "todayDollars": 2989,
-  "todayUnits": 166,
+  "todayDollars": 80,
+  "todayUnits": 5,
   "partial": false,
   "comps": {
     "lastweek": {
-      "comp": "2026-08-01",
-      "compLabel": "Sat, Aug 1",
-      "compDollars": 3265,
-      "compUnits": 165,
-      "ratio": 0.7313351925898548,
-      "beats": [
-        {
-          "name": "Edible Daisy Cake Decorations",
-          "img": "https://m.media-amazon.com/images/I/61BJ6Q6IkXL.jpg",
-          "today": 347,
-          "comp": 213,
-          "delta": 134
-        },
-        {
-          "name": "Global Sugar Art 1-Count Pink Cherry Blossoms ",
-          "img": "https://m.media-amazon.com/images/I/51FWmW9OFSL.jpg",
-          "today": 116,
-          "comp": 33,
-          "delta": 83
-        },
-        {
-          "name": "Cake Dummy Round – Styrofoam Fake Cake for Dec",
-          "img": "https://m.media-amazon.com/images/I/711fimYqXqL.jpg",
-          "today": 592,
-          "comp": 520,
-          "delta": 73
-        },
-        {
-          "name": "Paramount Crystals for Candy Melts & Chocolate",
-          "img": "https://m.media-amazon.com/images/I/7180IkY-H7L.jpg",
-          "today": 55,
-          "comp": 0,
-          "delta": 55
-        },
-        {
-          "name": "Global Sugar Art Sugar Flower Cake Toppers",
-          "img": "https://m.media-amazon.com/images/I/71BVUqVsKHL.jpg",
-          "today": 47,
-          "comp": 0,
-          "delta": 47
-        }
-      ],
-      "misses": [
-        {
-          "name": "Global Sugar Art Blossoms and Leaves Edible Su",
-          "img": "https://m.media-amazon.com/images/I/61TcjFYONlL.jpg",
-          "today": 0,
-          "comp": 164,
-          "delta": -164
-        },
-        {
-          "name": "Mini Edible Royal Icing Flowers Cake Decoratio",
-          "img": "https://m.media-amazon.com/images/I/71CJJHh9bzL.jpg",
-          "today": 404,
-          "comp": 538,
-          "delta": -134
-        },
-        {
-          "name": "Global Sugar Art Sugar Shrub Rose Cake Toppers",
-          "img": "https://m.media-amazon.com/images/I/41kWnJnb4pL.jpg",
-          "today": 23,
-          "comp": 146,
-          "delta": -123
-        },
-        {
-          "name": "Global Sugar Art Hydrangea Blossoms Sugar Cake",
-          "img": "https://m.media-amazon.com/images/I/51j23-vG5WL.jpg",
-          "today": 0,
-          "comp": 73,
-          "delta": -73
-        },
-        {
-          "name": "Global Sugar Art 3-Count White Stephanotis Spr",
-          "img": "https://m.media-amazon.com/images/I/411sjhPKVhL.jpg",
-          "today": 0,
-          "comp": 73,
-          "delta": -73
-        }
-      ],
-      "summary": "Today we're running $276 behind last Sat, Aug 1 at this hour. Biggest miss driving it: Global Sugar Art Blossoms and Leaves Edible Su (−$164)."
+      "comp": "2026-08-02",
+      "compLabel": "Sun, Aug 2",
+      "compDollars": 193,
+      "compUnits": 10,
+      "ratio": 0.04053824023267982,
+      "beats": [],
+      "misses": [],
+      "summary": "Today we're running $113 behind last Sun, Aug 2 at this hour. "
     },
     "lastyear": {
-      "comp": "2025-08-09",
-      "compLabel": "Sat, Aug 9, 2025",
-      "compDollars": 2364,
-      "compUnits": 98,
-      "ratio": 0.6503086046230183,
+      "comp": "2025-08-10",
+      "compLabel": "Sun, Aug 10, 2025",
+      "compDollars": 72,
+      "compUnits": 3,
+      "ratio": 0.027090100839766776,
       "beats": [
         {
           "name": "Mini Edible Royal Icing Flowers Cake Decoratio",
           "img": "https://m.media-amazon.com/images/I/71CJJHh9bzL.jpg",
-          "today": 404,
-          "comp": 49,
-          "delta": 355
-        },
-        {
-          "name": "Cake Dummy Round – Styrofoam Fake Cake for Dec",
-          "img": "https://m.media-amazon.com/images/I/711fimYqXqL.jpg",
-          "today": 592,
-          "comp": 380,
-          "delta": 213
-        },
-        {
-          "name": "Edible Daisy Cake Decorations",
-          "img": "https://m.media-amazon.com/images/I/61BJ6Q6IkXL.jpg",
-          "today": 347,
-          "comp": 203,
-          "delta": 144
-        },
-        {
-          "name": "Edible Cupcake Decorations — Assorted Themes",
-          "img": "https://m.media-amazon.com/images/I/71zOmSvkgTL.jpg",
-          "today": 141,
-          "comp": 13,
-          "delta": 128
-        },
-        {
-          "name": "Global Sugar Art Hydrangeas Unwired",
-          "img": "https://m.media-amazon.com/images/I/41wa4rEjlHL.jpg",
-          "today": 151,
-          "comp": 34,
-          "delta": 117
+          "today": 36,
+          "comp": 6,
+          "delta": 30
         }
       ],
-      "misses": [
-        {
-          "name": "Buttercream Frosting",
-          "img": "https://m.media-amazon.com/images/I/61OojwDd59L.jpg",
-          "today": 325,
-          "comp": 404,
-          "delta": -79
-        },
-        {
-          "name": "Global Sugar Art Sugar Cake Flower Cake Kits b",
-          "img": "https://m.media-amazon.com/images/I/51Wf5BZauDL.jpg",
-          "today": 0,
-          "comp": 69,
-          "delta": -69
-        },
-        {
-          "name": "Global Sugar Art 14-Piece Wedding Cake Decorat",
-          "img": "https://m.media-amazon.com/images/I/51sgF6ey5zL.jpg",
-          "today": 21,
-          "comp": 70,
-          "delta": -49
-        },
-        {
-          "name": "Global Sugar Art Premium Edible Roses",
-          "img": "https://m.media-amazon.com/images/I/31XtgrHQVHL.jpg",
-          "today": 39,
-          "comp": 85,
-          "delta": -46
-        },
-        {
-          "name": "Global Sugar Art Sugar Cake Topper Lily Sprays",
-          "img": "https://m.media-amazon.com/images/I/510WykzP58L.jpg",
-          "today": 0,
-          "comp": 45,
-          "delta": -45
-        }
-      ],
-      "summary": "Today we're running $625 ahead of last year (Sat, Aug 9, 2025) at this hour. Biggest beat driving it: Mini Edible Royal Icing Flowers Cake Decoratio (+$355)."
+      "misses": [],
+      "summary": "Today we're running $8 ahead of last year (Sun, Aug 10, 2025) at this hour. Biggest beat driving it: Mini Edible Royal Icing Flowers Cake Decoratio (+$30)."
     }
   },
-  "comp": "2026-08-01",
-  "compLabel": "Sat, Aug 1",
-  "compDollars": 3265,
-  "ratio": 0.7313351925898548,
-  "beats": [
-    {
-      "name": "Edible Daisy Cake Decorations",
-      "img": "https://m.media-amazon.com/images/I/61BJ6Q6IkXL.jpg",
-      "today": 347,
-      "comp": 213,
-      "delta": 134
-    },
-    {
-      "name": "Global Sugar Art 1-Count Pink Cherry Blossoms ",
-      "img": "https://m.media-amazon.com/images/I/51FWmW9OFSL.jpg",
-      "today": 116,
-      "comp": 33,
-      "delta": 83
-    },
-    {
-      "name": "Cake Dummy Round – Styrofoam Fake Cake for Dec",
-      "img": "https://m.media-amazon.com/images/I/711fimYqXqL.jpg",
-      "today": 592,
-      "comp": 520,
-      "delta": 73
-    },
-    {
-      "name": "Paramount Crystals for Candy Melts & Chocolate",
-      "img": "https://m.media-amazon.com/images/I/7180IkY-H7L.jpg",
-      "today": 55,
-      "comp": 0,
-      "delta": 55
-    },
-    {
-      "name": "Global Sugar Art Sugar Flower Cake Toppers",
-      "img": "https://m.media-amazon.com/images/I/71BVUqVsKHL.jpg",
-      "today": 47,
-      "comp": 0,
-      "delta": 47
-    }
-  ],
-  "misses": [
-    {
-      "name": "Global Sugar Art Blossoms and Leaves Edible Su",
-      "img": "https://m.media-amazon.com/images/I/61TcjFYONlL.jpg",
-      "today": 0,
-      "comp": 164,
-      "delta": -164
-    },
-    {
-      "name": "Mini Edible Royal Icing Flowers Cake Decoratio",
-      "img": "https://m.media-amazon.com/images/I/71CJJHh9bzL.jpg",
-      "today": 404,
-      "comp": 538,
-      "delta": -134
-    },
-    {
-      "name": "Global Sugar Art Sugar Shrub Rose Cake Toppers",
-      "img": "https://m.media-amazon.com/images/I/41kWnJnb4pL.jpg",
-      "today": 23,
-      "comp": 146,
-      "delta": -123
-    },
-    {
-      "name": "Global Sugar Art Hydrangea Blossoms Sugar Cake",
-      "img": "https://m.media-amazon.com/images/I/51j23-vG5WL.jpg",
-      "today": 0,
-      "comp": 73,
-      "delta": -73
-    },
-    {
-      "name": "Global Sugar Art 3-Count White Stephanotis Spr",
-      "img": "https://m.media-amazon.com/images/I/411sjhPKVhL.jpg",
-      "today": 0,
-      "comp": 73,
-      "delta": -73
-    }
-  ],
-  "summary": "Today we're running $276 behind last Sat, Aug 1 at this hour. Biggest miss driving it: Global Sugar Art Blossoms and Leaves Edible Su (−$164)."
+  "comp": "2026-08-02",
+  "compLabel": "Sun, Aug 2",
+  "compDollars": 193,
+  "ratio": 0.04053824023267982,
+  "beats": [],
+  "misses": [],
+  "summary": "Today we're running $113 behind last Sun, Aug 2 at this hour. "
 }
