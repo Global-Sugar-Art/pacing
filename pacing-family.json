@@ -1,254 +1,92 @@
 {
-  "generatedAt": "2026-08-09T23:32:04.507Z",
-  "today": "2026-08-09",
+  "generatedAt": "2026-08-10T11:47:38.496Z",
+  "today": "2026-08-10",
   "metric": "sales",
   "estimated": true,
-  "todayDollars": 3411,
-  "todayUnits": 181,
+  "todayDollars": 227,
+  "todayUnits": 12,
   "partial": false,
   "comps": {
     "lastweek": {
-      "comp": "2026-08-02",
-      "compLabel": "Sun, Aug 2",
-      "compDollars": 3191,
-      "compUnits": 163,
-      "ratio": 0.6705621764979078,
+      "comp": "2026-08-03",
+      "compLabel": "Mon, Aug 3",
+      "compDollars": 391,
+      "compUnits": 18,
+      "ratio": 0.06845084020092064,
       "beats": [
         {
-          "name": "Mini Edible Royal Icing Flowers Cake Decoratio",
-          "img": "https://m.media-amazon.com/images/I/71CJJHh9bzL.jpg",
-          "today": 695,
-          "comp": 462,
-          "delta": 233
-        },
-        {
-          "name": "Edible Cupcake Decorations — Assorted Themes",
-          "img": "https://m.media-amazon.com/images/I/71zOmSvkgTL.jpg",
-          "today": 203,
-          "comp": 70,
-          "delta": 133
-        },
-        {
-          "name": "Global Sugar Art Sugar Cupcake Flowers by Chef",
-          "img": "https://m.media-amazon.com/images/I/71QqUyJUW8L.jpg",
-          "today": 78,
-          "comp": 0,
-          "delta": 78
-        },
-        {
-          "name": "Global Sugar Art 8-Count White Lily of the Val",
-          "img": "https://m.media-amazon.com/images/I/31D5YNWkWjL.jpg",
-          "today": 70,
-          "comp": 0,
-          "delta": 70
-        },
-        {
-          "name": "Global Sugar Art Hydrangeas Unwired",
-          "img": "https://m.media-amazon.com/images/I/41wa4rEjlHL.jpg",
-          "today": 108,
-          "comp": 54,
-          "delta": 54
+          "name": "Global Sugar Art Sugar Cake Flower Cake Kits b",
+          "img": "https://m.media-amazon.com/images/I/51Wf5BZauDL.jpg",
+          "today": 59,
+          "comp": 6,
+          "delta": 52
         }
       ],
       "misses": [
-        {
-          "name": "Global Sugar Art 28-Count Medium White Tea Ros",
-          "img": "https://m.media-amazon.com/images/I/41BmvJraTNL.jpg",
-          "today": 0,
-          "comp": 94,
-          "delta": -94
-        },
-        {
-          "name": "Global Sugar Art Edible Exquisite Rose & Leaf ",
-          "img": "https://m.media-amazon.com/images/I/712HUz-6-dL.jpg",
-          "today": 0,
-          "comp": 67,
-          "delta": -67
-        },
-        {
-          "name": "Global Sugar Art Sugar Hydrandea Blossoms Wire",
-          "img": "https://m.media-amazon.com/images/I/41wa4rEjlHL.jpg",
-          "today": 23,
-          "comp": 84,
-          "delta": -60
-        },
-        {
-          "name": "Global Sugar Art Sugar Shrub Rose Cake Toppers",
-          "img": "https://m.media-amazon.com/images/I/41kWnJnb4pL.jpg",
-          "today": 0,
-          "comp": 60,
-          "delta": -60
-        },
-        {
-          "name": "Royal Icing and Cookie Mixes",
-          "img": "https://m.media-amazon.com/images/I/71HPCF6CTiL.jpg",
-          "today": 32,
-          "comp": 87,
-          "delta": -55
-        }
-      ],
-      "summary": "Today we're running $221 ahead of last Sun, Aug 2 at this hour. Biggest beat driving it: Mini Edible Royal Icing Flowers Cake Decoratio (+$233)."
-    },
-    "lastyear": {
-      "comp": "2025-08-10",
-      "compLabel": "Sun, Aug 10, 2025",
-      "compDollars": 1599,
-      "compUnits": 72,
-      "ratio": 0.6019369967892377,
-      "beats": [
-        {
-          "name": "Mini Edible Royal Icing Flowers Cake Decoratio",
-          "img": "https://m.media-amazon.com/images/I/71CJJHh9bzL.jpg",
-          "today": 695,
-          "comp": 137,
-          "delta": 558
-        },
-        {
-          "name": "Buttercream Frosting",
-          "img": "https://m.media-amazon.com/images/I/61OojwDd59L.jpg",
-          "today": 472,
-          "comp": 266,
-          "delta": 206
-        },
-        {
-          "name": "Edible Cupcake Decorations — Assorted Themes",
-          "img": "https://m.media-amazon.com/images/I/71zOmSvkgTL.jpg",
-          "today": 203,
-          "comp": 13,
-          "delta": 190
-        },
         {
           "name": "Cake Dummy Round – Styrofoam Fake Cake for Dec",
           "img": "https://m.media-amazon.com/images/I/711fimYqXqL.jpg",
-          "today": 429,
-          "comp": 258,
-          "delta": 171
+          "today": 0,
+          "comp": 81,
+          "delta": -81
         },
         {
-          "name": "Edible Daisy Cake Decorations",
-          "img": "https://m.media-amazon.com/images/I/61Fo1ZnZi0L.jpg",
-          "today": 278,
-          "comp": 132,
-          "delta": 146
+          "name": "Mini Edible Royal Icing Flowers Cake Decoratio",
+          "img": "https://m.media-amazon.com/images/I/71CJJHh9bzL.jpg",
+          "today": 31,
+          "comp": 73,
+          "delta": -42
         }
       ],
-      "misses": [
+      "summary": "Today we're running $164 behind last Mon, Aug 3 at this hour. Biggest miss driving it: Cake Dummy Round – Styrofoam Fake Cake for Dec (−$81)."
+    },
+    "lastyear": {
+      "comp": "2025-08-11",
+      "compLabel": "Mon, Aug 11, 2025",
+      "compDollars": 186,
+      "compUnits": 9,
+      "ratio": 0.041344663400487924,
+      "beats": [
         {
-          "name": "Global Sugar Art 25-Count Medium White Peace R",
-          "img": "https://m.media-amazon.com/images/I/51PZD6-i3qL.jpg",
-          "today": 0,
-          "comp": 76,
-          "delta": -76
-        },
-        {
-          "name": "Global Sugar Art Sugar Hydrandea Blossoms Wire",
-          "img": "https://m.media-amazon.com/images/I/41wa4rEjlHL.jpg",
-          "today": 23,
-          "comp": 77,
-          "delta": -54
-        },
-        {
-          "name": "Global Sugar Art 6-Count White Pearly Orchids",
-          "img": "https://m.media-amazon.com/images/I/41Fe7hO9xZL.jpg",
-          "today": 0,
-          "comp": 53,
-          "delta": -53
-        },
-        {
-          "name": "Global Sugar Art Clematis Sugar Cake Flowers",
-          "img": "https://m.media-amazon.com/images/I/81hltv3Ss0L.jpg",
-          "today": 0,
-          "comp": 50,
-          "delta": -50
-        },
-        {
-          "name": "Global Sugar Art Alan's Bridal Blend Wedding C",
-          "img": "https://m.media-amazon.com/images/I/31z2DSjGmeL.jpg",
-          "today": 0,
-          "comp": 47,
-          "delta": -47
+          "name": "Global Sugar Art Sugar Cake Flower Cake Kits b",
+          "img": "https://m.media-amazon.com/images/I/51Wf5BZauDL.jpg",
+          "today": 59,
+          "comp": 5,
+          "delta": 54
         }
       ],
-      "summary": "Today we're running $1,812 ahead of last year (Sun, Aug 10, 2025) at this hour. Biggest beat driving it: Mini Edible Royal Icing Flowers Cake Decoratio (+$558)."
+      "misses": [],
+      "summary": "Today we're running $41 ahead of last year (Mon, Aug 11, 2025) at this hour. Biggest beat driving it: Global Sugar Art Sugar Cake Flower Cake Kits b (+$54)."
     }
   },
-  "comp": "2026-08-02",
-  "compLabel": "Sun, Aug 2",
-  "compDollars": 3191,
-  "ratio": 0.6705621764979078,
+  "comp": "2026-08-03",
+  "compLabel": "Mon, Aug 3",
+  "compDollars": 391,
+  "ratio": 0.06845084020092064,
   "beats": [
     {
-      "name": "Mini Edible Royal Icing Flowers Cake Decoratio",
-      "img": "https://m.media-amazon.com/images/I/71CJJHh9bzL.jpg",
-      "today": 695,
-      "comp": 462,
-      "delta": 233
-    },
-    {
-      "name": "Edible Cupcake Decorations — Assorted Themes",
-      "img": "https://m.media-amazon.com/images/I/71zOmSvkgTL.jpg",
-      "today": 203,
-      "comp": 70,
-      "delta": 133
-    },
-    {
-      "name": "Global Sugar Art Sugar Cupcake Flowers by Chef",
-      "img": "https://m.media-amazon.com/images/I/71QqUyJUW8L.jpg",
-      "today": 78,
-      "comp": 0,
-      "delta": 78
-    },
-    {
-      "name": "Global Sugar Art 8-Count White Lily of the Val",
-      "img": "https://m.media-amazon.com/images/I/31D5YNWkWjL.jpg",
-      "today": 70,
-      "comp": 0,
-      "delta": 70
-    },
-    {
-      "name": "Global Sugar Art Hydrangeas Unwired",
-      "img": "https://m.media-amazon.com/images/I/41wa4rEjlHL.jpg",
-      "today": 108,
-      "comp": 54,
-      "delta": 54
+      "name": "Global Sugar Art Sugar Cake Flower Cake Kits b",
+      "img": "https://m.media-amazon.com/images/I/51Wf5BZauDL.jpg",
+      "today": 59,
+      "comp": 6,
+      "delta": 52
     }
   ],
   "misses": [
     {
-      "name": "Global Sugar Art 28-Count Medium White Tea Ros",
-      "img": "https://m.media-amazon.com/images/I/41BmvJraTNL.jpg",
+      "name": "Cake Dummy Round – Styrofoam Fake Cake for Dec",
+      "img": "https://m.media-amazon.com/images/I/711fimYqXqL.jpg",
       "today": 0,
-      "comp": 94,
-      "delta": -94
+      "comp": 81,
+      "delta": -81
     },
     {
-      "name": "Global Sugar Art Edible Exquisite Rose & Leaf ",
-      "img": "https://m.media-amazon.com/images/I/712HUz-6-dL.jpg",
-      "today": 0,
-      "comp": 67,
-      "delta": -67
-    },
-    {
-      "name": "Global Sugar Art Sugar Hydrandea Blossoms Wire",
-      "img": "https://m.media-amazon.com/images/I/41wa4rEjlHL.jpg",
-      "today": 23,
-      "comp": 84,
-      "delta": -60
-    },
-    {
-      "name": "Global Sugar Art Sugar Shrub Rose Cake Toppers",
-      "img": "https://m.media-amazon.com/images/I/41kWnJnb4pL.jpg",
-      "today": 0,
-      "comp": 60,
-      "delta": -60
-    },
-    {
-      "name": "Royal Icing and Cookie Mixes",
-      "img": "https://m.media-amazon.com/images/I/71HPCF6CTiL.jpg",
-      "today": 32,
-      "comp": 87,
-      "delta": -55
+      "name": "Mini Edible Royal Icing Flowers Cake Decoratio",
+      "img": "https://m.media-amazon.com/images/I/71CJJHh9bzL.jpg",
+      "today": 31,
+      "comp": 73,
+      "delta": -42
     }
   ],
-  "summary": "Today we're running $221 ahead of last Sun, Aug 2 at this hour. Biggest beat driving it: Mini Edible Royal Icing Flowers Cake Decoratio (+$233)."
+  "summary": "Today we're running $164 behind last Mon, Aug 3 at this hour. Biggest miss driving it: Cake Dummy Round – Styrofoam Fake Cake for Dec (−$81)."
 }
