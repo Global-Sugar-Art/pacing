@@ -1,254 +1,90 @@
 {
-  "generatedAt": "2026-08-12T23:33:12.981Z",
-  "today": "2026-08-12",
+  "generatedAt": "2026-08-13T11:41:30.735Z",
+  "today": "2026-08-13",
   "metric": "sales",
   "estimated": true,
-  "todayDollars": 4471,
-  "todayUnits": 240,
+  "todayDollars": 184,
+  "todayUnits": 10,
   "partial": false,
   "comps": {
     "lastweek": {
-      "comp": "2026-08-05",
-      "compLabel": "Wed, Aug 5",
-      "compDollars": 4055,
-      "compUnits": 203,
-      "ratio": 0.7537245600697422,
-      "beats": [
-        {
-          "name": "Global Sugar Art 36-Count Mint Green Mini Edib",
-          "img": "https://m.media-amazon.com/images/I/71CJJHh9bzL.jpg",
-          "today": 391,
-          "comp": 212,
-          "delta": 179
-        },
-        {
-          "name": "Buttercream Frosting",
-          "img": "https://m.media-amazon.com/images/I/61OojwDd59L.jpg",
-          "today": 547,
-          "comp": 395,
-          "delta": 152
-        },
+      "comp": "2026-08-06",
+      "compLabel": "Thu, Aug 6",
+      "compDollars": 524,
+      "compUnits": 26,
+      "ratio": 0.07737034771895301,
+      "beats": [],
+      "misses": [
         {
           "name": "Cake Dummy Round – Styrofoam Fake Cake for Dec",
           "img": "https://m.media-amazon.com/images/I/711fimYqXqL.jpg",
-          "today": 666,
-          "comp": 545,
-          "delta": 121
+          "today": 40,
+          "comp": 115,
+          "delta": -75
         },
         {
-          "name": "Global Sugar Art Blossoms and Leaves Edible Su",
-          "img": "https://m.media-amazon.com/images/I/61TcjFYONlL.jpg",
-          "today": 142,
-          "comp": 57,
-          "delta": 86
-        },
-        {
-          "name": "Global Sugar Art Edible Exquisite Rose & Leaf ",
-          "img": "https://m.media-amazon.com/images/I/712HUz-6-dL.jpg",
-          "today": 75,
-          "comp": 15,
-          "delta": 60
-        }
-      ],
-      "misses": [
-        {
-          "name": "Global Sugar Art Sugar Hydrandea Blossoms Wire",
-          "img": "https://m.media-amazon.com/images/I/41wa4rEjlHL.jpg",
-          "today": 0,
-          "comp": 113,
-          "delta": -113
-        },
-        {
-          "name": "Global Sugar Art 25-Count Large White Tea Rose",
-          "img": "https://m.media-amazon.com/images/I/61fM8wlc7NS.jpg",
-          "today": 23,
-          "comp": 105,
-          "delta": -83
-        },
-        {
-          "name": "Global Sugar Art 14-Piece Wedding Cake Decorat",
-          "img": "https://m.media-amazon.com/images/I/51sgF6ey5zL.jpg",
-          "today": 43,
-          "comp": 113,
-          "delta": -70
-        },
-        {
-          "name": "Gumpaste Sugar Flowers with Pearl Stamens - We",
-          "img": "https://m.media-amazon.com/images/I/71YTCkvFwOL.jpg",
-          "today": 225,
-          "comp": 286,
-          "delta": -61
-        },
-        {
-          "name": "Global Sugar Art Sugar Cake Flower Cake Kits b",
-          "img": "https://m.media-amazon.com/images/I/51Wf5BZauDL.jpg",
-          "today": 61,
-          "comp": 113,
-          "delta": -52
-        }
-      ],
-      "summary": "Today we're running $416 ahead of last Wed, Aug 5 at this hour. Biggest beat driving it: Global Sugar Art 36-Count Mint Green Mini Edib (+$179)."
-    },
-    "lastyear": {
-      "comp": "2025-08-13",
-      "compLabel": "Wed, Aug 13, 2025",
-      "compDollars": 3566,
-      "compUnits": 152,
-      "ratio": 0.738715189676778,
-      "beats": [
-        {
-          "name": "Global Sugar Art 36-Count Pink Mini Edible Flo",
-          "img": "https://m.media-amazon.com/images/I/41+K7b3mR+L.jpg",
-          "today": 534,
-          "comp": 112,
-          "delta": 422
-        },
-        {
-          "name": "Global Sugar Art 36-Count Mint Green Mini Edib",
-          "img": "https://m.media-amazon.com/images/I/71CJJHh9bzL.jpg",
-          "today": 391,
-          "comp": 0,
-          "delta": 391
+          "name": "Global Sugar Art 36-Count Baby Blue Mini Edibl",
+          "img": "https://m.media-amazon.com/images/I/614vVTpMMGL.jpg",
+          "today": 16,
+          "comp": 59,
+          "delta": -43
         },
         {
           "name": "Buttercream Frosting",
-          "img": "https://m.media-amazon.com/images/I/61OojwDd59L.jpg",
-          "today": 547,
-          "comp": 430,
-          "delta": 117
-        },
-        {
-          "name": "Edible Cupcake Decorations — Assorted Themes",
-          "img": "https://m.media-amazon.com/images/I/71zOmSvkgTL.jpg",
-          "today": 57,
-          "comp": 0,
-          "delta": 57
-        },
-        {
-          "name": "Global Sugar Art 3-Count Large Pink Tropical H",
-          "img": "https://m.media-amazon.com/images/I/51g+OxQbhTL.jpg",
-          "today": 115,
-          "comp": 65,
-          "delta": 50
+          "img": "https://m.media-amazon.com/images/I/31vJ90-4TBL.jpg",
+          "today": 16,
+          "comp": 58,
+          "delta": -42
         }
       ],
+      "summary": "Today we're running $340 behind last Thu, Aug 6 at this hour. Biggest miss driving it: Cake Dummy Round – Styrofoam Fake Cake for Dec (−$75)."
+    },
+    "lastyear": {
+      "comp": "2025-08-14",
+      "compLabel": "Thu, Aug 14, 2025",
+      "compDollars": 315,
+      "compUnits": 14,
+      "ratio": 0.08169990606820177,
+      "beats": [],
       "misses": [
         {
-          "name": "Global Sugar Art Sugar Blossom Sprays by Chef ",
-          "img": "https://m.media-amazon.com/images/I/61uWAQ8zVPL.jpg",
-          "today": 22,
-          "comp": 224,
-          "delta": -203
-        },
-        {
-          "name": "Global Sugar Art 8-Count Medium White Aussie R",
-          "img": "https://m.media-amazon.com/images/I/41HiHJKfaqL.jpg",
-          "today": 0,
-          "comp": 83,
-          "delta": -83
-        },
-        {
-          "name": "Global Sugar Art 18-Count Pink Edible Daisy Ca",
-          "img": "https://m.media-amazon.com/images/I/61Fo1ZnZi0L.jpg",
-          "today": 72,
-          "comp": 154,
-          "delta": -83
-        },
-        {
-          "name": "Global Sugar Art Premium Edible Roses",
-          "img": "https://m.media-amazon.com/images/I/31XtgrHQVHL.jpg",
-          "today": 57,
-          "comp": 134,
-          "delta": -78
-        },
-        {
-          "name": "Global Sugar Art Tranquil Water Sugar Cake Flo",
-          "img": "https://m.media-amazon.com/images/I/51dIhvuTllL.jpg",
-          "today": 0,
-          "comp": 55,
-          "delta": -55
+          "name": "Buttercream Frosting",
+          "img": "https://m.media-amazon.com/images/I/31vJ90-4TBL.jpg",
+          "today": 16,
+          "comp": 60,
+          "delta": -45
         }
       ],
-      "summary": "Today we're running $904 ahead of last year (Wed, Aug 13, 2025) at this hour. Biggest beat driving it: Global Sugar Art 36-Count Pink Mini Edible Flo (+$422)."
+      "summary": "Today we're running $131 behind last year (Thu, Aug 14, 2025) at this hour. Biggest miss driving it: Buttercream Frosting (−$45)."
     }
   },
-  "comp": "2026-08-05",
-  "compLabel": "Wed, Aug 5",
-  "compDollars": 4055,
-  "ratio": 0.7537245600697422,
-  "beats": [
-    {
-      "name": "Global Sugar Art 36-Count Mint Green Mini Edib",
-      "img": "https://m.media-amazon.com/images/I/71CJJHh9bzL.jpg",
-      "today": 391,
-      "comp": 212,
-      "delta": 179
-    },
-    {
-      "name": "Buttercream Frosting",
-      "img": "https://m.media-amazon.com/images/I/61OojwDd59L.jpg",
-      "today": 547,
-      "comp": 395,
-      "delta": 152
-    },
+  "comp": "2026-08-06",
+  "compLabel": "Thu, Aug 6",
+  "compDollars": 524,
+  "ratio": 0.07737034771895301,
+  "beats": [],
+  "misses": [
     {
       "name": "Cake Dummy Round – Styrofoam Fake Cake for Dec",
       "img": "https://m.media-amazon.com/images/I/711fimYqXqL.jpg",
-      "today": 666,
-      "comp": 545,
-      "delta": 121
+      "today": 40,
+      "comp": 115,
+      "delta": -75
     },
     {
-      "name": "Global Sugar Art Blossoms and Leaves Edible Su",
-      "img": "https://m.media-amazon.com/images/I/61TcjFYONlL.jpg",
-      "today": 142,
-      "comp": 57,
-      "delta": 86
+      "name": "Global Sugar Art 36-Count Baby Blue Mini Edibl",
+      "img": "https://m.media-amazon.com/images/I/614vVTpMMGL.jpg",
+      "today": 16,
+      "comp": 59,
+      "delta": -43
     },
     {
-      "name": "Global Sugar Art Edible Exquisite Rose & Leaf ",
-      "img": "https://m.media-amazon.com/images/I/712HUz-6-dL.jpg",
-      "today": 75,
-      "comp": 15,
-      "delta": 60
+      "name": "Buttercream Frosting",
+      "img": "https://m.media-amazon.com/images/I/31vJ90-4TBL.jpg",
+      "today": 16,
+      "comp": 58,
+      "delta": -42
     }
   ],
-  "misses": [
-    {
-      "name": "Global Sugar Art Sugar Hydrandea Blossoms Wire",
-      "img": "https://m.media-amazon.com/images/I/41wa4rEjlHL.jpg",
-      "today": 0,
-      "comp": 113,
-      "delta": -113
-    },
-    {
-      "name": "Global Sugar Art 25-Count Large White Tea Rose",
-      "img": "https://m.media-amazon.com/images/I/61fM8wlc7NS.jpg",
-      "today": 23,
-      "comp": 105,
-      "delta": -83
-    },
-    {
-      "name": "Global Sugar Art 14-Piece Wedding Cake Decorat",
-      "img": "https://m.media-amazon.com/images/I/51sgF6ey5zL.jpg",
-      "today": 43,
-      "comp": 113,
-      "delta": -70
-    },
-    {
-      "name": "Gumpaste Sugar Flowers with Pearl Stamens - We",
-      "img": "https://m.media-amazon.com/images/I/71YTCkvFwOL.jpg",
-      "today": 225,
-      "comp": 286,
-      "delta": -61
-    },
-    {
-      "name": "Global Sugar Art Sugar Cake Flower Cake Kits b",
-      "img": "https://m.media-amazon.com/images/I/51Wf5BZauDL.jpg",
-      "today": 61,
-      "comp": 113,
-      "delta": -52
-    }
-  ],
-  "summary": "Today we're running $416 ahead of last Wed, Aug 5 at this hour. Biggest beat driving it: Global Sugar Art 36-Count Mint Green Mini Edib (+$179)."
+  "summary": "Today we're running $340 behind last Thu, Aug 6 at this hour. Biggest miss driving it: Cake Dummy Round – Styrofoam Fake Cake for Dec (−$75)."
 }
