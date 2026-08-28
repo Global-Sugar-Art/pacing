@@ -243,7 +243,7 @@
   </section>
 </div>
 
-<script>window.__PACING__={"nowH":23,"wd":"Thu","liveUrl":"https://odfz7pp4z4lxf6ase3vp7zvn3m0cboph.lambda-url.us-east-2.on.aws/","dateLabel":"Thu, Aug 27","asofLabel":"as of 2:44 AM EDT","compDate":{"lastweek":"Thu, Aug 20","lastyear":"Thu, Aug 28, 2025"},"legLW":"Aug 20","legLY":"Aug 28 '25","units":{"today":[10,13,14,37,40,45,63,78,93,113,128,149,166,194,209,226,237,259,283,298,309,318,320,320],"lastweek":[2,6,7,11,19,29,36,52,77,97,113,142,159,175,186,201,222,237,256,271,280,292,298,299],"lastyear":[2,3,4,5,6,14,21,39,51,64,79,91,104,120,127,145,154,166,172,178,185,192,195,196]},"sales":{"today":[199,278.97,303.96,715.73,760.7,882.65,1189.49,1436.34,1707.69,2042.49,2333.86,2712.77,3044.6,3510.32,3773.17,4127.6,4302.49,4724.87,5203.23,5489.08,5702.97,5859.88,5888.36,5888.36],"lastweek":[34.98,98.94,113.93,178.89,325.31,514.21,668.14,955.68,1420.93,1797.03,2090.87,2598.08,2925.91,3198.75,3417.64,3638.99,4033.78,4325.63,4654.14,4947.99,5104.9,5344.28,5468.22,5518.21],"lastyear":[36.98,51.97,70.96,89.95,121.94,318.86,480.79,835.65,1101.13,1361.96,1707.29,2004.77,2292.64,2624.2,2768.13,3231.95,3471.86,3805.74,3927.68,4071.62,4269.55,4433.48,4539.45,4557.44]},"full":{"units":{"lastweek":299,"lastyear":196},"sales":{"lastweek":5518.21,"lastyear":4557.44}},"orders":279,"ordersSub":"1.1 units · $21.11 ea","freshLabel":"Live · refreshed 11:44 PM PT","recap":{"yesterday":{"label":"Yesterday","sub":"Wed, Aug 26","units":377,"sales":6687.44,"lastweek":{"units":376,"sales":6650.71},"lastyear":{"units":220,"sales":5038.21}},"mtd":{"label":"Month to date","sub":"Aug 1–Aug 26","units":7820,"sales":145609.56,"prioryear":{"units":4657,"sales":108869.75}},"ytd":{"label":"Year to date","sub":"Jan 1–Aug 26","units":75305,"sales":1395758.93,"prioryear":{"units":43662,"sales":955069.15}}}};</script>
+<script>window.__PACING__={"nowH":11,"wd":"Fri","liveUrl":"https://odfz7pp4z4lxf6ase3vp7zvn3m0cboph.lambda-url.us-east-2.on.aws/","dateLabel":"Fri, Aug 28","asofLabel":"as of 2:16 PM EDT","compDate":{"lastweek":"Fri, Aug 21","lastyear":"Fri, Aug 29, 2025"},"legLW":"Aug 21","legLY":"Aug 29 '25","units":{"today":[2,2,3,7,15,20,31,43,60,73,99,103],"lastweek":[2,2,6,10,16,27,38,53,68,82,99,110,120,129,137,145,158,170,183,190,205,209,217,222],"lastyear":[0,2,3,7,11,14,24,30,40,54,61,69,77,87,99,108,120,130,137,145,148,152,157,165]},"sales":{"today":[29.98,29.98,44.97,108.43,272.31,361.26,571.15,807.03,1112.21,1328.78,1761.02,1814.98],"lastweek":[32.98,32.98,107.94,172.6,278.54,445.13,626.54,902.39,1209.94,1471.8,1807.53,2017.42,2192.32,2335.73,2482.65,2620.57,2877.14,3077.02,3306.89,3441.88,3700.73,3766.69,3910.61,4017.56],"lastyear":[0,57.98,75.97,148.93,230.89,294.86,513.76,634.7,817.6,1158.46,1335.39,1490.31,1657.23,1853.13,2170.01,2355.92,2659.2,2870.74,3013.67,3189.59,3237.56,3326.52,3449.47,3671.39]},"full":{"units":{"lastweek":222,"lastyear":165},"sales":{"lastweek":4017.56,"lastyear":3671.39}},"orders":85,"ordersSub":"1.2 units · $21.35 ea","freshLabel":"Live · refreshed 11:16 AM PT","recap":{"yesterday":{"label":"Yesterday","sub":"Thu, Aug 27","units":319,"sales":5873.37,"lastweek":{"units":299,"sales":5518.21},"lastyear":{"units":196,"sales":4557.44}},"mtd":{"label":"Month to date","sub":"Aug 1–Aug 27","units":8136,"sales":151470.58,"prioryear":{"units":4877,"sales":113907.96}},"ytd":{"label":"Year to date","sub":"Jan 1–Aug 27","units":75621,"sales":1401619.95,"prioryear":{"units":43882,"sales":960107.36}}}};</script>
 <script>
 (function(){
   var D = window.__PACING__;
@@ -423,7 +423,18 @@
     // Overlay the by-product breakdown LIVE (per-ASIN tally the pacing Lambda reads, fed by Siren in
     // real time). Live wins over the few-times-a-day baked pacing-family.json products.
     try { if (live.products && live.products.length) renderProducts({today: live.date, products: live.products}, true); } catch(e){}
+    ensureProducts();
     render();
+  }
+  // The Lambda caps the by-product compute at 5s: a cold hit times out and ships the payload
+  // WITHOUT products — but the compute keeps running and fills the Lambda's ~60s cache. This issues
+  // the "next fetch" that cache exists for: up to 3 follow-up pulls, 8s apart, stopping the moment
+  // the live breakdown paints. Also covers a flaky-radio first fetch right after an app wake.
+  var prodPulls = 0;
+  function ensureProducts(){
+    if (productsLive || !D.liveUrl || prodPulls >= 3) return;
+    prodPulls++;
+    setTimeout(fetchLive, 8000);
   }
   function fetchLive(){
     if(!D.liveUrl) return false;
@@ -435,10 +446,10 @@
     fetch(D.liveUrl, ctrl ? {signal:ctrl.signal, cache:'no-store'} : {cache:'no-store'})
       .then(function(r){ return r && r.ok ? r.json() : null; })
       .then(function(live){ if(to) clearTimeout(to); applyLive(live); })
-      .catch(function(){ if(to) clearTimeout(to); });   // keep the baked snapshot on any failure
+      .catch(function(){ if(to) clearTimeout(to); ensureProducts(); });   // keep the baked snapshot on any failure; retry the breakdown
     return true;
   }
-  function refreshNow(){ if(!fetchLive()){ try{location.reload();}catch(e){ render(); } } }
+  function refreshNow(){ prodPulls = 0; if(!fetchLive()){ try{location.reload();}catch(e){ render(); } } }
 
   render();       // draw the baked snapshot immediately
   fetchLive();    // then overlay up-to-the-minute today data if a live endpoint is configured
@@ -476,6 +487,8 @@
     if(!any) return;
     famData = d;
     paintFamily();
+    // Same-day snapshot, same reasoning as the by-product card below: survive a Home-Screen reset.
+    try { d.today = d.today || t; localStorage.setItem('pacingFamily', JSON.stringify(d)); } catch(e){}
   }
   // ── By-product breakdown — per-ASIN "today so far", grouped by parent, collapsible (from the same
   //    pacing-family.json). Units are exact; per-ASIN $ is estimated + anchored to the exact day total. ──
@@ -511,7 +524,15 @@
     document.getElementById('prodSub').textContent = '· '+n+' famil'+(n===1?'y':'ies')+(fromLive?' · live':'');
     document.getElementById('productsCard').style.display='';
     if(fromLive) productsLive = true;
+    // Last-known-good snapshot (same PT day only, via the guard above): a Home-Screen app reset
+    // repaints from this instantly instead of losing the card when the one-shot live pull misses
+    // and the baked JSON is stamped with yesterday's PT day (late/dropped Family Pacing cron).
+    try { localStorage.setItem('pacingProducts', JSON.stringify({today: d.today || t, products: d.products})); } catch(e){}
   }
+  // Boot from the last same-day snapshots immediately (each render's own stale-day guard drops
+  // yesterday's); the live overlay and fresh baked JSON repaint over them as they land.
+  try { var pcSnap = JSON.parse(localStorage.getItem('pacingProducts') || 'null'); if (pcSnap) renderProducts(pcSnap, false); } catch(e){}
+  try { var pfSnap = JSON.parse(localStorage.getItem('pacingFamily') || 'null'); if (pfSnap) renderFamily(pfSnap); } catch(e){}
   document.getElementById('prodGroups').addEventListener('click', function(e){
     var h = e.target.closest('.pg-head.clk'); if(!h) return;
     var kids = document.getElementById('pgk'+h.getAttribute('data-pg')); if(!kids) return;
