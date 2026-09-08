@@ -51,6 +51,13 @@
   section{padding:12px 14px 0;display:flex;flex-direction:column;gap:16px}
   .card{background:#fff;border:1px solid #E7ECF2;border-radius:16px;box-shadow:0 6px 20px rgba(15,23,42,.06)}
 
+  /* A stale-comp page is showing the WRONG day's baselines, not merely a degraded page — it gets the
+     behind palette and sits above every card that depends on the comps. */
+  .stalebar{padding:11px 14px;border-left:5px solid var(--behind-base);background:var(--behind-soft);border-color:var(--behind-border);color:#7A3C10;font-size:12.5px;line-height:1.45;border-radius:14px}
+  .stalebar b{color:var(--behind)}
+  /* Neutral, not green: a stale card must not read as "ahead" just because the ahead/behind class is off. */
+  .hero.stale,.punch.stale{background:#fff;border-left-color:var(--slate-300)}
+  .punch.stale .punch-num{color:var(--slate-500)}
   .punch{padding:16px 18px 16px;border-left:5px solid transparent;transition:background .2s,border-color .2s}
   .punch.ahead{background:linear-gradient(160deg,#fff,#E7F5EB);border-color:#E7ECF2;border-left-color:var(--ahead-base)}
   .punch.behind{background:linear-gradient(160deg,#fff,#FFEEDF);border-color:#E7ECF2;border-left-color:var(--behind-base)}
@@ -67,6 +74,10 @@
   .d-primary span{font-size:12px;font-weight:600;color:var(--slate-500);margin-left:5px;letter-spacing:0}
   .d-secondary{font-size:13px;font-weight:700;white-space:nowrap}
   .d-secondary span{font-size:11px;font-weight:600;color:var(--slate-400);margin-left:4px}
+  /* The one-line reconciliation shown when the pace card and the projection card disagree in sign. */
+  .diverge{margin-top:9px;font-size:11.5px;line-height:1.4;color:var(--slate-500)}
+  /* Names what the projection was built on. Its own line — appended to the big number it overflowed. */
+  .basis{margin-top:7px;font-size:11px;line-height:1.4;color:var(--slate-400)}
   .up{color:var(--ahead)} .down{color:var(--behind)}
 
   .chart{padding:15px 8px 12px 6px}
@@ -179,6 +190,8 @@
   </header>
 
   <section>
+    <div class="card stalebar" id="staleBar" style="display:none"></div>
+
     <div class="card hero" id="paceCard">
       <div class="k"><span id="paceCap">Pace vs this hour</span><span class="statuspill" id="paceStatus"></span></div>
       <div class="pace-bars">
@@ -194,12 +207,14 @@
     </div>
 
     <div class="card punch" id="punchCard">
-      <div class="k"><span>Projected end of day</span><span class="statuspill" id="statusPill"></span></div>
+      <div class="k"><span id="punchCap">Projected end of day</span><span class="statuspill" id="statusPill"></span></div>
       <div class="punch-num" id="projVal"></div>
       <div class="deltas">
         <div class="d-primary" id="dPrimary"></div>
         <div class="d-secondary" id="dSecondary"></div>
       </div>
+      <div class="diverge" id="diverge" style="display:none"></div>
+      <div class="basis" id="basis"></div>
     </div>
 
     <div class="card chart">
@@ -209,9 +224,9 @@
       </div>
       <div class="legend">
         <span><i class="swatch today"></i> Today</span>
-        <span><i class="swatch fc"></i> Forecast</span>
-        <span><i class="swatch lw"></i> <span id="legLW"></span></span>
-        <span><i class="swatch ly"></i> <span id="legLY"></span></span>
+        <span id="legFC"><i class="swatch fc"></i> Forecast</span>
+        <span id="legLWrap"><i class="swatch lw"></i> <span id="legLW"></span></span>
+        <span id="legLYrap"><i class="swatch ly"></i> <span id="legLY"></span></span>
       </div>
       <svg id="chart" viewBox="0 0 400 236" preserveAspectRatio="xMidYMid meet"></svg>
     </div>
@@ -243,7 +258,7 @@
   </section>
 </div>
 
-<script>window.__PACING__={"nowH":7,"wd":"Tue","liveUrl":"https://odfz7pp4z4lxf6ase3vp7zvn3m0cboph.lambda-url.us-east-2.on.aws/","dateLabel":"Tue, Sep 8","asofLabel":"as of 10:51 AM EDT","compDate":{"lastweek":"Tue, Sep 1","lastyear":"Tue, Sep 9, 2025"},"legLW":"Sep 1","legLY":"Sep 9 '25","units":{"today":[5,13,13,15,28,33,47,68],"lastweek":[2,9,16,20,24,34,44,68,87,112,138,169,191,206,228,244,260,284,304,335,356,371,387,396],"lastyear":[1,1,1,1,8,20,36,44,53,68,83,108,124,138,147,153,167,176,204,225,236,251,254,260]},"sales":{"today":[84.95,226.87,226.87,261.85,517.72,602.27,908.14,1319.93],"lastweek":[41.98,172.75,274.68,324.64,401.6,568.2,755.1,1228.98,1575.8,1957.75,2424.49,2959.68,3337.14,3606.99,3954.47,4210.32,4478.66,5009.82,5385.62,5904.01,6313.8,6596.65,6896.49,7083.4],"lastyear":[26.99,26.99,26.99,26.99,200.92,562.8,969.64,1143.18,1372.27,1752.12,2060.57,2620.78,3029.34,3362.2,3532.12,3656.06,4037.92,4241.83,4921.57,5453.36,5700.75,6066.6,6126.57,6364.51]},"full":{"units":{"lastweek":396,"lastyear":260},"sales":{"lastweek":7083.4,"lastyear":6364.51}},"orders":57,"ordersSub":"1.2 units · $23.16 ea","freshLabel":"Live · refreshed 7:51 AM PT","recap":{"yesterday":{"label":"Yesterday","sub":"Mon, Sep 7","units":390,"sales":6949.32,"lastweek":{"units":402,"sales":7147.52},"lastyear":{"units":245,"sales":5578.41}},"mtd":{"label":"Month to date","sub":"Sep 1–Sep 7","units":2176,"sales":38575.89,"prioryear":{"units":1406,"sales":30856.14}},"ytd":{"label":"Year to date","sub":"Jan 1–Sep 7","units":78891,"sales":1459401.99,"prioryear":{"units":45985,"sales":1006742.04}}}};</script>
+<script>window.__PACING__={"nowH":8,"wd":"Tue","liveUrl":"https://odfz7pp4z4lxf6ase3vp7zvn3m0cboph.lambda-url.us-east-2.on.aws/","today":"2026-09-08","dateLabel":"Tue, Sep 8","asofLabel":"as of 11:16 AM EDT","compDate":{"lastweek":"Tue, Sep 1","lastyear":"Tue, Sep 9, 2025"},"legLW":"Sep 1","legLY":"Sep 9 '25","units":{"today":[5,13,13,15,28,33,47,70,77],"lastweek":[2,9,16,20,24,34,44,68,87,112,138,169,191,206,228,244,260,284,304,335,356,371,387,396],"lastyear":[1,1,1,1,8,20,36,44,53,68,83,108,124,138,147,153,167,176,204,225,236,251,254,260]},"sales":{"today":[84.95,226.87,226.87,261.85,517.72,602.27,908.14,1349.91,1468.84],"lastweek":[41.98,172.75,274.68,324.64,401.6,568.2,755.1,1228.98,1575.8,1957.75,2424.49,2959.68,3337.14,3606.99,3954.47,4210.32,4478.66,5009.82,5385.62,5904.01,6313.8,6596.65,6896.49,7083.4],"lastyear":[26.99,26.99,26.99,26.99,200.92,562.8,969.64,1143.18,1372.27,1752.12,2060.57,2620.78,3029.34,3362.2,3532.12,3656.06,4037.92,4241.83,4921.57,5453.36,5700.75,6066.6,6126.57,6364.51]},"full":{"units":{"lastweek":396,"lastyear":260},"sales":{"lastweek":7083.4,"lastyear":6364.51}},"forecast":{"shape":{"units":[0.00708452304196985,0.01896242055816524,0.025835866261398176,0.03343465045592705,0.05548602419691281,0.08494609965198201,0.11297852474323061,0.1618464278038746,0.21167219305517176,0.27971201375456695,0.3429354333609653,0.4072948328267477,0.47401513797008166,0.5351769979429555,0.5857511283043197,0.6317890147677381,0.6960639832980259,0.7577455224514048,0.8050241373145003,0.8711590696884814,0.9356338279992849,0.9692770725311401,0.9926396090351034,1],"sales":[0.007968443705208297,0.017578188956118693,0.021759237147977017,0.02977118158167151,0.05510168303270699,0.0813431735957165,0.1109498268333888,0.16292407507705997,0.2088341282421185,0.26887658349607507,0.33224242638740376,0.39605316235323423,0.46297408990171995,0.5267488311922344,0.5794221342480843,0.6232222123187294,0.689965084152153,0.7525772420437744,0.7998601140550476,0.8596704771058559,0.9344692670607844,0.9681393177550952,0.9926713442362087,1]},"baseline":{"units":350.57,"sales":6405.08},"basis":"4 recent Tuesdays","days":["2026-09-01","2026-08-25","2026-08-18","2026-08-11"]},"orders":66,"ordersSub":"1.2 units · $22.26 ea","freshLabel":"Live · refreshed 8:16 AM PT","recap":{"yesterday":{"label":"Yesterday","sub":"Mon, Sep 7","units":390,"sales":6949.32,"lastweek":{"units":402,"sales":7147.52},"lastyear":{"units":245,"sales":5578.41}},"mtd":{"label":"Month to date","sub":"Sep 1–Sep 7","units":2176,"sales":38575.89,"prioryear":{"units":1406,"sales":30856.14}},"ytd":{"label":"Year to date","sub":"Jan 1–Sep 7","units":78891,"sales":1459401.99,"prioryear":{"units":45985,"sales":1006742.04}}}};</script>
 <script>
 (function(){
   var D = window.__PACING__;
@@ -262,23 +277,38 @@
   function compShort(c){ return c==='lastweek' ? 'Last '+WD : 'Last yr'; }
   function other(c){ return c==='lastweek' ? 'lastyear' : 'lastweek'; }
 
-  // Forecast blends BOTH comp days' hour-by-hour shape → a STABLE projected total that does not
-  // move when you toggle the comp (the toggle only changes what you compare that total against).
-  // fb(h) = the average fraction of a full day's sales that had accrued by hour h across the two
-  // comp days; projecting today forward on that blended shape lands at todayNow / fb(now).
-  function fb(h, lwArr, lyArr){
-    return (lwArr[h]/lwArr[lwArr.length-1] + lyArr[h]/lyArr[lyArr.length-1]) / 2;
+  // ── The projection ────────────────────────────────────────────────────────────────────────────
+  // ONE number, independent of the Last-week/Last-year toggle — the toggle only re-points what that
+  // number is compared against. "banked + what a typical day like this has left in it", with today's
+  // own running pace mixed in more and more as the day fills:
+  //     proj = banked + (1 − f) · B · r^f       r = (banked / f) / B,  f = shape[nowH]
+  // `shape` (median cumulative fraction across recent same-weekdays) and `B` (expected full-day
+  // total) are baked by pacing-iq.ts. Early on f≈.07 so r^f≈1 and the baseline carries it; by
+  // evening f→1 and it converges on pure extrapolation. Backtested over 372 days
+  // (scripts/pacing-backtest.ts): median error at 6 AM PT 30% → 12%, 90th percentile 86% → 34%.
+  // Pages baked before `forecast` existed fall back to the old two-comp shape blend.
+  function basisFor(metric, Dm){
+    var f = D.forecast;
+    if (f) return { shape: f.shape[metric], baseline: f.baseline[metric] };
+    var shape=[], h;
+    for(h=0; h<24; h++) shape.push((Dm.lastweek[h]/(Dm.lastweek[23]||1) + Dm.lastyear[h]/(Dm.lastyear[23]||1))/2);
+    return { shape: shape, baseline: ((Dm.lastweek[23]||0) + (Dm.lastyear[23]||0))/2 };
   }
-  function forecastCurve(todayArr, lwArr, lyArr){
-    var now = todayArr.length-1;
-    var base = fb(now, lwArr, lyArr);
-    var out=[];
-    for(var h=now; h<24; h++) out.push(todayArr[now] * (fb(h, lwArr, lyArr) / base));
+  function projEodOf(banked, nowH, b){
+    var f = b.shape[nowH] || 0;
+    if(!(f>0) || !(b.baseline>0)) return banked + Math.max(b.baseline||0, 0);
+    var r = (banked/f)/b.baseline;
+    return banked + (1-f) * b.baseline * Math.pow(Math.max(r,0.01), f);
+  }
+  // Cumulative path from now to midnight that lands exactly on `proj`, following the typical shape.
+  function forecastCurve(todayArr, nowH, b, proj){
+    var banked = todayArr[todayArr.length-1] || 0, f = b.shape[nowH] || 0, rest = proj - banked;
+    var out=[], h, g;
+    for(h=nowH; h<24; h++){
+      g = f < 1 ? (((b.shape[h]===undefined?f:b.shape[h]) - f) / (1-f)) : 1;
+      out.push(banked + rest * Math.min(Math.max(g,0),1));
+    }
     return out;
-  }
-  function blendedProjEod(todayArr, lwArr, lyArr){
-    var now = todayArr.length-1;
-    return todayArr[now] / fb(now, lwArr, lyArr);
   }
   function deltaHTML(proj, full, label, metric){
     var pct = Math.round((proj/full-1)*100);
@@ -287,6 +317,7 @@
   }
 
   // static header bits
+  D.dateLabelBaked = D.dateLabel;   // applyLive re-stamps D.dateLabel to the live day; the banner needs the baked one
   document.getElementById('date').textContent = D.dateLabel;
   document.getElementById('asof').textContent = D.asofLabel;
   document.getElementById('btnLW').textContent = 'vs Last '+WD;
@@ -294,41 +325,79 @@
   document.getElementById('legLY').textContent = 'Last yr · '+D.legLY;
   document.getElementById('freshFlag').textContent = D.freshLabel;
 
+  // Set by applyLive when the live day is ahead of the day these comps were baked for. Everything
+  // on this page except "today so far" is a comparison, so a stale bake means the comparisons are
+  // against the wrong day and must be suppressed, not quietly shown.
+  var STALE_COMPS = false;
+  function paintStale(){
+    var el = document.getElementById('staleBar');
+    if(!el) return;
+    if(!STALE_COMPS){ el.style.display='none'; render(); return; }
+    el.innerHTML = "<b>Comparisons are unavailable.</b> Today's numbers are live, but the comparison days "
+      + "were baked for " + D.dateLabelBaked + " — the pacing job hasn't run yet today. Pace, projection and "
+      + "the comp lines are hidden rather than shown against the wrong day.";
+    el.style.display='';
+    render();
+  }
+
   function render(){
     var comp=state.comp, metric=state.metric;
     var Dm = metric==='sales'?SALES:UNITS;
     var today=Dm.today, compArr=Dm[comp];
     var now=today.length-1;
     var todayNow=today[now], compNow=compArr[NOW_H], compFull=compArr[compArr.length-1];
-    var haveComp=compNow>0, paceAhead=todayNow>=compNow;        // pace vs THIS comp at this hour → drives the meter
+    var haveComp=compNow>0 && !STALE_COMPS, paceAhead=todayNow>=compNow; // pace vs THIS comp at this hour → drives the meter
     // (compNow can be 0 in the early PT morning before the comp day's first sale — guard the ÷ below)
-    var projEod=blendedProjEod(today, Dm.lastweek, Dm.lastyear); // stable, comp-independent landing estimate
+    var basis=basisFor(metric, Dm);
+    var projEod=projEodOf(todayNow, NOW_H, basis);              // stable, comp-independent landing estimate
     var oc=other(comp);
 
     var primaryPct=Math.round((projEod/FULL[metric][comp]-1)*100);
     var ahead=primaryPct>=0;                                     // projected to LAND above the selected comp's full day
-    document.getElementById('punchCard').className='card punch '+(ahead?'ahead':'behind');
-    document.getElementById('statusPill').textContent=(ahead?'▲ AHEAD ':'▼ BEHIND ')+(primaryPct>=0?'+':'')+primaryPct+'%';
-    document.getElementById('projVal').innerHTML=fmt(projEod,metric)+'<small>'+fmt(todayNow,metric)+' so far</small>';
-    document.getElementById('dPrimary').innerHTML=deltaHTML(projEod, FULL[metric][comp], compShort(comp), metric);
-    document.getElementById('dSecondary').innerHTML=deltaHTML(projEod, FULL[metric][oc], compShort(oc), metric);
+    document.getElementById('punchCard').className='card punch '+(STALE_COMPS?'stale':(ahead?'ahead':'behind'));
+    document.getElementById('statusPill').textContent=STALE_COMPS?'':((ahead?'▲ AHEAD ':'▼ BEHIND ')+(primaryPct>=0?'+':'')+primaryPct+'%');
+    // A projection needs a day shape, and the only shapes on the page are the stale comps' — so with
+    // stale comps there is no projection to show, only what has actually banked.
+    document.getElementById('projVal').innerHTML=STALE_COMPS
+      ? fmt(todayNow,metric)+'<small>'+D.orders.toLocaleString()+' orders</small>'
+      : fmt(projEod,metric)+'<small>'+fmt(todayNow,metric)+' so far</small>';
+    var bs=document.getElementById('basis');
+    if(bs) bs.textContent=(STALE_COMPS||!D.forecast) ? '' : 'Projected on the day shape of '+D.forecast.basis+'.';
+    var dv=document.getElementById('diverge');
+    if(dv){
+      // The two cards measure different things — where today stands RIGHT NOW vs where it lands by
+      // midnight — so they can legitimately disagree. When they do, say why.
+      if(!STALE_COMPS && haveComp && paceAhead!==ahead){
+        dv.textContent='Ahead at this hour but '+(ahead?'':'not ')+'projected to finish '+(ahead?'above':'below')+' '
+          +compShort(comp)+' — today is running '+(paceAhead?'front-loaded':'back-loaded')+' against it.';
+        dv.style.display='';
+      } else { dv.style.display='none'; }
+    }
+    document.getElementById('dPrimary').innerHTML=STALE_COMPS?'':deltaHTML(projEod, FULL[metric][comp], compShort(comp), metric);
+    document.getElementById('dSecondary').innerHTML=STALE_COMPS?'':deltaHTML(projEod, FULL[metric][oc], compShort(oc), metric);
 
     // Pace card: mirrors the projected-EOD card — left title + ahead/behind pill top-right; the
     // today/comp dollars label the two horizontal bars.
-    document.getElementById('paceCard').className='card hero '+(paceAhead?'ahead':'behind');
+    document.getElementById('paceCard').className='card hero '+(STALE_COMPS?'stale':(paceAhead?'ahead':'behind'));
     document.getElementById('paceCap').textContent='Pace vs this hour '+(comp==='lastweek'?'last week':'last year');
     if(haveComp){ var dpct=Math.abs(Math.round((todayNow/compNow-1)*100));
       document.getElementById('paceStatus').textContent=(paceAhead?'▲ AHEAD +':'▼ BEHIND −')+dpct+'%'; }
-    else { document.getElementById('paceStatus').textContent=(todayNow>0?'▲ AHEAD':'no comp yet'); }
+    else { document.getElementById('paceStatus').textContent=(STALE_COMPS?'comps stale':(todayNow>0?'▲ AHEAD':'no comp yet')); }
     document.getElementById('pbTodayVal').textContent=fmt(todayNow,metric);
-    document.getElementById('pbCompVal').textContent=fmt(compNow,metric);
-    document.getElementById('pbCompName').textContent='This hr · '+(comp==='lastweek'?D.legLW:D.legLY);
-    var pbMax=Math.max(todayNow,compNow,1);
+    document.getElementById('pbCompVal').textContent=STALE_COMPS?'—':fmt(compNow,metric);
+    document.getElementById('pbCompName').textContent=STALE_COMPS
+      ? 'This hr · not available'
+      : 'This hr · '+(comp==='lastweek'?D.legLW:D.legLY);
+    var pbMax=Math.max(todayNow,STALE_COMPS?0:compNow,1);
     document.getElementById('pbToday').style.width=(todayNow/pbMax*100).toFixed(1)+'%';
-    document.getElementById('pbComp').style.width=(compNow/pbMax*100).toFixed(1)+'%';
+    document.getElementById('pbComp').style.width=(STALE_COMPS?0:compNow/pbMax*100).toFixed(1)+'%';
 
+    document.getElementById('punchCap').textContent=STALE_COMPS?'Banked so far today':'Projected end of day';
+    ['legFC','legLWrap','legLYrap'].forEach(function(id){
+      var el=document.getElementById(id); if(el) el.style.display=STALE_COMPS?'none':'';
+    });
     document.getElementById('chartTitle').textContent='Cumulative '+(metric==='sales'?'sales':'units')+' through the day';
-    document.getElementById('fcTag').textContent='forecast ≈ '+(metric==='sales'?moneyK(projEod):Math.round(projEod).toLocaleString());
+    document.getElementById('fcTag').textContent=STALE_COMPS?'':('forecast ≈ '+(metric==='sales'?moneyK(projEod):Math.round(projEod).toLocaleString()));
 
     var cb=document.querySelectorAll('#compSeg button'), i;
     for(i=0;i<cb.length;i++) cb[i].classList.toggle('on', cb[i].getAttribute('data-comp')===comp);
@@ -342,9 +411,13 @@
     var Dm=metric==='sales'?SALES:UNITS;
     var W=400,H=236,padL=metric==='sales'?46:32,padR=14,padT=14,padB=26;
     var iw=W-padL-padR, ih=H-padT-padB;
-    var fc=forecastCurve(Dm.today,Dm.lastweek,Dm.lastyear);
+    var fc=forecastCurve(Dm.today, NOW_H, basisFor(metric, Dm), projEodOf(Dm.today[Dm.today.length-1]||0, NOW_H, basisFor(metric, Dm)));
     var projEnd=fc[fc.length-1];
-    var maxY=Math.max(Dm.lastweek[Dm.lastweek.length-1],Dm.lastyear[Dm.lastyear.length-1],projEnd)*1.06;
+    // With stale comps the only trustworthy series is today's, so the chart scales to it alone and
+    // the comp + forecast paths are dropped below.
+    var maxY=(STALE_COMPS
+      ? Math.max(Dm.today[Dm.today.length-1]||0,1)/0.6
+      : Math.max(Dm.lastweek[Dm.lastweek.length-1],Dm.lastyear[Dm.lastyear.length-1],projEnd))*1.06;
     var x=function(h){return padL+(h/23)*iw;}, y=function(val){return padT+ih-(val/maxY)*ih;};
     var line=function(arr){return arr.map(function(v,i){return (i?'L':'M')+x(i).toFixed(1)+' '+y(v).toFixed(1);}).join(' ');};
     var fcLine=function(arr){return arr.map(function(v,i){return (i?'L':'M')+x(NOW_H+i).toFixed(1)+' '+y(v).toFixed(1);}).join(' ');};
@@ -362,13 +435,15 @@
     var nx=x(NOW_H);
     g+='<line x1="'+nx+'" y1="'+padT+'" x2="'+nx+'" y2="'+(padT+ih)+'" stroke="#0090FF" stroke-width="1" stroke-dasharray="3 3" opacity=".45"/>';
     g+='<text x="'+nx+'" y="'+(padT+7)+'" text-anchor="middle" font-size="8.5" fill="#0090FF" font-weight="700" font-family="var(--font)">now</text>';
-    g+='<path d="'+line(Dm.lastweek)+'" fill="none" stroke="#D4A62A" stroke-width="'+(sel==='lastweek'?2.8:2)+'" opacity="'+(sel==='lastweek'?1:.65)+'"/>';
-    g+='<path d="'+line(Dm.lastyear)+'" fill="none" stroke="#B8C0CC" stroke-width="'+(sel==='lastyear'?2.8:2)+'" opacity="'+(sel==='lastyear'?1:.85)+'"/>';
-    g+='<path d="'+fcLine(fc)+'" fill="none" stroke="#0090FF" stroke-width="2.4" stroke-dasharray="2 4" stroke-linecap="round" opacity=".9"/>';
+    if(!STALE_COMPS){
+      g+='<path d="'+line(Dm.lastweek)+'" fill="none" stroke="#D4A62A" stroke-width="'+(sel==='lastweek'?2.8:2)+'" opacity="'+(sel==='lastweek'?1:.65)+'"/>';
+      g+='<path d="'+line(Dm.lastyear)+'" fill="none" stroke="#B8C0CC" stroke-width="'+(sel==='lastyear'?2.8:2)+'" opacity="'+(sel==='lastyear'?1:.85)+'"/>';
+      g+='<path d="'+fcLine(fc)+'" fill="none" stroke="#0090FF" stroke-width="2.4" stroke-dasharray="2 4" stroke-linecap="round" opacity=".9"/>';
+    }
     g+='<path d="'+line(Dm.today)+'" fill="none" stroke="#0090FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>';
     var nowI=Dm.today.length-1;
     g+='<circle cx="'+x(nowI)+'" cy="'+y(Dm.today[Dm.today.length-1])+'" r="4.5" fill="#0090FF" stroke="#fff" stroke-width="2"/>';
-    g+='<circle cx="'+x(23)+'" cy="'+y(projEnd)+'" r="4.5" fill="#fff" stroke="#0090FF" stroke-width="2.4"/>';
+    if(!STALE_COMPS) g+='<circle cx="'+x(23)+'" cy="'+y(projEnd)+'" r="4.5" fill="#fff" stroke="#0090FF" stroke-width="2.4"/>';
     document.getElementById('chart').innerHTML=g;
   }
 
@@ -393,17 +468,23 @@
       D.asofLabel = 'as of ' + et;
       var a=document.getElementById('asof'); if(a) a.textContent = D.asofLabel;
     } catch(e){}
-    // Re-stamp the DATE heading from the live payload's own day. The baked snapshot can freeze on a
-    // stale day if a bake fails (e.g. the Aug 1 2026 month-boundary outage), but live data is always
-    // TODAY — so trust live.date for the heading rather than the possibly-stale baked dateLabel.
+    // Re-stamp the DATE heading from the live payload's own day — but ONLY say so out loud.
+    // This used to silently repaint the heading to today whenever the bake had frozen on an older
+    // day, which made a stale page look current: on 2026-09-08 the 11:00 UTC refresh slot never
+    // fired, so Sep 7's comps sat under Sep 8's live $583 and the page projected $9,549. Today's
+    // numbers ARE live and worth showing; the comps are not, so they get suppressed and flagged.
     // Construct from parts (not new Date('YYYY-MM-DD'), which parses as UTC and can roll back a day).
     try {
-      if (live.date && live.date !== D.today) {
-        var p = live.date.split('-');
-        var dt = new Date(+p[0], +p[1]-1, +p[2]);
-        D.today = live.date;
-        D.dateLabel = dt.toLocaleDateString('en-US', {weekday:'short', month:'short', day:'numeric'});
-        var dEl = document.getElementById('date'); if(dEl) dEl.textContent = D.dateLabel;
+      if (live.date) {
+        STALE_COMPS = !!(D.today && live.date !== D.today);
+        if (live.date !== D.dateYmdShown) {
+          var p = live.date.split('-');
+          var dt = new Date(+p[0], +p[1]-1, +p[2]);
+          D.dateYmdShown = live.date;
+          D.dateLabel = dt.toLocaleDateString('en-US', {weekday:'short', month:'short', day:'numeric'});
+          var dEl = document.getElementById('date'); if(dEl) dEl.textContent = D.dateLabel;
+        }
+        paintStale();
       }
     } catch(e){}
     // Overlay the RECAP live too when the endpoint returns it. The recap is baked into the page, so
