@@ -1,21 +1,32 @@
 {
-  "generatedAt": "2026-10-03T11:01:39.194Z",
+  "generatedAt": "2026-10-03T12:47:21.358Z",
   "today": "2026-10-03",
   "metric": "sales",
   "estimated": true,
-  "todayDollars": 20,
-  "todayUnits": 1,
+  "todayDollars": 165,
+  "todayUnits": 9,
   "partial": false,
   "comps": {
     "lastweek": {
       "comp": "2026-09-26",
       "compLabel": "Sat, Sep 26",
-      "compDollars": 223,
-      "compUnits": 13,
-      "ratio": 0.05065388444177769,
+      "compDollars": 290,
+      "compUnits": 17,
+      "ratio": 0.06587255049024286,
       "metric": "units",
       "beats": [],
       "misses": [
+        {
+          "name": "Paramount Crystals for Candy Melts & Chocolate",
+          "img": "https://m.media-amazon.com/images/I/61OW-j13QeL.jpg",
+          "asin": "B0GC9XSGGY",
+          "sku": "Para8",
+          "family": "Paramount Crystals · family of 3",
+          "today": 2,
+          "comp": 5,
+          "compFull": 22,
+          "delta": -3
+        },
         {
           "name": "Global Sugar Art 12-Count Edible Burgundy Rose",
           "img": "https://m.media-amazon.com/images/I/71yI7q0NgzL.jpg",
@@ -26,30 +37,30 @@
           "comp": 3,
           "compFull": 4,
           "delta": -3
-        },
-        {
-          "name": "Paramount Crystals for Candy Melts & Chocolate",
-          "img": "https://m.media-amazon.com/images/I/61OW-j13QeL.jpg",
-          "asin": "B0GC9XSGGY",
-          "sku": "Para8",
-          "family": "Paramount Crystals · family of 3",
-          "today": 0,
-          "comp": 3,
-          "compFull": 22,
-          "delta": -3
         }
       ],
-      "summary": "Today we're running $203 behind last Sat, Sep 26 at this hour. Biggest miss driving it — Global Sugar Art 12-Count Edible Burgundy Rose: 0 units so far today vs 3 by this hour last week (−3)."
+      "summary": "Today we're running $125 behind last Sat, Sep 26 at this hour. Biggest miss driving it — Paramount Crystals for Candy Melts & Chocolate: 2 units so far today vs 5 by this hour last week (−3)."
     },
     "lastyear": {
       "comp": "2025-10-04",
       "compLabel": "Sat, Oct 4, 2025",
-      "compDollars": 516,
-      "compUnits": 24,
-      "ratio": 0.1337636796687302,
+      "compDollars": 660,
+      "compUnits": 31,
+      "ratio": 0.171366228536736,
       "metric": "units",
       "beats": [],
       "misses": [
+        {
+          "name": "Paramount Crystals for Candy Melts & Chocolate",
+          "img": "https://m.media-amazon.com/images/I/7180IkY-H7L.jpg",
+          "asin": "B08MWLMBX7",
+          "sku": "Para4",
+          "family": "Paramount Crystals · family of 3",
+          "today": 1,
+          "comp": 6,
+          "compFull": 35,
+          "delta": -5
+        },
         {
           "name": "Global Sugar Art 1-Count Large White Rose",
           "img": "https://m.media-amazon.com/images/I/41If8UyK9nL.jpg",
@@ -60,17 +71,6 @@
           "comp": 4,
           "compFull": 5,
           "delta": -4
-        },
-        {
-          "name": "Paramount Crystals for Candy Melts & Chocolate",
-          "img": "https://m.media-amazon.com/images/I/7180IkY-H7L.jpg",
-          "asin": "B08MWLMBX7",
-          "sku": "Para4",
-          "family": "Paramount Crystals · family of 3",
-          "today": 0,
-          "comp": 3,
-          "compFull": 35,
-          "delta": -3
         },
         {
           "name": "Global Sugar Art 6-Inch Round Cake Dummy",
@@ -84,16 +84,75 @@
           "delta": -3
         }
       ],
-      "summary": "Today we're running $496 behind last year (Sat, Oct 4, 2025) at this hour. Biggest miss driving it — Global Sugar Art 1-Count Large White Rose: 0 units so far today vs 4 by this hour last year (−4)."
+      "summary": "Today we're running $496 behind last year (Sat, Oct 4, 2025) at this hour. Biggest miss driving it — Paramount Crystals for Candy Melts & Chocolate: 1 unit so far today vs 6 by this hour last year (−5)."
     }
   },
   "products": [
+    {
+      "parent": "B0GHSK8Y3R",
+      "name": "Paramount Crystals",
+      "img": "https://m.media-amazon.com/images/I/61OW-j13QeL.jpg",
+      "units": 3,
+      "sales": 48,
+      "children": [
+        {
+          "asin": "B0GC9XSGGY",
+          "sku": "Para8",
+          "title": "Paramount Crystals for Candy Melts & Chocolate, Edible Wax Flakes, 8 oz",
+          "img": "https://m.media-amazon.com/images/I/61OW-j13QeL.jpg",
+          "units": 2,
+          "sales": 33
+        },
+        {
+          "asin": "B08MWLMBX7",
+          "sku": "Para4",
+          "title": "Paramount Crystals for Candy Melts & Chocolate, Edible Wax Flakes, 4 oz",
+          "img": "https://m.media-amazon.com/images/I/7180IkY-H7L.jpg",
+          "units": 1,
+          "sales": 14
+        }
+      ]
+    },
+    {
+      "parent": "B0FVBFZD9P",
+      "name": "Edible Daisy Cake Decorations Cupcake Toppers ",
+      "img": "https://m.media-amazon.com/images/I/715XbF9BL-L.jpg",
+      "units": 2,
+      "sales": 34,
+      "children": [
+        {
+          "asin": "B07TLY7F5C",
+          "sku": "32082",
+          "title": "Global Sugar Art 18-Count Edible Daisy Cake Decorations, Cupcake Toppers",
+          "img": "https://m.media-amazon.com/images/I/715XbF9BL-L.jpg",
+          "units": 2,
+          "sales": 34
+        }
+      ]
+    },
+    {
+      "parent": "B0CSB69B32",
+      "name": "Sugar Cake Topper Lily",
+      "img": "https://m.media-amazon.com/images/I/510WykzP58L.jpg",
+      "units": 1,
+      "sales": 24,
+      "children": [
+        {
+          "asin": "B08N6YS9H6",
+          "sku": "37514FBA",
+          "title": "Global Sugar Art 1-Count Calla Lily Deluxe Spray, Lily Cake Topper",
+          "img": "https://m.media-amazon.com/images/I/510WykzP58L.jpg",
+          "units": 1,
+          "sales": 24
+        }
+      ]
+    },
     {
       "parent": "B0GL5X67CY",
       "name": "Large Tea Rose 2 Inch Gumpaste 12 Count",
       "img": "https://m.media-amazon.com/images/I/31D5eTyazLL.jpg",
       "units": 1,
-      "sales": 20,
+      "sales": 22,
       "children": [
         {
           "asin": "B0848JDC77",
@@ -101,17 +160,62 @@
           "title": "Global Sugar Art 12-Count Large White Tea Rose, 2-Inch, Gumpaste Roses",
           "img": "https://m.media-amazon.com/images/I/41RYFdijNwL.jpg",
           "units": 1,
-          "sales": 20
+          "sales": 22
+        }
+      ]
+    },
+    {
+      "parent": "B0FNQ4TTWP",
+      "name": "Mini Daisy Cake Decorations Edible 144 Count",
+      "img": "https://m.media-amazon.com/images/I/61WBaR9JbaL.jpg",
+      "units": 1,
+      "sales": 21,
+      "children": [
+        {
+          "asin": "B084M7YB7Q",
+          "sku": "36910",
+          "title": "Global Sugar Art 36-Count Mini Edible Daisy Cake Decorations, Sugar Flowers",
+          "img": "https://m.media-amazon.com/images/I/61WBaR9JbaL.jpg",
+          "units": 1,
+          "sales": 21
+        }
+      ]
+    },
+    {
+      "parent": "B0D1RXTP8G",
+      "name": "Buttercream Frosting",
+      "img": "https://m.media-amazon.com/images/I/71PxM5bpa8L.jpg",
+      "units": 1,
+      "sales": 17,
+      "children": [
+        {
+          "asin": "B0D1RHGDF3",
+          "sku": "37930",
+          "title": "Global Sugar Art Black Buttercream Frosting, Cake Decorating Icing, 16oz",
+          "img": "https://m.media-amazon.com/images/I/71PxM5bpa8L.jpg",
+          "units": 1,
+          "sales": 17
         }
       ]
     }
   ],
   "comp": "2026-09-26",
   "compLabel": "Sat, Sep 26",
-  "compDollars": 223,
-  "ratio": 0.05065388444177769,
+  "compDollars": 290,
+  "ratio": 0.06587255049024286,
   "beats": [],
   "misses": [
+    {
+      "name": "Paramount Crystals for Candy Melts & Chocolate",
+      "img": "https://m.media-amazon.com/images/I/61OW-j13QeL.jpg",
+      "asin": "B0GC9XSGGY",
+      "sku": "Para8",
+      "family": "Paramount Crystals · family of 3",
+      "today": 2,
+      "comp": 5,
+      "compFull": 22,
+      "delta": -3
+    },
     {
       "name": "Global Sugar Art 12-Count Edible Burgundy Rose",
       "img": "https://m.media-amazon.com/images/I/71yI7q0NgzL.jpg",
@@ -122,18 +226,7 @@
       "comp": 3,
       "compFull": 4,
       "delta": -3
-    },
-    {
-      "name": "Paramount Crystals for Candy Melts & Chocolate",
-      "img": "https://m.media-amazon.com/images/I/61OW-j13QeL.jpg",
-      "asin": "B0GC9XSGGY",
-      "sku": "Para8",
-      "family": "Paramount Crystals · family of 3",
-      "today": 0,
-      "comp": 3,
-      "compFull": 22,
-      "delta": -3
     }
   ],
-  "summary": "Today we're running $203 behind last Sat, Sep 26 at this hour. Biggest miss driving it — Global Sugar Art 12-Count Edible Burgundy Rose: 0 units so far today vs 3 by this hour last week (−3)."
+  "summary": "Today we're running $125 behind last Sat, Sep 26 at this hour. Biggest miss driving it — Paramount Crystals for Candy Melts & Chocolate: 2 units so far today vs 5 by this hour last week (−3)."
 }
