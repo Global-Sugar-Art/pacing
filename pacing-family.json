@@ -1,557 +1,50 @@
 {
-  "generatedAt": "2026-10-07T02:11:42.043Z",
-  "today": "2026-10-06",
+  "generatedAt": "2026-10-07T11:01:53.085Z",
+  "today": "2026-10-07",
   "metric": "sales",
   "estimated": true,
-  "todayDollars": 6517,
-  "todayUnits": 350,
+  "todayDollars": 265,
+  "todayUnits": 15,
   "partial": false,
   "comps": {
     "lastweek": {
-      "comp": "2026-09-29",
-      "compLabel": "Tue, Sep 29",
-      "compDollars": 5964,
-      "compUnits": 336,
-      "ratio": 0.8550274988386829,
+      "comp": "2026-09-30",
+      "compLabel": "Wed, Sep 30",
+      "compDollars": 308,
+      "compUnits": 18,
+      "ratio": 0.044376207363838197,
       "metric": "units",
-      "beats": [
-        {
-          "name": "Global Sugar Art Black Buttercream Frosting",
-          "img": "https://m.media-amazon.com/images/I/71PxM5bpa8L.jpg",
-          "asin": "B0D1RHGDF3",
-          "sku": "37930",
-          "family": "Buttercream Frosting · family of 20",
-          "today": 16,
-          "comp": 5,
-          "compFull": 5,
-          "delta": 11
-        },
-        {
-          "name": "Global Sugar Art 18 Ct Edible Fall Cake Decora",
-          "img": "https://m.media-amazon.com/images/I/71Q2BcGlE0L.jpg",
-          "asin": "B0HC86JY5L",
-          "sku": "FALL_18",
-          "family": "Edible Fall Cake Decorations Royal Icing Autum · family of 2",
-          "today": 16,
-          "comp": 5,
-          "compFull": 6,
-          "delta": 11
-        },
-        {
-          "name": "Global Sugar Art 72-Piece Small Edible Rose & ",
-          "img": "https://m.media-amazon.com/images/I/71QV6q43wVL.jpg",
-          "asin": "B0992MHDYN",
-          "sku": "37685",
-          "family": "Small Edible Rose 36 Count · family of 7",
-          "today": 7,
-          "comp": 0,
-          "compFull": 0,
-          "delta": 7
-        },
-        {
-          "name": "Global Sugar Art 36-Count Mini Edible Daisy Ca",
-          "img": "https://m.media-amazon.com/images/I/61WBaR9JbaL.jpg",
-          "asin": "B084M7YB7Q",
-          "sku": "36910",
-          "family": "Mini Daisy Cake Decorations Edible 72 Count · family of 7",
-          "today": 9,
-          "comp": 3,
-          "compFull": 5,
-          "delta": 6
-        },
-        {
-          "name": "Global Sugar Art 36-Count Black Mini Edible Fl",
-          "img": "https://m.media-amazon.com/images/I/61CuWvSNNpL.jpg",
-          "asin": "B0HC47RXFP",
-          "sku": "DROP_BLK_36",
-          "family": "Silver Mini Edible Flowers Cake Decorations 36 · family of 16",
-          "today": 7,
-          "comp": 1,
-          "compFull": 1,
-          "delta": 6
-        }
-      ],
-      "misses": [
-        {
-          "name": "Paramount Crystals for Candy Melts & Chocolate",
-          "img": "https://m.media-amazon.com/images/I/61OW-j13QeL.jpg",
-          "asin": "B0GC9XSGGY",
-          "sku": "Para8",
-          "family": "Paramount Crystals · family of 3",
-          "today": 10,
-          "comp": 25,
-          "compFull": 28,
-          "delta": -15
-        },
-        {
-          "name": "Global Sugar Art 18 Ct Edible Halloween Cake D",
-          "img": "https://m.media-amazon.com/images/I/71rCot63zkL.jpg",
-          "asin": "B0HC8DCRGD",
-          "sku": "HLWN_18",
-          "family": "Edible Halloween Cake Decorations Cauldrons 18 · family of 6",
-          "today": 3,
-          "comp": 13,
-          "compFull": 15,
-          "delta": -10
-        },
-        {
-          "name": "Paramount Crystals for Candy Melts & Chocolate",
-          "img": "https://m.media-amazon.com/images/I/7180IkY-H7L.jpg",
-          "asin": "B08MWLMBX7",
-          "sku": "Para4",
-          "family": "Paramount Crystals · family of 3",
-          "today": 23,
-          "comp": 32,
-          "compFull": 34,
-          "delta": -9
-        },
-        {
-          "name": "Global Sugar Art 24-Count White Gum Paste Suga",
-          "img": "https://m.media-amazon.com/images/I/51wojPDh1zL.jpg",
-          "asin": "B07T91MHGQ",
-          "sku": "36807",
-          "family": "Mini Blossoms 24 Count · family of 6",
-          "today": 3,
-          "comp": 8,
-          "compFull": 10,
-          "delta": -5
-        },
-        {
-          "name": "Global Sugar Art 12-Inch Round Cake Dummy",
-          "img": "https://m.media-amazon.com/images/I/71kjBN+tV8L.jpg",
-          "asin": "B08MWMFNMG",
-          "sku": "RND125",
-          "family": "14 Inch Round Cake Dummy Styrofoam 5 High · family of 35",
-          "today": 0,
-          "comp": 5,
-          "compFull": 5,
-          "delta": -5
-        }
-      ],
-      "summary": "Today we're running $553 ahead of last Tue, Sep 29 at this hour."
+      "beats": [],
+      "misses": [],
+      "summary": "Today we're running $43 behind last Wed, Sep 30 at this hour."
     },
     "lastyear": {
-      "comp": "2025-10-07",
-      "compLabel": "Tue, Oct 7, 2025",
-      "compDollars": 6062,
-      "compUnits": 287,
-      "ratio": 0.8882511791606165,
+      "comp": "2025-10-08",
+      "compLabel": "Wed, Oct 8, 2025",
+      "compDollars": 287,
+      "compUnits": 14,
+      "ratio": 0.04375981071891117,
       "metric": "units",
-      "beats": [
-        {
-          "name": "Global Sugar Art 36-Count Pink Mini Edible Flo",
-          "img": "https://m.media-amazon.com/images/I/71CJJHh9bzL.jpg",
-          "asin": "B0D45SRK3J",
-          "sku": "37916",
-          "family": "Silver Mini Edible Flowers Cake Decorations 36 · family of 16",
-          "today": 23,
-          "comp": 1,
-          "compFull": 1,
-          "delta": 22
-        },
-        {
-          "name": "Global Sugar Art 18 Ct Edible Fall Cake Decora",
-          "img": "https://m.media-amazon.com/images/I/71Q2BcGlE0L.jpg",
-          "asin": "B0HC86JY5L",
-          "sku": "FALL_18",
-          "family": "Edible Fall Cake Decorations Royal Icing Autum · family of 2",
-          "today": 16,
-          "comp": 0,
-          "compFull": 0,
-          "delta": 16
-        },
-        {
-          "name": "Paramount Crystals for Candy Melts & Chocolate",
-          "img": "https://m.media-amazon.com/images/I/61OW-j13QeL.jpg",
-          "asin": "B0GC9XSGGY",
-          "sku": "Para8",
-          "family": "Paramount Crystals · family of 3",
-          "today": 10,
-          "comp": 0,
-          "compFull": 0,
-          "delta": 10
-        },
-        {
-          "name": "Global Sugar Art Woodland Animal Edible Cake D",
-          "img": "https://m.media-amazon.com/images/I/61KSinv+l1L.jpg",
-          "asin": "B0HC86WYB3",
-          "sku": "WOOD_18",
-          "family": "Edible Cupcake Decorations — Assorted Themes · family of 12",
-          "today": 10,
-          "comp": 0,
-          "compFull": 0,
-          "delta": 10
-        },
-        {
-          "name": "Global Sugar Art 24 Ct Edible Halloween Cake D",
-          "img": "https://m.media-amazon.com/images/I/71Srq-35UgL.jpg",
-          "asin": "B0D3MB51M6",
-          "sku": "37914",
-          "family": "Edible Halloween Cake Decorations Cauldrons 18 · family of 6",
-          "today": 8,
-          "comp": 0,
-          "compFull": 0,
-          "delta": 8
-        }
-      ],
-      "misses": [
-        {
-          "name": "Paramount Crystals for Candy Melts & Chocolate",
-          "img": "https://m.media-amazon.com/images/I/7180IkY-H7L.jpg",
-          "asin": "B08MWLMBX7",
-          "sku": "Para4",
-          "family": "Paramount Crystals · family of 3",
-          "today": 23,
-          "comp": 33,
-          "compFull": 41,
-          "delta": -10
-        },
-        {
-          "name": "Global Sugar Art Black Buttercream Frosting",
-          "img": "https://m.media-amazon.com/images/I/61OojwDd59L.jpg",
-          "asin": "B0FDHHMPNK",
-          "sku": "FROST_BLACK_48",
-          "family": "Buttercream Frosting · family of 20",
-          "today": 0,
-          "comp": 9,
-          "compFull": 9,
-          "delta": -9
-        },
-        {
-          "name": "Global Sugar Art Royal Icing Mix",
-          "img": "https://m.media-amazon.com/images/I/71HPCF6CTiL.jpg",
-          "asin": "B09CB7VJWJ",
-          "sku": "37709",
-          "family": "Royal Icing Mix · family of 5",
-          "today": 1,
-          "comp": 8,
-          "compFull": 8,
-          "delta": -7
-        },
-        {
-          "name": "Global Sugar Art 1-Count White Peony",
-          "img": "https://m.media-amazon.com/images/I/41PpIR+adYL.jpg",
-          "asin": "B084M9423V",
-          "sku": "36913",
-          "family": "Premium Peony Sugar Cake Flowers · family of 10",
-          "today": 0,
-          "comp": 7,
-          "compFull": 7,
-          "delta": -7
-        },
-        {
-          "name": "Global Sugar Art 8-Inch Round Cake Dummy",
-          "img": "https://m.media-amazon.com/images/I/61zng2VzdXL.jpg",
-          "asin": "B08MWNGWFC",
-          "sku": "RND86",
-          "family": "14 Inch Round Cake Dummy Styrofoam 5 High · family of 35",
-          "today": 0,
-          "comp": 7,
-          "compFull": 8,
-          "delta": -7
-        }
-      ],
-      "summary": "Today we're running $455 ahead of last year (Tue, Oct 7, 2025) at this hour."
+      "beats": [],
+      "misses": [],
+      "summary": "Today we're running $22 behind last year (Wed, Oct 8, 2025) at this hour."
     }
   },
   "products": [
     {
-      "parent": "B0FVHMJ18S",
-      "name": "Silver Mini Edible Flowers Cake Decorations 36",
-      "img": "https://m.media-amazon.com/images/I/71CJJHh9bzL.jpg",
-      "units": 62,
-      "sales": 1103,
+      "parent": "B0C15P9DDZ",
+      "name": "15 Piece Rose",
+      "img": "https://m.media-amazon.com/images/I/71Us694JH6L.jpg",
+      "units": 2,
+      "sales": 33,
       "children": [
         {
-          "asin": "B0D45SRK3J",
-          "sku": "37916",
-          "title": "Global Sugar Art 36-Count Pink Mini Edible Flowers Cake Decorations",
-          "img": "https://m.media-amazon.com/images/I/71CJJHh9bzL.jpg",
-          "units": 23,
-          "sales": 383
-        },
-        {
-          "asin": "B0D45SGY93",
-          "sku": "37917",
-          "title": "Global Sugar Art 36-Count White Mini Edible Flowers Cake Decorations",
-          "img": "https://m.media-amazon.com/images/I/61lBWNGtWPL.jpg",
-          "units": 9,
-          "sales": 149
-        },
-        {
-          "asin": "B0HC47RXFP",
-          "sku": "DROP_BLK_36",
-          "title": "Global Sugar Art 36-Count Black Mini Edible Flowers Cake Decorations",
-          "img": "https://m.media-amazon.com/images/I/61CuWvSNNpL.jpg",
-          "units": 7,
-          "sales": 116
-        },
-        {
-          "asin": "B0FVCW9KZ5",
-          "sku": "37917_72",
-          "title": "Global Sugar Art 72-Count Mini Edible White Flowers, White Flower Sprinkles",
-          "img": "https://m.media-amazon.com/images/I/61lBWNGtWPL.jpg",
-          "units": 4,
-          "sales": 106
-        },
-        {
-          "asin": "B0FVC9SMSB",
-          "sku": "37918",
-          "title": "Global Sugar Art 36-Count Purple Mini Edible Flowers Cake Decorations",
-          "img": "https://m.media-amazon.com/images/I/71s8mq350wL.jpg",
-          "units": 7,
-          "sales": 87
-        },
-        {
-          "asin": "B0FVCN2WDW",
-          "sku": "37916_180",
-          "title": "Global Sugar Art 180-Count Pink Mini Edible Flowers, Royal Icing Flowers",
-          "img": "https://m.media-amazon.com/images/I/71CJJHh9bzL.jpg",
-          "units": 2,
-          "sales": 67
-        },
-        {
-          "asin": "B0HC8D6SVL",
-          "sku": "DROP_MNT_36",
-          "title": "Global Sugar Art 36-Count Mint Green Mini Edible Flowers Cake Decorations",
-          "img": "https://m.media-amazon.com/images/I/61H+oOEWzjL.jpg",
-          "units": 3,
-          "sales": 50
-        },
-        {
-          "asin": "B0HC8886BB",
-          "sku": "DROP_GLD_36",
-          "title": "Global Sugar Art 36-Count Yellow Mini Edible Flowers Cake Decorations",
-          "img": "https://m.media-amazon.com/images/I/61l8Y1A68ML.jpg",
-          "units": 3,
-          "sales": 50
-        },
-        {
-          "asin": "B0FVCNKLJP",
-          "sku": "37917_180",
-          "title": "Global Sugar Art 180-Count White Mini Edible Flowers, Tiny Sugar Flowers",
-          "img": "https://m.media-amazon.com/images/I/61lBWNGtWPL.jpg",
-          "units": 1,
-          "sales": 33
-        },
-        {
-          "asin": "B0FVCFHQTH",
-          "sku": "37916_72",
-          "title": "Global Sugar Art 72-Count Pink Mini Edible Flowers Cake Decorations",
-          "img": "https://m.media-amazon.com/images/I/71CJJHh9bzL.jpg",
-          "units": 1,
-          "sales": 26
-        },
-        {
-          "asin": "B0FVCB6CFB",
-          "sku": "37918_180",
-          "title": "Global Sugar Art 180-Count Purple Mini Edible Flowers, Royal Icing",
-          "img": "https://m.media-amazon.com/images/I/71s8mq350wL.jpg",
-          "units": 1,
-          "sales": 18
-        },
-        {
-          "asin": "B0HC7TGGHK",
-          "sku": "DROP_BBL_36",
-          "title": "Global Sugar Art 36-Count Baby Blue Mini Edible Flowers Cake Decorations",
-          "img": "https://m.media-amazon.com/images/I/614vVTpMMGL.jpg",
-          "units": 1,
-          "sales": 17
-        }
-      ]
-    },
-    {
-      "parent": "B08V1XJYFC",
-      "name": "14 Inch Round Cake Dummy Styrofoam 5 High",
-      "img": "https://m.media-amazon.com/images/I/61zng2VzdXL.jpg",
-      "units": 30,
-      "sales": 740,
-      "children": [
-        {
-          "asin": "B08MWPP8JV",
-          "sku": "RND126",
-          "title": "Global Sugar Art 12-Inch Round Cake Dummy, Styrofoam, 6\" High, 12x6",
-          "img": "https://m.media-amazon.com/images/I/71d6s9ygv8L.jpg",
-          "units": 7,
-          "sales": 178
-        },
-        {
-          "asin": "B08MWS4PZP",
-          "sku": "RND165",
-          "title": "Global Sugar Art 16-Inch Round Cake Dummy, Styrofoam, 5\" High, 16x5",
-          "img": "https://m.media-amazon.com/images/I/61r4AMnbGuL.jpg",
-          "units": 3,
-          "sales": 104
-        },
-        {
-          "asin": "B08MWQ85V7",
-          "sku": "RND124",
-          "title": "Global Sugar Art 12-Inch Round Cake Dummy, Styrofoam, 4\" High, 12x4",
-          "img": "https://m.media-amazon.com/images/I/71kjBN+tV8L.jpg",
-          "units": 3,
-          "sales": 74
-        },
-        {
-          "asin": "B08MWNT37C",
-          "sku": "RND66",
-          "title": "Global Sugar Art 6-Inch Round Cake Dummy, Styrofoam, 6\" High, 6x6 Fake Cake",
-          "img": "https://m.media-amazon.com/images/I/711fimYqXqL.jpg",
-          "units": 3,
-          "sales": 63
-        },
-        {
-          "asin": "B08MWNL99K",
-          "sku": "RND146",
-          "title": "Global Sugar Art 14-Inch Round Cake Dummy, Styrofoam, 6\" High, 14x6",
-          "img": "https://m.media-amazon.com/images/I/71kjBN+tV8L.jpg",
-          "units": 2,
-          "sales": 61
-        },
-        {
-          "asin": "B08MWQF2FV",
-          "sku": "RND134",
-          "title": "Global Sugar Art 13-Inch Round Cake Dummy, Styrofoam, 4\" High, 13x4",
-          "img": "https://m.media-amazon.com/images/I/61r4AMnbGuL.jpg",
-          "units": 2,
-          "sales": 54
-        },
-        {
-          "asin": "B08MWJ2NP1",
-          "sku": "RND76",
-          "title": "Global Sugar Art 7-Inch Round Cake Dummy, Styrofoam, 6\" High, 7x6 Fake Cake",
-          "img": "https://m.media-amazon.com/images/I/711fimYqXqL.jpg",
-          "units": 2,
-          "sales": 45
-        },
-        {
-          "asin": "B08MWP4ZR3",
-          "sku": "RND64",
-          "title": "Global Sugar Art 6-Inch Round Cake Dummy, Styrofoam, 4\" High, 6x4 Fake Cake",
-          "img": "https://m.media-amazon.com/images/I/61SzPCX7dGL.jpg",
-          "units": 2,
-          "sales": 38
-        },
-        {
-          "asin": "B08MWQ1KFM",
-          "sku": "RND46",
-          "title": "Global Sugar Art 4-Inch Round Cake Dummy, Styrofoam, 6\" High, 4x6 Fake Cake",
-          "img": "https://m.media-amazon.com/images/I/71wD8A+NXOL.jpg",
+          "asin": "B084M8555Z",
+          "sku": "36950",
+          "title": "Global Sugar Art 15-Piece Red Rose & Leaf Kit, Assorted Sizes, Edible Roses",
+          "img": "https://m.media-amazon.com/images/I/51VXD6Hm34L.jpg",
           "units": 2,
           "sales": 33
-        },
-        {
-          "asin": "B08MWP96L8",
-          "sku": "RND106",
-          "title": "Global Sugar Art 10-Inch Round Cake Dummy, Styrofoam, 6\" High, 10x6",
-          "img": "https://m.media-amazon.com/images/I/61fsTUHbHgL.jpg",
-          "units": 1,
-          "sales": 25
-        },
-        {
-          "asin": "B08MWQYNYP",
-          "sku": "RND54",
-          "title": "Global Sugar Art 5-Inch Round Cake Dummy, Styrofoam, 4\" High, 5x4 Fake Cake",
-          "img": "https://m.media-amazon.com/images/I/711fimYqXqL.jpg",
-          "units": 1,
-          "sales": 22
-        },
-        {
-          "asin": "B08MWR56VL",
-          "sku": "RND94",
-          "title": "Global Sugar Art 9-Inch Round Cake Dummy, Styrofoam, 4\" High, 9x4 Fake Cake",
-          "img": "https://m.media-amazon.com/images/I/71d6s9ygv8L.jpg",
-          "units": 1,
-          "sales": 22
-        },
-        {
-          "asin": "B08MWPRQQX",
-          "sku": "RND96",
-          "title": "Global Sugar Art 9-Inch Round Cake Dummy, Styrofoam, 6\" High, 9x6 Fake Cake",
-          "img": "https://m.media-amazon.com/images/I/71d6s9ygv8L.jpg",
-          "units": 1,
-          "sales": 22
-        }
-      ]
-    },
-    {
-      "parent": "B0D1RXTP8G",
-      "name": "Buttercream Frosting",
-      "img": "https://m.media-amazon.com/images/I/71PxM5bpa8L.jpg",
-      "units": 38,
-      "sales": 630,
-      "children": [
-        {
-          "asin": "B0D1RHGDF3",
-          "sku": "37930",
-          "title": "Global Sugar Art Black Buttercream Frosting, Cake Decorating Icing, 16oz",
-          "img": "https://m.media-amazon.com/images/I/71PxM5bpa8L.jpg",
-          "units": 16,
-          "sales": 266
-        },
-        {
-          "asin": "B0D1RKRKWP",
-          "sku": "37926",
-          "title": "Global Sugar Art Orange Buttercream Frosting, Cake Decorating Icing, 16oz",
-          "img": "https://m.media-amazon.com/images/I/71Ccwhd7X6L.jpg",
-          "units": 7,
-          "sales": 116
-        },
-        {
-          "asin": "B0D1RHY7Y3",
-          "sku": "37922",
-          "title": "Global Sugar Art Green Buttercream Frosting, Cake Decorating Icing, 16oz",
-          "img": "https://m.media-amazon.com/images/I/719ybAlurWL.jpg",
-          "units": 5,
-          "sales": 83
-        },
-        {
-          "asin": "B0D1RJH2VM",
-          "sku": "37928",
-          "title": "Global Sugar Art Red Buttercream Frosting, Cake Decorating Icing, 16oz",
-          "img": "https://m.media-amazon.com/images/I/71hqjgCr9sL.jpg",
-          "units": 4,
-          "sales": 66
-        },
-        {
-          "asin": "B0D1RJ13HG",
-          "sku": "37921",
-          "title": "Global Sugar Art True White Buttercream Frosting, Wedding Cake Icing, 16oz",
-          "img": "https://m.media-amazon.com/images/I/71Gt0s2dV0L.jpg",
-          "units": 4,
-          "sales": 66
-        },
-        {
-          "asin": "B0D1RHLFLJ",
-          "sku": "37924",
-          "title": "Global Sugar Art Sky Blue Buttercream Frosting, Cake Decorating Icing, 16oz",
-          "img": "https://m.media-amazon.com/images/I/71BwypXjDkL.jpg",
-          "units": 2,
-          "sales": 33
-        }
-      ]
-    },
-    {
-      "parent": "B0GHSK8Y3R",
-      "name": "Paramount Crystals",
-      "img": "https://m.media-amazon.com/images/I/61OW-j13QeL.jpg",
-      "units": 33,
-      "sales": 506,
-      "children": [
-        {
-          "asin": "B08MWLMBX7",
-          "sku": "Para4",
-          "title": "Paramount Crystals for Candy Melts & Chocolate, Edible Wax Flakes, 4 oz",
-          "img": "https://m.media-amazon.com/images/I/7180IkY-H7L.jpg",
-          "units": 23,
-          "sales": 336
-        },
-        {
-          "asin": "B0GC9XSGGY",
-          "sku": "Para8",
-          "title": "Paramount Crystals for Candy Melts & Chocolate, Edible Wax Flakes, 8 oz",
-          "img": "https://m.media-amazon.com/images/I/61OW-j13QeL.jpg",
-          "units": 10,
-          "sales": 170
         }
       ]
     },
@@ -559,48 +52,33 @@
       "parent": "B0FJZ8BCG1",
       "name": "Edible Halloween Cake Decorations Cauldrons 18",
       "img": "https://m.media-amazon.com/images/I/71rCot63zkL.jpg",
-      "units": 18,
-      "sales": 304,
+      "units": 2,
+      "sales": 32,
       "children": [
-        {
-          "asin": "B0D3MB51M6",
-          "sku": "37914",
-          "title": "Global Sugar Art 24 Ct Edible Halloween Cake Decorations, Witch Toppers",
-          "img": "https://m.media-amazon.com/images/I/71Srq-35UgL.jpg",
-          "units": 8,
-          "sales": 123
-        },
-        {
-          "asin": "B0D3MCLJZR",
-          "sku": "37913",
-          "title": "Global Sugar Art 24 Ct Edible Halloween Cake Decorations, Pumpkin Toppers",
-          "img": "https://m.media-amazon.com/images/I/71JwebjMvrL.jpg",
-          "units": 4,
-          "sales": 70
-        },
         {
           "asin": "B0HC8DCRGD",
           "sku": "HLWN_18",
           "title": "Global Sugar Art 18 Ct Edible Halloween Cake Decorations, Cauldrons",
           "img": "https://m.media-amazon.com/images/I/71rCot63zkL.jpg",
-          "units": 3,
-          "sales": 48
-        },
-        {
-          "asin": "B0FJPZ5FF7",
-          "sku": "37913_48",
-          "title": "Global Sugar Art 48 Ct Edible Halloween Cake Decorations, Pumpkin Toppers",
-          "img": "https://m.media-amazon.com/images/I/71JwebjMvrL.jpg",
           "units": 2,
-          "sales": 44
-        },
+          "sales": 32
+        }
+      ]
+    },
+    {
+      "parent": "B0GHSK8Y3R",
+      "name": "Paramount Crystals",
+      "img": "https://m.media-amazon.com/images/I/7180IkY-H7L.jpg",
+      "units": 2,
+      "sales": 29,
+      "children": [
         {
-          "asin": "B0FJPMD6VP",
-          "sku": "37914_48",
-          "title": "Global Sugar Art 48 Ct Edible Halloween Cake Decorations, Witch Toppers",
-          "img": "https://m.media-amazon.com/images/I/71Srq-35UgL.jpg",
-          "units": 1,
-          "sales": 20
+          "asin": "B08MWLMBX7",
+          "sku": "Para4",
+          "title": "Paramount Crystals for Candy Melts & Chocolate, Edible Wax Flakes, 4 oz",
+          "img": "https://m.media-amazon.com/images/I/7180IkY-H7L.jpg",
+          "units": 2,
+          "sales": 29
         }
       ]
     },
@@ -608,676 +86,15 @@
       "parent": "B0FVCSC1F3",
       "name": "Edible Cupcake Decorations — Assorted Themes",
       "img": "https://m.media-amazon.com/images/I/51DU6YzWqaL.jpg",
-      "units": 16,
-      "sales": 237,
+      "units": 2,
+      "sales": 28,
       "children": [
         {
           "asin": "B0HC86WYB3",
           "sku": "WOOD_18",
           "title": "Global Sugar Art Woodland Animal Edible Cake Decorations, 18 Count Set",
           "img": "https://m.media-amazon.com/images/I/61KSinv+l1L.jpg",
-          "units": 10,
-          "sales": 142
-        },
-        {
-          "asin": "B0HC8P6R7H",
-          "sku": "SAFARI_18",
-          "title": "Global Sugar Art Safari Animal Edible Cake Decorations, 18 Count Set",
-          "img": "https://m.media-amazon.com/images/I/61gao1J29nL.jpg",
-          "units": 3,
-          "sales": 45
-        },
-        {
-          "asin": "B0FVBN2FBS",
-          "sku": "37901_48",
-          "title": "Global Sugar Art 48-Count Unicorn Edible Royal Icing Cupcake Toppers",
-          "img": "https://m.media-amazon.com/images/I/61yZPMNZSxL.jpg",
           "units": 2,
-          "sales": 36
-        },
-        {
-          "asin": "B0HC8L5JR8",
-          "sku": "UNICORN_18",
-          "title": "Global Sugar Art Unicorn Princess Edible Cake Decorations, 18 Count",
-          "img": "https://m.media-amazon.com/images/I/51IS4k6pXYL.jpg",
-          "units": 1,
-          "sales": 14
-        }
-      ]
-    },
-    {
-      "parent": "B0HC8FBSG2",
-      "name": "Edible Fall Cake Decorations Royal Icing Autum",
-      "img": "https://m.media-amazon.com/images/I/71Q2BcGlE0L.jpg",
-      "units": 16,
-      "sales": 224,
-      "children": [
-        {
-          "asin": "B0HC86JY5L",
-          "sku": "FALL_18",
-          "title": "Global Sugar Art 18 Ct Edible Fall Cake Decorations, Autumn Harvest Set",
-          "img": "https://m.media-amazon.com/images/I/71Q2BcGlE0L.jpg",
-          "units": 16,
-          "sales": 224
-        }
-      ]
-    },
-    {
-      "parent": "B09WRVVZKH",
-      "name": "Small Edible Rose 36 Count",
-      "img": "https://m.media-amazon.com/images/I/61o3KUnpVgL.jpg",
-      "units": 8,
-      "sales": 213,
-      "children": [
-        {
-          "asin": "B0992MHDYN",
-          "sku": "37685",
-          "title": "Global Sugar Art 72-Piece Small Edible Rose & Leaf Kit, Red, 1.25-inch",
-          "img": "https://m.media-amazon.com/images/I/71QV6q43wVL.jpg",
-          "units": 7,
-          "sales": 194
-        },
-        {
-          "asin": "B0D4MM7LR6",
-          "sku": "37936",
-          "title": "Global Sugar Art 36-Piece Small Edible Rose & Leaf Kit, Red, 1.25-inch",
-          "img": "https://m.media-amazon.com/images/I/41ScMjsA0aL.jpg",
-          "units": 1,
-          "sales": 19
-        }
-      ]
-    },
-    {
-      "parent": "B0FNQ4TTWP",
-      "name": "Mini Daisy Cake Decorations Edible 72 Count",
-      "img": "https://m.media-amazon.com/images/I/61WBaR9JbaL.jpg",
-      "units": 9,
-      "sales": 188,
-      "children": [
-        {
-          "asin": "B084M7YB7Q",
-          "sku": "36910",
-          "title": "Global Sugar Art 36-Count Mini Edible Daisy Cake Decorations, Sugar Flowers",
-          "img": "https://m.media-amazon.com/images/I/61WBaR9JbaL.jpg",
-          "units": 9,
-          "sales": 188
-        }
-      ]
-    },
-    {
-      "parent": "B09WRVJ6RS",
-      "name": "Mini Edible Flowers Cake Decorations 24 Count",
-      "img": "https://m.media-amazon.com/images/I/61sSb8nnTOL.jpg",
-      "units": 6,
-      "sales": 166,
-      "children": [
-        {
-          "asin": "B0992LMVRV",
-          "sku": "37676",
-          "title": "Global Sugar Art 24-Count Mini White Edible Flowers Cake Decorations",
-          "img": "https://m.media-amazon.com/images/I/61sSb8nnTOL.jpg",
-          "units": 3,
-          "sales": 83
-        },
-        {
-          "asin": "B0992LCGMS",
-          "sku": "37675",
-          "title": "Global Sugar Art 24-Count Mini Pink Edible Flowers Cake Decorations",
-          "img": "https://m.media-amazon.com/images/I/61UV2VI+4DL.jpg",
-          "units": 2,
-          "sales": 55
-        },
-        {
-          "asin": "B0992LQ7X7",
-          "sku": "37677",
-          "title": "Global Sugar Art 24-Count Mini Yellow Edible Flowers Cake Decorations",
-          "img": "https://m.media-amazon.com/images/I/617oQuEmNiL.jpg",
-          "units": 1,
-          "sales": 28
-        }
-      ]
-    },
-    {
-      "parent": "B00KMQNOQE",
-      "name": "Global Sugar Art 6-Count Small Bold Orchid & R",
-      "img": "https://m.media-amazon.com/images/I/71SZVW2KldL.jpg",
-      "units": 3,
-      "sales": 123,
-      "children": [
-        {
-          "asin": "B00KMQNOQE",
-          "sku": "37104",
-          "title": "Global Sugar Art 6-Count Small Bold Orchid & Rose Assorted Sprays",
-          "img": "https://m.media-amazon.com/images/I/71SZVW2KldL.jpg",
-          "units": 3,
-          "sales": 123
-        }
-      ]
-    },
-    {
-      "parent": "B09WRRY18S",
-      "name": "Sugar Flower Cake Toppers",
-      "img": "https://m.media-amazon.com/images/I/71BVUqVsKHL.jpg",
-      "units": 5,
-      "sales": 119,
-      "children": [
-        {
-          "asin": "B07T7JXJ42",
-          "sku": "36815",
-          "title": "Global Sugar Art 1-Count Red Rose Bouquet, Red Fondant Flowers",
-          "img": "https://m.media-amazon.com/images/I/71VzusyvNzL.jpg",
-          "units": 2,
-          "sales": 54
-        },
-        {
-          "asin": "B07T8ZMKYD",
-          "sku": "36814",
-          "title": "Global Sugar Art 1-Count White Rose Bouquet, White Rose Cake Topper",
-          "img": "https://m.media-amazon.com/images/I/71213EDJIXL.jpg",
-          "units": 2,
-          "sales": 38
-        },
-        {
-          "asin": "B08M46GS6C",
-          "sku": "36812FBA",
-          "title": "Global Sugar Art 1-Count Pink and Lavender Rose Bouquet, Gum Paste Flowers",
-          "img": "https://m.media-amazon.com/images/I/71BVUqVsKHL.jpg",
-          "units": 1,
-          "sales": 27
-        }
-      ]
-    },
-    {
-      "parent": "B0C15P9DDZ",
-      "name": "15 Piece Rose",
-      "img": "https://m.media-amazon.com/images/I/71Us694JH6L.jpg",
-      "units": 6,
-      "sales": 118,
-      "children": [
-        {
-          "asin": "B084M8555Z",
-          "sku": "36950",
-          "title": "Global Sugar Art 15-Piece Red Rose & Leaf Kit, Assorted Sizes, Edible Roses",
-          "img": "https://m.media-amazon.com/images/I/51VXD6Hm34L.jpg",
-          "units": 5,
-          "sales": 83
-        },
-        {
-          "asin": "B07XPHBYBS",
-          "sku": "37131",
-          "title": "Global Sugar Art 65-Piece Edible White Rose & Leaf Kit, Assorted Sizes",
-          "img": "https://m.media-amazon.com/images/I/81Sou-DrDAL.jpg",
-          "units": 1,
-          "sales": 35
-        }
-      ]
-    },
-    {
-      "parent": "B0HC89VXGH",
-      "name": "Dainty Bess Edible Mini Royal Icing Sugar Flow",
-      "img": "https://m.media-amazon.com/images/I/71TmTgj7LIL.jpg",
-      "units": 7,
-      "sales": 118,
-      "children": [
-        {
-          "asin": "B0D45ZMMQ4",
-          "sku": "37915",
-          "title": "Global Sugar Art 24 Count Dainty Bess Edible Mini Royal Icing Sugar Flowers",
-          "img": "https://m.media-amazon.com/images/I/71TmTgj7LIL.jpg",
-          "units": 7,
-          "sales": 118
-        }
-      ]
-    },
-    {
-      "parent": "B08MWLYRRS",
-      "name": "Paramount Crystals by Confectionery Arts Inter",
-      "img": "https://m.media-amazon.com/images/I/71YMe0eykdL.jpg",
-      "units": 5,
-      "sales": 111,
-      "children": [
-        {
-          "asin": "B08MWLYRRS",
-          "sku": "Para14",
-          "title": "Paramount Crystals by Confectionery Arts International - 16 ounce bag",
-          "img": "https://m.media-amazon.com/images/I/71YMe0eykdL.jpg",
-          "units": 5,
-          "sales": 111
-        }
-      ]
-    },
-    {
-      "parent": "B0D5MNTZ61",
-      "name": "Royal Icing Roses",
-      "img": "https://m.media-amazon.com/images/I/51lERmoHcML.jpg",
-      "units": 5,
-      "sales": 96,
-      "children": [
-        {
-          "asin": "B0D3QPTMPQ",
-          "sku": "37904",
-          "title": "Global Sugar Art 12-Count Purple Royal Icing Roses, Edible Purple Roses",
-          "img": "https://m.media-amazon.com/images/I/51+bb2JgWtL.jpg",
-          "units": 3,
-          "sales": 52
-        },
-        {
-          "asin": "B0D3QPN8ZN",
-          "sku": "37908",
-          "title": "Global Sugar Art 12-Count Blue Royal Icing Roses, Edible Blue Roses",
-          "img": "https://m.media-amazon.com/images/I/51dwNYarY7L.jpg",
-          "units": 1,
-          "sales": 22
-        },
-        {
-          "asin": "B0D3QNSQZS",
-          "sku": "37907",
-          "title": "Global Sugar Art 12-Count White Royal Icing Roses, Edible White Roses",
-          "img": "https://m.media-amazon.com/images/I/41ko23VgR4L.jpg",
-          "units": 1,
-          "sales": 22
-        }
-      ]
-    },
-    {
-      "parent": "B0FVBBT5HJ",
-      "name": "Hydrangeas Unwired",
-      "img": "https://m.media-amazon.com/images/I/41wa4rEjlHL.jpg",
-      "units": 4,
-      "sales": 90,
-      "children": [
-        {
-          "asin": "B084M7RSM1",
-          "sku": "36908",
-          "title": "Global Sugar Art 36-Count Small White Hydrangea Flowers, Unwired, 1-inch",
-          "img": "https://m.media-amazon.com/images/I/41-Aov1ge1L.jpg",
-          "units": 2,
-          "sales": 45
-        },
-        {
-          "asin": "B00SMPF7KI",
-          "sku": "37504",
-          "title": "Global Sugar Art 36-Count Small Blue Hydrangea Flowers, Unwired, 1-inch",
-          "img": "https://m.media-amazon.com/images/I/41wa4rEjlHL.jpg",
-          "units": 2,
-          "sales": 45
-        }
-      ]
-    },
-    {
-      "parent": "B0C3HV6JT5",
-      "name": "Edible Roses 12 Count",
-      "img": "https://m.media-amazon.com/images/I/71yI7q0NgzL.jpg",
-      "units": 4,
-      "sales": 90,
-      "children": [
-        {
-          "asin": "B0B15NBTK5",
-          "sku": "37813",
-          "title": "Global Sugar Art 12-Count Edible Burgundy Roses for Cake Decorating",
-          "img": "https://m.media-amazon.com/images/I/71yI7q0NgzL.jpg",
-          "units": 4,
-          "sales": 90
-        }
-      ]
-    },
-    {
-      "parent": "B0FNS39BKZ",
-      "name": "Edible Christmas Cupcake Toppers Reindeer 72 C",
-      "img": "https://m.media-amazon.com/images/I/61X1nfz3t-L.jpg",
-      "units": 4,
-      "sales": 89,
-      "children": [
-        {
-          "asin": "B0D3MBRNG5",
-          "sku": "37890",
-          "title": "Global Sugar Art 36-Count Edible Christmas Cupcake Toppers, Poinsettia Set",
-          "img": "https://m.media-amazon.com/images/I/61Ya+yuHtQL.jpg",
-          "units": 3,
-          "sales": 67
-        },
-        {
-          "asin": "B0CJG2DH1B",
-          "sku": "37886",
-          "title": "Global Sugar Art 36-Count Edible Christmas Cupcake Toppers, Reindeer Set",
-          "img": "https://m.media-amazon.com/images/I/61X1nfz3t-L.jpg",
-          "units": 1,
-          "sales": 22
-        }
-      ]
-    },
-    {
-      "parent": "B0H8R6PDM7",
-      "name": "Stephanotis Spray Sugar Flowers 3 Count",
-      "img": "https://m.media-amazon.com/images/I/411sjhPKVhL.jpg",
-      "units": 4,
-      "sales": 89,
-      "children": [
-        {
-          "asin": "B08N8K2W3T",
-          "sku": "34117FBA",
-          "title": "Global Sugar Art 3-Count White Stephanotis Spray, Sugar Flowers",
-          "img": "https://m.media-amazon.com/images/I/411sjhPKVhL.jpg",
-          "units": 4,
-          "sales": 89
-        }
-      ]
-    },
-    {
-      "parent": "B09WRPWH6P",
-      "name": "Medium Peace Rose Kit 2 inch 14 Count",
-      "img": "https://m.media-amazon.com/images/I/51xIix9n-7L.jpg",
-      "units": 3,
-      "sales": 84,
-      "children": [
-        {
-          "asin": "B08N729ZQ6",
-          "sku": "36804FBA",
-          "title": "Global Sugar Art 14-Piece Medium Lavender Peace Rose Kit, 2-inch",
-          "img": "https://m.media-amazon.com/images/I/51xIix9n-7L.jpg",
-          "units": 1,
-          "sales": 28
-        },
-        {
-          "asin": "B08KDRXRTB",
-          "sku": "37642",
-          "title": "Global Sugar Art 14-Piece Medium Pink Peace Rose Kit with Leaves, 2-inch",
-          "img": "https://m.media-amazon.com/images/I/517v0NH4ImL.jpg",
-          "units": 1,
-          "sales": 28
-        },
-        {
-          "asin": "B08N6ZRR1N",
-          "sku": "36802FBA",
-          "title": "Global Sugar Art 14-Piece Medium White Peace Rose Kit with Leaves, 2-inch",
-          "img": "https://m.media-amazon.com/images/I/51ZuoS22qSL.jpg",
-          "units": 1,
-          "sales": 28
-        }
-      ]
-    },
-    {
-      "parent": "B0CSXSCS7C",
-      "name": "Gardenia",
-      "img": "https://m.media-amazon.com/images/I/41FWGBFGtcL.jpg",
-      "units": 4,
-      "sales": 68,
-      "children": [
-        {
-          "asin": "B07TRHX85B",
-          "sku": "37489",
-          "title": "Global Sugar Art 1-Count Large White Gardenia, Jumbo Bloom, Cake Flowers",
-          "img": "https://m.media-amazon.com/images/I/41FWGBFGtcL.jpg",
-          "units": 4,
-          "sales": 68
-        }
-      ]
-    },
-    {
-      "parent": "B09WRP91SZ",
-      "name": "Mini Blossoms 24 Count",
-      "img": "https://m.media-amazon.com/images/I/51wojPDh1zL.jpg",
-      "units": 3,
-      "sales": 67,
-      "children": [
-        {
-          "asin": "B07T91MHGQ",
-          "sku": "36807",
-          "title": "Global Sugar Art 24-Count White Gum Paste Sugar Flowers for Cake Decorating",
-          "img": "https://m.media-amazon.com/images/I/51wojPDh1zL.jpg",
-          "units": 3,
-          "sales": 67
-        }
-      ]
-    },
-    {
-      "parent": "B09WRQ3P7Y",
-      "name": "Leaf Spray Sugar Cake Flowers",
-      "img": "https://m.media-amazon.com/images/I/71UFc6GCb9L.jpg",
-      "units": 3,
-      "sales": 65,
-      "children": [
-        {
-          "asin": "B08N721NBS",
-          "sku": "37645",
-          "title": "Global Sugar Art 4-Count Magnolia Gum Paste Leaves for Cake Decorating",
-          "img": "https://m.media-amazon.com/images/I/71bNEHpI7sL.jpg",
-          "units": 2,
-          "sales": 45
-        },
-        {
-          "asin": "B09894CQ5W",
-          "sku": "37671",
-          "title": "Global Sugar Art 2-Count Green Peony Sugar Leaves for Cake Decorating",
-          "img": "https://m.media-amazon.com/images/I/71rHA5aasfL.jpg",
-          "units": 1,
-          "sales": 20
-        }
-      ]
-    },
-    {
-      "parent": "B0CT27QTC2",
-      "name": "Sugar Anemone",
-      "img": "https://m.media-amazon.com/images/I/61I1DXpeXBL.jpg",
-      "units": 3,
-      "sales": 63,
-      "children": [
-        {
-          "asin": "B07TQJX6S4",
-          "sku": "37511",
-          "title": "Global Sugar Art 3-Count White Anemone, Gumpaste Flowers, Cake Flowers",
-          "img": "https://m.media-amazon.com/images/I/511GtNav1qL.jpg",
-          "units": 2,
-          "sales": 44
-        },
-        {
-          "asin": "B07TPF9X7L",
-          "sku": "34109",
-          "title": "Global Sugar Art 3-Count White and Black Anemone, Black Sugar Flowers",
-          "img": "https://m.media-amazon.com/images/I/61I1DXpeXBL.jpg",
-          "units": 1,
-          "sales": 19
-        }
-      ]
-    },
-    {
-      "parent": "B084M7MD81",
-      "name": "Global Sugar Art 20-Count White Frangipani Plu",
-      "img": "https://m.media-amazon.com/images/I/61J8hTXv08S.jpg",
-      "units": 2,
-      "sales": 56,
-      "children": [
-        {
-          "asin": "B084M7MD81",
-          "sku": "36871",
-          "title": "Global Sugar Art 20-Count White Frangipani Plumeria, Hawaiian Sugar Flowers",
-          "img": "https://m.media-amazon.com/images/I/61J8hTXv08S.jpg",
-          "units": 2,
-          "sales": 56
-        }
-      ]
-    },
-    {
-      "parent": "B0CN9SQLR3",
-      "name": "Christmas Poinsettia Large Sugar Flowers 3 Cou",
-      "img": "https://m.media-amazon.com/images/I/71SlCO+PNwL.jpg",
-      "units": 2,
-      "sales": 51,
-      "children": [
-        {
-          "asin": "B0BGM9ZKB9",
-          "sku": "37821FBA",
-          "title": "Global Sugar Art 3-Piece Poinsettia & Holly Leaf Kit, Small with Berries",
-          "img": "https://m.media-amazon.com/images/I/71SlCO+PNwL.jpg",
-          "units": 1,
-          "sales": 26
-        },
-        {
-          "asin": "B084M82SN9",
-          "sku": "36897",
-          "title": "Global Sugar Art 3-Count Christmas Poinsettia, Small Sugar Flowers",
-          "img": "https://m.media-amazon.com/images/I/71T8h1LucrL.jpg",
-          "units": 1,
-          "sales": 26
-        }
-      ]
-    },
-    {
-      "parent": "B0GKWPYM7F",
-      "name": "Premium Peony Sugar Cake Flowers",
-      "img": "https://m.media-amazon.com/images/I/61nluIlVyWL.jpg",
-      "units": 3,
-      "sales": 46,
-      "children": [
-        {
-          "asin": "B08KFHN9YM",
-          "sku": "37641FBA",
-          "title": "Global Sugar Art 1-Count Magenta Peony, Closed, Large Jumbo Bloom",
-          "img": "https://m.media-amazon.com/images/I/51RX-p6pDLL.jpg",
-          "units": 2,
-          "sales": 28
-        },
-        {
-          "asin": "B0GKWRGHXL",
-          "sku": "36679_2CT",
-          "title": "Global Sugar Art 2-Count Pink Peony, Closed, Large Jumbo Bloom, Cake Topper",
-          "img": "https://m.media-amazon.com/images/I/61nluIlVyWL.jpg",
-          "units": 1,
-          "sales": 18
-        }
-      ]
-    },
-    {
-      "parent": "B0CSXNM4NH",
-      "name": "Peony",
-      "img": "https://m.media-amazon.com/images/I/71rw0u8V8mL.jpg",
-      "units": 2,
-      "sales": 45,
-      "children": [
-        {
-          "asin": "B0D3JBM4BQ",
-          "sku": "37893",
-          "title": "Global Sugar Art 1-Count Pink Peony Spray, Open, Sugar Paste Leaves",
-          "img": "https://m.media-amazon.com/images/I/71oPaSzgSrL.jpg",
-          "units": 1,
-          "sales": 23
-        },
-        {
-          "asin": "B0D3J9TJPV",
-          "sku": "37887",
-          "title": "Global Sugar Art 1-Count White Peony Spray, Closed, Gumpaste Flowers",
-          "img": "https://m.media-amazon.com/images/I/71rw0u8V8mL.jpg",
-          "units": 1,
-          "sales": 23
-        }
-      ]
-    },
-    {
-      "parent": "B0CCPQZJX2",
-      "name": "Large Tropical Hibiscus Hawaiian Flowers 3 Cou",
-      "img": "https://m.media-amazon.com/images/I/51qIFRO3fXL.jpg",
-      "units": 2,
-      "sales": 42,
-      "children": [
-        {
-          "asin": "B083P64KCP",
-          "sku": "36893",
-          "title": "Global Sugar Art 3-Count Large Pink Tropical Hibiscus, Hawaiian Flowers",
-          "img": "https://m.media-amazon.com/images/I/51g+OxQbhTL.jpg",
-          "units": 1,
-          "sales": 22
-        },
-        {
-          "asin": "B08M4827HJ",
-          "sku": "37520FBA",
-          "title": "Global Sugar Art 9-Count Large Pink Tropical Hibiscus, Large Sugar Flowers",
-          "img": "https://m.media-amazon.com/images/I/51g+OxQbhTL.jpg",
-          "units": 1,
-          "sales": 19
-        }
-      ]
-    },
-    {
-      "parent": "B0BCL243VV",
-      "name": "Calla Lily Bouquet Wedding Cake Topper",
-      "img": "https://m.media-amazon.com/images/I/71hiQliarZL.jpg",
-      "units": 2,
-      "sales": 42,
-      "children": [
-        {
-          "asin": "B09T52PNB9",
-          "sku": "37746",
-          "title": "Global Sugar Art 1-Count White Calla Lily and Blossom Bouquet for Wedding",
-          "img": "https://m.media-amazon.com/images/I/71zNVFfbgFL.jpg",
-          "units": 2,
-          "sales": 42
-        }
-      ]
-    },
-    {
-      "parent": "B0CSXR5Z6D",
-      "name": "Sugar Cake Flower Cake Kits",
-      "img": "https://m.media-amazon.com/images/I/41N-2xt66YL.jpg",
-      "units": 1,
-      "sales": 34,
-      "children": [
-        {
-          "asin": "B0989GF6RT",
-          "sku": "37679",
-          "title": "Global Sugar Art 5-Count Hibiscus Sugar Flowers, Tropical Cake Decorations",
-          "img": "https://m.media-amazon.com/images/I/41N-2xt66YL.jpg",
-          "units": 1,
-          "sales": 34
-        }
-      ]
-    },
-    {
-      "parent": "B0BMQS2X5J",
-      "name": "Rose Sugar Cake Flowers",
-      "img": "https://m.media-amazon.com/images/I/41If8UyK9nL.jpg",
-      "units": 1,
-      "sales": 33,
-      "children": [
-        {
-          "asin": "B08TTRR7BJ",
-          "sku": "34131FBA",
-          "title": "Global Sugar Art 5-Count Large Red Rose, Jumbo Bloom, Large Sugar Flowers",
-          "img": "https://m.media-amazon.com/images/I/51jyTO0CxrL.jpg",
-          "units": 1,
-          "sales": 33
-        }
-      ]
-    },
-    {
-      "parent": "B0CSXP6WVW",
-      "name": "Sugar Hydrandea Blossoms Wired",
-      "img": "https://m.media-amazon.com/images/I/41-dK6n2MxL.jpg",
-      "units": 1,
-      "sales": 28,
-      "children": [
-        {
-          "asin": "B084M86JDL",
-          "sku": "36909",
-          "title": "Global Sugar Art 36-Count Small White Hydrangea Flowers, Wired, 1-inch",
-          "img": "https://m.media-amazon.com/images/I/41-dK6n2MxL.jpg",
-          "units": 1,
-          "sales": 28
-        }
-      ]
-    },
-    {
-      "parent": "B0CSXSFMMB",
-      "name": "Sugar Rose",
-      "img": "https://m.media-amazon.com/images/I/81x1j7DMN2L.jpg",
-      "units": 1,
-      "sales": 28,
-      "children": [
-        {
-          "asin": "B0CQMNCR71",
-          "sku": "37884",
-          "title": "Global Sugar Art 15-Piece Rose & Blossom Kit, Pink, Sugar Flowers",
-          "img": "https://m.media-amazon.com/images/I/81x1j7DMN2L.jpg",
-          "units": 1,
           "sales": 28
         }
       ]
@@ -1300,255 +117,68 @@
       ]
     },
     {
-      "parent": "B0HKWVRVB8",
-      "name": "8 Count Lily",
-      "img": "https://m.media-amazon.com/images/I/61iPN1VOamL.jpg",
-      "units": 1,
-      "sales": 27,
-      "children": [
-        {
-          "asin": "B07TQJXMPK",
-          "sku": "37384",
-          "title": "Global Sugar Art 8-Count White Lily of the Valley Sugar Flowers with Leaves",
-          "img": "https://m.media-amazon.com/images/I/61iPN1VOamL.jpg",
-          "units": 1,
-          "sales": 27
-        }
-      ]
-    },
-    {
-      "parent": "B0CCPQKTFM",
-      "name": "Azalea 1 75 Inch Sugar Cake Flowers",
-      "img": "https://m.media-amazon.com/images/I/61siaFlMm1L.jpg",
-      "units": 1,
-      "sales": 25,
-      "children": [
-        {
-          "asin": "B098859PBB",
-          "sku": "37672",
-          "title": "Global Sugar Art 10-Count Medium White Azaleas, 1.75-inch, Sugar Flowers",
-          "img": "https://m.media-amazon.com/images/I/61siaFlMm1L.jpg",
-          "units": 1,
-          "sales": 25
-        }
-      ]
-    },
-    {
-      "parent": "B0CSB69B32",
-      "name": "Sugar Cake Topper Lily",
-      "img": "https://m.media-amazon.com/images/I/510WykzP58L.jpg",
+      "parent": "B0D45YF65B",
+      "name": "Sugar Blossom",
+      "img": "https://m.media-amazon.com/images/I/31Gj2Ev8BEL.jpg",
       "units": 1,
       "sales": 24,
       "children": [
         {
-          "asin": "B08N6YS9H6",
-          "sku": "37514FBA",
-          "title": "Global Sugar Art 1-Count Calla Lily Deluxe Spray, Lily Cake Topper",
-          "img": "https://m.media-amazon.com/images/I/510WykzP58L.jpg",
+          "asin": "B0D3JBRCHF",
+          "sku": "37894",
+          "title": "Global Sugar Art White Cherry Blossom Spray, Gumpaste Flowers for Cakes",
+          "img": "https://m.media-amazon.com/images/I/31Gj2Ev8BEL.jpg",
           "units": 1,
           "sales": 24
         }
       ]
     },
     {
-      "parent": "B0GL5X67CY",
-      "name": "Small Tea Rose 1 Inch Gumpaste 15 Count",
-      "img": "https://m.media-amazon.com/images/I/31D5eTyazLL.jpg",
+      "parent": "B09WRQ3P7Y",
+      "name": "Leaf Spray Sugar Cake Flowers",
+      "img": "https://m.media-amazon.com/images/I/71UFc6GCb9L.jpg",
+      "units": 1,
+      "sales": 23,
+      "children": [
+        {
+          "asin": "B08N71T9CC",
+          "sku": "37648",
+          "title": "Global Sugar Art 4-Count Green Olive Sugar Leaves for Cake Decorating",
+          "img": "https://m.media-amazon.com/images/I/71UFc6GCb9L.jpg",
+          "units": 1,
+          "sales": 23
+        }
+      ]
+    },
+    {
+      "parent": "B0H8R6PDM7",
+      "name": "Stephanotis Spray Sugar Flowers 3 Count",
+      "img": "https://m.media-amazon.com/images/I/411sjhPKVhL.jpg",
       "units": 1,
       "sales": 22,
       "children": [
         {
-          "asin": "B0848JDC77",
-          "sku": "36877",
-          "title": "Global Sugar Art 12-Count Large White Tea Rose, 2-Inch, Gumpaste Roses",
-          "img": "https://m.media-amazon.com/images/I/41RYFdijNwL.jpg",
+          "asin": "B08N8K2W3T",
+          "sku": "34117FBA",
+          "title": "Global Sugar Art 3-Count White Stephanotis Spray, Sugar Flowers",
+          "img": "https://m.media-amazon.com/images/I/411sjhPKVhL.jpg",
           "units": 1,
           "sales": 22
         }
       ]
     },
     {
-      "parent": "B09VLKSDC1",
-      "name": "Silicone Lace Mat",
-      "img": "https://m.media-amazon.com/images/I/41VpvHLXu9L.jpg",
-      "units": 2,
-      "sales": 22,
-      "children": [
-        {
-          "asin": "B08SWDSDL6",
-          "sku": "31956FBA",
-          "title": "Global Sugar Art Silicone Cake Lace Mat, Butterflies & Ribbon Lace Mold",
-          "img": "https://m.media-amazon.com/images/I/51i0s5eyq6L.jpg",
-          "units": 2,
-          "sales": 22
-        }
-      ]
-    },
-    {
-      "parent": "B0D4699RZ9",
-      "name": "Camellia Orchid Spray Hibiscus Sugar 1 Count",
-      "img": "https://m.media-amazon.com/images/I/710-AxL8SQL.jpg",
-      "units": 1,
-      "sales": 22,
-      "children": [
-        {
-          "asin": "B0989HF6JD",
-          "sku": "37698",
-          "title": "Global Sugar Art 1-Count Pink Camellia Orchid Spray, Hibiscus Sugar Flowers",
-          "img": "https://m.media-amazon.com/images/I/710-AxL8SQL.jpg",
-          "units": 1,
-          "sales": 22
-        }
-      ]
-    },
-    {
-      "parent": "B08M47335C",
-      "name": "Global Sugar Art 3-Count Pink Cymbidium Orchid",
-      "img": "https://m.media-amazon.com/images/I/511mRoOvMEL.jpg",
-      "units": 1,
-      "sales": 22,
-      "children": [
-        {
-          "asin": "B08M47335C",
-          "sku": "36944FBA",
-          "title": "Global Sugar Art 3-Count Pink Cymbidium Orchids, Orchid Cake Topper",
-          "img": "https://m.media-amazon.com/images/I/511mRoOvMEL.jpg",
-          "units": 1,
-          "sales": 22
-        }
-      ]
-    },
-    {
-      "parent": "B08V1ZNZKR",
-      "name": "Cake Dummy Square",
-      "img": "https://m.media-amazon.com/images/I/71yyME-kGOL.jpg",
-      "units": 1,
-      "sales": 20,
-      "children": [
-        {
-          "asin": "B08MWSXWL1",
-          "sku": "SQR666",
-          "title": "Global Sugar Art 6-Inch Square Cake Dummy, Styrofoam, 6\" High, 6x6",
-          "img": "https://m.media-amazon.com/images/I/71L8bIWqQbL.jpg",
-          "units": 1,
-          "sales": 20
-        }
-      ]
-    },
-    {
-      "parent": "B0CSHK6T2K",
-      "name": "Sugar Cake Topper Lillies 3 count",
-      "img": "https://m.media-amazon.com/images/I/41z3f3hnk9L.jpg",
-      "units": 1,
-      "sales": 19,
-      "children": [
-        {
-          "asin": "B00K0DIP68",
-          "sku": "37103",
-          "title": "Global Sugar Art 3-Count Large White Casablanca Lily, Gumpaste Lily Flowers",
-          "img": "https://m.media-amazon.com/images/I/41z3f3hnk9L.jpg",
-          "units": 1,
-          "sales": 19
-        }
-      ]
-    },
-    {
-      "parent": "B0CSXNJWGB",
-      "name": "Rebecca Roses",
-      "img": "https://m.media-amazon.com/images/I/416fjcPp1hL.jpg",
-      "units": 1,
-      "sales": 18,
-      "children": [
-        {
-          "asin": "B08PQ9V2XL",
-          "sku": "37594FBA",
-          "title": "Global Sugar Art 3-Count Large White Rebecca Roses, 3-inch, Gumpaste Roses",
-          "img": "https://m.media-amazon.com/images/I/416fjcPp1hL.jpg",
-          "units": 1,
-          "sales": 18
-        }
-      ]
-    },
-    {
-      "parent": "B08KFD7NW3",
-      "name": "Global Sugar Art 6-Count White Pearly Orchids",
-      "img": "https://m.media-amazon.com/images/I/41Fe7hO9xZL.jpg",
-      "units": 1,
-      "sales": 18,
-      "children": [
-        {
-          "asin": "B08KFD7NW3",
-          "sku": "37603",
-          "title": "Global Sugar Art 6-Count White Pearly Orchids, Medium, Gumpaste Orchids",
-          "img": "https://m.media-amazon.com/images/I/41Fe7hO9xZL.jpg",
-          "units": 1,
-          "sales": 18
-        }
-      ]
-    },
-    {
-      "parent": "B0CQVS6QF6",
-      "name": "Parent Frangipani Toppers",
-      "img": "https://m.media-amazon.com/images/I/518pGfBwcyL.jpg",
+      "parent": "B0D1RXTP8G",
+      "name": "Buttercream Frosting",
+      "img": "https://m.media-amazon.com/images/I/71PxM5bpa8L.jpg",
       "units": 1,
       "sales": 17,
       "children": [
         {
-          "asin": "B00KMQTMMY",
-          "sku": "37118",
-          "title": "Global Sugar Art 1-Count Tropical Frangipani Spray, Small Blossoms",
-          "img": "https://m.media-amazon.com/images/I/518pGfBwcyL.jpg",
-          "units": 1,
-          "sales": 17
-        }
-      ]
-    },
-    {
-      "parent": "B083P69G85",
-      "name": "Global Sugar Art 1-Count Pink Cherry Blossoms ",
-      "img": "https://m.media-amazon.com/images/I/51FWmW9OFSL.jpg",
-      "units": 1,
-      "sales": 17,
-      "children": [
-        {
-          "asin": "B083P69G85",
-          "sku": "36941",
-          "title": "Global Sugar Art 1-Count Pink Cherry Blossoms with Leaves Spray",
-          "img": "https://m.media-amazon.com/images/I/51FWmW9OFSL.jpg",
-          "units": 1,
-          "sales": 17
-        }
-      ]
-    },
-    {
-      "parent": "B0HCCJ3F5R",
-      "name": "Baby Boy Edible Royal Icing Cupcake 24 Count",
-      "img": "https://m.media-amazon.com/images/I/71woKCrHndL.jpg",
-      "units": 1,
-      "sales": 17,
-      "children": [
-        {
-          "asin": "B0D3QQQYS4",
-          "sku": "37912",
-          "title": "Global Sugar Art 24-Count Baby Girl Edible Royal Icing Cupcake Toppers",
-          "img": "https://m.media-amazon.com/images/I/71woKCrHndL.jpg",
-          "units": 1,
-          "sales": 17
-        }
-      ]
-    },
-    {
-      "parent": "B09WRMFJXX",
-      "name": "Hibiscus Sugar Cake Flowers",
-      "img": "https://m.media-amazon.com/images/I/71lLc2ILAVL.jpg",
-      "units": 1,
-      "sales": 17,
-      "children": [
-        {
-          "asin": "B0989B1RBZ",
-          "sku": "37700",
-          "title": "Global Sugar Art 1-Count Large Yellow Tropical Hibiscus with Leaves",
-          "img": "https://m.media-amazon.com/images/I/71ZqTxjc1cL.jpg",
+          "asin": "B0D1RHGDF3",
+          "sku": "37930",
+          "title": "Global Sugar Art Black Buttercream Frosting, Cake Decorating Icing, 16oz",
+          "img": "https://m.media-amazon.com/images/I/71PxM5bpa8L.jpg",
           "units": 1,
           "sales": 17
         }
@@ -1572,191 +202,28 @@
       ]
     },
     {
-      "parent": "B0CSYPMN13",
-      "name": "Premium Roses",
-      "img": "https://m.media-amazon.com/images/I/41ebY-2LNsL.jpg",
-      "units": 1,
-      "sales": 17,
-      "children": [
-        {
-          "asin": "B00K185DQ2",
-          "sku": "36875",
-          "title": "Global Sugar Art 16-Ct Medium White Edible Sugar Roses, Cake Decorating",
-          "img": "https://m.media-amazon.com/images/I/51qQwRoRcHL.jpg",
-          "units": 1,
-          "sales": 17
-        }
-      ]
-    },
-    {
-      "parent": "B0CSXTHSM8",
-      "name": "Tipped Brassavola Orchids Gumpaste Flowers 3 C",
-      "img": "https://m.media-amazon.com/images/I/51apyzcrq+L.jpg",
-      "units": 1,
-      "sales": 17,
-      "children": [
-        {
-          "asin": "B07TPF9QDS",
-          "sku": "33495",
-          "title": "Global Sugar Art 3-Count Purple Tipped Brassavola Orchids, Gumpaste Flowers",
-          "img": "https://m.media-amazon.com/images/I/51apyzcrq+L.jpg",
-          "units": 1,
-          "sales": 17
-        }
-      ]
-    },
-    {
-      "parent": "B0FVN99V3Q",
-      "name": "Royal Icing Mix",
-      "img": "https://m.media-amazon.com/images/I/71+wifWB9RL.jpg",
-      "units": 1,
-      "sales": 15,
-      "children": [
-        {
-          "asin": "B09CB7VJWJ",
-          "sku": "37709",
-          "title": "Global Sugar Art Royal Icing Mix, Firm Cookie & Gingerbread Icing, 15oz",
-          "img": "https://m.media-amazon.com/images/I/71HPCF6CTiL.jpg",
-          "units": 1,
-          "sales": 15
-        }
-      ]
-    },
-    {
-      "parent": "B09WRTRW9Y",
-      "name": "Medium Roses Unwired 1 75 inch 16 Count",
-      "img": "https://m.media-amazon.com/images/I/71hDMY443YL.jpg",
-      "units": 1,
-      "sales": 13,
-      "children": [
-        {
-          "asin": "B0848KFFBK",
-          "sku": "36873",
-          "title": "Global Sugar Art 12-Count Large Red Roses, Unwired, 2-inch, Sugar Flowers",
-          "img": "https://m.media-amazon.com/images/I/71yH77fljoL.jpg",
-          "units": 1,
-          "sales": 13
-        }
-      ]
-    }
-  ],
-  "comp": "2026-09-29",
-  "compLabel": "Tue, Sep 29",
-  "compDollars": 5964,
-  "ratio": 0.8550274988386829,
-  "beats": [
-    {
-      "name": "Global Sugar Art Black Buttercream Frosting",
-      "img": "https://m.media-amazon.com/images/I/71PxM5bpa8L.jpg",
-      "asin": "B0D1RHGDF3",
-      "sku": "37930",
-      "family": "Buttercream Frosting · family of 20",
-      "today": 16,
-      "comp": 5,
-      "compFull": 5,
-      "delta": 11
-    },
-    {
-      "name": "Global Sugar Art 18 Ct Edible Fall Cake Decora",
+      "parent": "B0HC8FBSG2",
+      "name": "Edible Fall Cake Decorations Royal Icing Autum",
       "img": "https://m.media-amazon.com/images/I/71Q2BcGlE0L.jpg",
-      "asin": "B0HC86JY5L",
-      "sku": "FALL_18",
-      "family": "Edible Fall Cake Decorations Royal Icing Autum · family of 2",
-      "today": 16,
-      "comp": 5,
-      "compFull": 6,
-      "delta": 11
-    },
-    {
-      "name": "Global Sugar Art 72-Piece Small Edible Rose & ",
-      "img": "https://m.media-amazon.com/images/I/71QV6q43wVL.jpg",
-      "asin": "B0992MHDYN",
-      "sku": "37685",
-      "family": "Small Edible Rose 36 Count · family of 7",
-      "today": 7,
-      "comp": 0,
-      "compFull": 0,
-      "delta": 7
-    },
-    {
-      "name": "Global Sugar Art 36-Count Mini Edible Daisy Ca",
-      "img": "https://m.media-amazon.com/images/I/61WBaR9JbaL.jpg",
-      "asin": "B084M7YB7Q",
-      "sku": "36910",
-      "family": "Mini Daisy Cake Decorations Edible 72 Count · family of 7",
-      "today": 9,
-      "comp": 3,
-      "compFull": 5,
-      "delta": 6
-    },
-    {
-      "name": "Global Sugar Art 36-Count Black Mini Edible Fl",
-      "img": "https://m.media-amazon.com/images/I/61CuWvSNNpL.jpg",
-      "asin": "B0HC47RXFP",
-      "sku": "DROP_BLK_36",
-      "family": "Silver Mini Edible Flowers Cake Decorations 36 · family of 16",
-      "today": 7,
-      "comp": 1,
-      "compFull": 1,
-      "delta": 6
+      "units": 1,
+      "sales": 14,
+      "children": [
+        {
+          "asin": "B0HC86JY5L",
+          "sku": "FALL_18",
+          "title": "Global Sugar Art 18 Ct Edible Fall Cake Decorations, Autumn Harvest Set",
+          "img": "https://m.media-amazon.com/images/I/71Q2BcGlE0L.jpg",
+          "units": 1,
+          "sales": 14
+        }
+      ]
     }
   ],
-  "misses": [
-    {
-      "name": "Paramount Crystals for Candy Melts & Chocolate",
-      "img": "https://m.media-amazon.com/images/I/61OW-j13QeL.jpg",
-      "asin": "B0GC9XSGGY",
-      "sku": "Para8",
-      "family": "Paramount Crystals · family of 3",
-      "today": 10,
-      "comp": 25,
-      "compFull": 28,
-      "delta": -15
-    },
-    {
-      "name": "Global Sugar Art 18 Ct Edible Halloween Cake D",
-      "img": "https://m.media-amazon.com/images/I/71rCot63zkL.jpg",
-      "asin": "B0HC8DCRGD",
-      "sku": "HLWN_18",
-      "family": "Edible Halloween Cake Decorations Cauldrons 18 · family of 6",
-      "today": 3,
-      "comp": 13,
-      "compFull": 15,
-      "delta": -10
-    },
-    {
-      "name": "Paramount Crystals for Candy Melts & Chocolate",
-      "img": "https://m.media-amazon.com/images/I/7180IkY-H7L.jpg",
-      "asin": "B08MWLMBX7",
-      "sku": "Para4",
-      "family": "Paramount Crystals · family of 3",
-      "today": 23,
-      "comp": 32,
-      "compFull": 34,
-      "delta": -9
-    },
-    {
-      "name": "Global Sugar Art 24-Count White Gum Paste Suga",
-      "img": "https://m.media-amazon.com/images/I/51wojPDh1zL.jpg",
-      "asin": "B07T91MHGQ",
-      "sku": "36807",
-      "family": "Mini Blossoms 24 Count · family of 6",
-      "today": 3,
-      "comp": 8,
-      "compFull": 10,
-      "delta": -5
-    },
-    {
-      "name": "Global Sugar Art 12-Inch Round Cake Dummy",
-      "img": "https://m.media-amazon.com/images/I/71kjBN+tV8L.jpg",
-      "asin": "B08MWMFNMG",
-      "sku": "RND125",
-      "family": "14 Inch Round Cake Dummy Styrofoam 5 High · family of 35",
-      "today": 0,
-      "comp": 5,
-      "compFull": 5,
-      "delta": -5
-    }
-  ],
-  "summary": "Today we're running $553 ahead of last Tue, Sep 29 at this hour."
+  "comp": "2026-09-30",
+  "compLabel": "Wed, Sep 30",
+  "compDollars": 308,
+  "ratio": 0.044376207363838197,
+  "beats": [],
+  "misses": [],
+  "summary": "Today we're running $43 behind last Wed, Sep 30 at this hour."
 }
